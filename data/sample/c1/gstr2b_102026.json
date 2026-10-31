@@ -1,0 +1,633 @@
+{
+ "chksum": "synthetic",
+ "data": {
+  "gstin": "29WWHCL5580O1ZT",
+  "rtnprd": "102026",
+  "version": "1.0",
+  "gendt": "14-11-2026",
+  "docdata": {
+   "b2b": [
+    {
+     "ctin": "07XJTCM6618Y1ZU",
+     "trdnm": "BANIK & CO",
+     "supfildt": "10-11-2026",
+     "supprd": "102026",
+     "inv": [
+      {
+       "inum": "BC/1197/26-27",
+       "typ": "R",
+       "dt": "08-10-2026",
+       "val": 80532.9,
+       "pos": "29",
+       "rev": "N",
+       "itcavl": "Y",
+       "rsn": "",
+       "diffprcnt": 1,
+       "srctyp": "",
+       "txval": 76698.0,
+       "igst": 3834.9,
+       "cgst": 0.0,
+       "sgst": 0.0,
+       "cess": 0,
+       "items": [
+        {
+         "num": 1,
+         "rt": 5,
+         "txval": 76698.0,
+         "igst": 3834.9,
+         "cgst": 0.0,
+         "sgst": 0.0,
+         "cess": 0
+        }
+       ]
+      },
+      {
+       "inum": "BC/1207/26-27",
+       "typ": "R",
+       "dt": "12-10-2026",
+       "val": 82352.55,
+       "pos": "29",
+       "rev": "N",
+       "itcavl": "Y",
+       "rsn": "",
+       "diffprcnt": 1,
+       "srctyp": "",
+       "txval": 78431.0,
+       "igst": 3921.55,
+       "cgst": 0.0,
+       "sgst": 0.0,
+       "cess": 0,
+       "items": [
+        {
+         "num": 1,
+         "rt": 5,
+         "txval": 78431.0,
+         "igst": 3921.55,
+         "cgst": 0.0,
+         "sgst": 0.0,
+         "cess": 0
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "ctin": "24DJIPD6280S1ZL",
+     "trdnm": "GUPTA SUPPLIES",
+     "supfildt": "10-11-2026",
+     "supprd": "102026",
+     "inv": [
+      {
+       "inum": "INV/2026-27/0043",
+       "typ": "R",
+       "dt": "29-09-2026",
+       "val": 18490.5,
+       "pos": "29",
+       "rev": "N",
+       "itcavl": "Y",
+       "rsn": "",
+       "diffprcnt": 1,
+       "srctyp": "",
+       "txval": 17610.0,
+       "igst": 880.5,
+       "cgst": 0.0,
+       "sgst": 0.0,
+       "cess": 0,
+       "items": [
+        {
+         "num": 1,
+         "rt": 5,
+         "txval": 17610.0,
+         "igst": 880.5,
+         "cgst": 0.0,
+         "sgst": 0.0,
+         "cess": 0
+        }
+       ]
+      },
+      {
+       "inum": "INV/2026-27/0057",
+       "typ": "R",
+       "dt": "22-10-2026",
+       "val": 102499.95,
+       "pos": "29",
+       "rev": "N",
+       "itcavl": "Y",
+       "rsn": "",
+       "diffprcnt": 1,
+       "srctyp": "",
+       "txval": 97619.0,
+       "igst": 4880.95,
+       "cgst": 0.0,
+       "sgst": 0.0,
+       "cess": 0,
+       "items": [
+        {
+         "num": 1,
+         "rt": 5,
+         "txval": 97619.0,
+         "igst": 4880.95,
+         "cgst": 0.0,
+         "sgst": 0.0,
+         "cess": 0
+        }
+       ]
+      },
+      {
+       "inum": "INV/2026-27/0064",
+       "typ": "R",
+       "dt": "05-10-2026",
+       "val": 123123.0,
+       "pos": "29",
+       "rev": "N",
+       "itcavl": "Y",
+       "rsn": "",
+       "diffprcnt": 1,
+       "srctyp": "",
+       "txval": 117260.0,
+       "igst": 5863.0,
+       "cgst": 0.0,
+       "sgst": 0.0,
+       "cess": 0,
+       "items": [
+        {
+         "num": 1,
+         "rt": 5,
+         "txval": 117260.0,
+         "igst": 5863.0,
+         "cgst": 0.0,
+         "sgst": 0.0,
+         "cess": 0
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "ctin": "27ZIKFY3791P1ZX",
+     "trdnm": "CHHABRA DISTRIBUTORS",
+     "supfildt": "10-11-2026",
+     "supprd": "102026",
+     "inv": [
+      {
+       "inum": "CD-1295",
+       "typ": "R",
+       "dt": "25-10-2026",
+       "val": 123982.6,
+       "pos": "29",
+       "rev": "N",
+       "itcavl": "Y",
+       "rsn": "",
+       "diffprcnt": 1,
+       "srctyp": "",
+       "txval": 105070.0,
+       "igst": 18912.6,
+       "cgst": 0.0,
+       "sgst": 0.0,
+       "cess": 0,
+       "items": [
+        {
+         "num": 1,
+         "rt": 18,
+         "txval": 105070.0,
+         "igst": 18912.6,
+         "cgst": 0.0,
+         "sgst": 0.0,
+         "cess": 0
+        }
+       ]
+      },
+      {
+       "inum": "CD-1302",
+       "typ": "R",
+       "dt": "03-10-2026",
+       "val": 112179.06,
+       "pos": "29",
+       "rev": "N",
+       "itcavl": "Y",
+       "rsn": "",
+       "diffprcnt": 1,
+       "srctyp": "",
+       "txval": 95067.0,
+       "igst": 17112.06,
+       "cgst": 0.0,
+       "sgst": 0.0,
+       "cess": 0,
+       "items": [
+        {
+         "num": 1,
+         "rt": 18,
+         "txval": 95067.0,
+         "igst": 17112.06,
+         "cgst": 0.0,
+         "sgst": 0.0,
+         "cess": 0
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "ctin": "29AITPW4599G1Z1",
+     "trdnm": "MAMMEN INDUSTRIES",
+     "supfildt": "10-11-2026",
+     "supprd": "102026",
+     "inv": [
+      {
+       "inum": "MI-98",
+       "typ": "R",
+       "dt": "10-10-2026",
+       "val": 87486.0,
+       "pos": "29",
+       "rev": "N",
+       "itcavl": "Y",
+       "rsn": "",
+       "diffprcnt": 1,
+       "srctyp": "",
+       "txval": 83320.0,
+       "igst": 0.0,
+       "cgst": 2083.0,
+       "sgst": 2083.0,
+       "cess": 0,
+       "items": [
+        {
+         "num": 1,
+         "rt": 5,
+         "txval": 83320.0,
+         "igst": 0.0,
+         "cgst": 2083.0,
+         "sgst": 2083.0,
+         "cess": 0
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "ctin": "29AURCM2287K1ZI",
+     "trdnm": "DAVE ENTERPRISES",
+     "supfildt": "10-11-2026",
+     "supprd": "102026",
+     "inv": [
+      {
+       "inum": "00903",
+       "typ": "R",
+       "dt": "27-10-2026",
+       "val": 257235.3,
+       "pos": "29",
+       "rev": "N",
+       "itcavl": "Y",
+       "rsn": "",
+       "diffprcnt": 1,
+       "srctyp": "",
+       "txval": 244986.0,
+       "igst": 0.0,
+       "cgst": 6124.65,
+       "sgst": 6124.65,
+       "cess": 0,
+       "items": [
+        {
+         "num": 1,
+         "rt": 5,
+         "txval": 244986.0,
+         "igst": 0.0,
+         "cgst": 6124.65,
+         "sgst": 6124.65,
+         "cess": 0
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "ctin": "29GJQPB7402E1Z5",
+     "trdnm": "MISTRY & CO",
+     "supfildt": "10-11-2026",
+     "supprd": "102026",
+     "inv": [
+      {
+       "inum": "INV/2026-27/1423",
+       "typ": "R",
+       "dt": "09-10-2026",
+       "val": 174876.0,
+       "pos": "29",
+       "rev": "N",
+       "itcavl": "Y",
+       "rsn": "",
+       "diffprcnt": 1,
+       "srctyp": "",
+       "txval": 148200.0,
+       "igst": 0.0,
+       "cgst": 13338.0,
+       "sgst": 13338.0,
+       "cess": 0,
+       "items": [
+        {
+         "num": 1,
+         "rt": 18,
+         "txval": 148200.0,
+         "igst": 0.0,
+         "cgst": 13338.0,
+         "sgst": 13338.0,
+         "cess": 0
+        }
+       ]
+      },
+      {
+       "inum": "INV/2026-27/1429",
+       "typ": "R",
+       "dt": "23-10-2026",
+       "val": 179211.32,
+       "pos": "29",
+       "rev": "N",
+       "itcavl": "Y",
+       "rsn": "",
+       "diffprcnt": 1,
+       "srctyp": "",
+       "txval": 151874.0,
+       "igst": 0.0,
+       "cgst": 13668.66,
+       "sgst": 13668.66,
+       "cess": 0,
+       "items": [
+        {
+         "num": 1,
+         "rt": 18,
+         "txval": 151874.0,
+         "igst": 0.0,
+         "cgst": 13668.66,
+         "sgst": 13668.66,
+         "cess": 0
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "ctin": "29OBXPT2441A1Z0",
+     "trdnm": "KALLA TRADERS",
+     "supfildt": "10-11-2026",
+     "supprd": "102026",
+     "inv": [
+      {
+       "inum": "KT/1301/26-27",
+       "typ": "R",
+       "dt": "02-10-2026",
+       "val": 228231.15,
+       "pos": "29",
+       "rev": "N",
+       "itcavl": "Y",
+       "rsn": "",
+       "diffprcnt": 1,
+       "srctyp": "",
+       "txval": 217363.0,
+       "igst": 0.0,
+       "cgst": 5434.07,
+       "sgst": 5434.08,
+       "cess": 0,
+       "items": [
+        {
+         "num": 1,
+         "rt": 5,
+         "txval": 217363.0,
+         "igst": 0.0,
+         "cgst": 5434.07,
+         "sgst": 5434.08,
+         "cess": 0
+        }
+       ]
+      },
+      {
+       "inum": "KT/1312/26-27",
+       "typ": "R",
+       "dt": "18-10-2026",
+       "val": 72714.6,
+       "pos": "29",
+       "rev": "N",
+       "itcavl": "Y",
+       "rsn": "",
+       "diffprcnt": 1,
+       "srctyp": "",
+       "txval": 69252.0,
+       "igst": 0.0,
+       "cgst": 1731.3,
+       "sgst": 1731.3,
+       "cess": 0,
+       "items": [
+        {
+         "num": 1,
+         "rt": 5,
+         "txval": 69252.0,
+         "igst": 0.0,
+         "cgst": 1731.3,
+         "sgst": 1731.3,
+         "cess": 0
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "ctin": "29QLUPA1204D1Z2",
+     "trdnm": "BEHL TRADERS",
+     "supfildt": "10-11-2026",
+     "supprd": "102026",
+     "inv": [
+      {
+       "inum": "BT262701273",
+       "typ": "R",
+       "dt": "07-10-2026",
+       "val": 224684.25,
+       "pos": "29",
+       "rev": "N",
+       "itcavl": "Y",
+       "rsn": "",
+       "diffprcnt": 1,
+       "srctyp": "",
+       "txval": 213985.0,
+       "igst": 0.0,
+       "cgst": 5349.62,
+       "sgst": 5349.63,
+       "cess": 0,
+       "items": [
+        {
+         "num": 1,
+         "rt": 5,
+         "txval": 213985.0,
+         "igst": 0.0,
+         "cgst": 5349.62,
+         "sgst": 5349.63,
+         "cess": 0
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "ctin": "32WZOCD7198W1ZB",
+     "trdnm": "GANDHI & CO",
+     "supfildt": "10-11-2026",
+     "supprd": "102026",
+     "inv": [
+      {
+       "inum": "GC-1188",
+       "typ": "R",
+       "dt": "07-10-2026",
+       "val": 144973.62,
+       "pos": "29",
+       "rev": "N",
+       "itcavl": "Y",
+       "rsn": "",
+       "diffprcnt": 1,
+       "srctyp": "",
+       "txval": 122859.0,
+       "igst": 22114.62,
+       "cgst": 0.0,
+       "sgst": 0.0,
+       "cess": 0,
+       "items": [
+        {
+         "num": 1,
+         "rt": 18,
+         "txval": 122859.0,
+         "igst": 22114.62,
+         "cgst": 0.0,
+         "sgst": 0.0,
+         "cess": 0
+        }
+       ]
+      },
+      {
+       "inum": "GC-1199",
+       "typ": "R",
+       "dt": "21-10-2026",
+       "val": 157013.16,
+       "pos": "29",
+       "rev": "N",
+       "itcavl": "Y",
+       "rsn": "",
+       "diffprcnt": 1,
+       "srctyp": "",
+       "txval": 133062.0,
+       "igst": 23951.16,
+       "cgst": 0.0,
+       "sgst": 0.0,
+       "cess": 0,
+       "items": [
+        {
+         "num": 1,
+         "rt": 18,
+         "txval": 133062.0,
+         "igst": 23951.16,
+         "cgst": 0.0,
+         "sgst": 0.0,
+         "cess": 0
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "ctin": "33DBPCQ5908C1ZA",
+     "trdnm": "GUHA SUPPLIES",
+     "supfildt": "10-11-2026",
+     "supprd": "102026",
+     "inv": [
+      {
+       "inum": "00483",
+       "typ": "R",
+       "dt": "19-10-2026",
+       "val": 191990.4,
+       "pos": "29",
+       "rev": "N",
+       "itcavl": "Y",
+       "rsn": "",
+       "diffprcnt": 1,
+       "srctyp": "",
+       "txval": 182848.0,
+       "igst": 9142.4,
+       "cgst": 0.0,
+       "sgst": 0.0,
+       "cess": 0,
+       "items": [
+        {
+         "num": 1,
+         "rt": 5,
+         "txval": 182848.0,
+         "igst": 9142.4,
+         "cgst": 0.0,
+         "sgst": 0.0,
+         "cess": 0
+        }
+       ]
+      },
+      {
+       "inum": "00495",
+       "typ": "R",
+       "dt": "02-10-2026",
+       "val": 20430.9,
+       "pos": "29",
+       "rev": "N",
+       "itcavl": "Y",
+       "rsn": "",
+       "diffprcnt": 1,
+       "srctyp": "",
+       "txval": 19458.0,
+       "igst": 972.9,
+       "cgst": 0.0,
+       "sgst": 0.0,
+       "cess": 0,
+       "items": [
+        {
+         "num": 1,
+         "rt": 5,
+         "txval": 19458.0,
+         "igst": 972.9,
+         "cgst": 0.0,
+         "sgst": 0.0,
+         "cess": 0
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "ctin": "36NVNFB5901D1Z5",
+     "trdnm": "TRIPATHI DISTRIBUTORS",
+     "supfildt": "10-11-2026",
+     "supprd": "102026",
+     "inv": [
+      {
+       "inum": "TD262700573",
+       "typ": "R",
+       "dt": "24-10-2026",
+       "val": 72621.92,
+       "pos": "29",
+       "rev": "N",
+       "itcavl": "Y",
+       "rsn": "",
+       "diffprcnt": 1,
+       "srctyp": "",
+       "txval": 61544.0,
+       "igst": 11077.92,
+       "cgst": 0.0,
+       "sgst": 0.0,
+       "cess": 0,
+       "items": [
+        {
+         "num": 1,
+         "rt": 18,
+         "txval": 61544.0,
+         "igst": 11077.92,
+         "cgst": 0.0,
+         "sgst": 0.0,
+         "cess": 0
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  }
+ }
+}

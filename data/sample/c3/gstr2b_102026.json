@@ -1,0 +1,549 @@
+{
+ "chksum": "synthetic",
+ "data": {
+  "gstin": "29ZGPCH7489V1ZT",
+  "rtnprd": "102026",
+  "version": "1.0",
+  "gendt": "14-11-2026",
+  "docdata": {
+   "b2b": [
+    {
+     "ctin": "07NNBFN9185V1Z1",
+     "trdnm": "MANNAN DISTRIBUTORS",
+     "supfildt": "10-11-2026",
+     "supprd": "102026",
+     "inv": [
+      {
+       "inum": "INV/2026-27/0163",
+       "typ": "R",
+       "dt": "25-10-2026",
+       "val": 318642.48,
+       "pos": "29",
+       "rev": "N",
+       "itcavl": "Y",
+       "rsn": "",
+       "diffprcnt": 1,
+       "srctyp": "",
+       "txval": 270036.0,
+       "igst": 48606.48,
+       "cgst": 0.0,
+       "sgst": 0.0,
+       "cess": 0,
+       "items": [
+        {
+         "num": 1,
+         "rt": 18,
+         "txval": 270036.0,
+         "igst": 48606.48,
+         "cgst": 0.0,
+         "sgst": 0.0,
+         "cess": 0
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "ctin": "24HSNCS2739K1ZQ",
+     "trdnm": "VYAS SUPPLIES",
+     "supfildt": "10-11-2026",
+     "supprd": "102026",
+     "inv": [
+      {
+       "inum": "00524",
+       "typ": "R",
+       "dt": "28-10-2026",
+       "val": 28117.04,
+       "pos": "29",
+       "rev": "N",
+       "itcavl": "Y",
+       "rsn": "",
+       "diffprcnt": 1,
+       "srctyp": "",
+       "txval": 23828.0,
+       "igst": 4289.04,
+       "cgst": 0.0,
+       "sgst": 0.0,
+       "cess": 0,
+       "items": [
+        {
+         "num": 1,
+         "rt": 18,
+         "txval": 23828.0,
+         "igst": 4289.04,
+         "cgst": 0.0,
+         "sgst": 0.0,
+         "cess": 0
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "ctin": "27JMECY5796R1Z4",
+     "trdnm": "DHAWAN TRADERS",
+     "supfildt": "10-11-2026",
+     "supprd": "102026",
+     "inv": [
+      {
+       "inum": "DT/1016/26-27",
+       "typ": "R",
+       "dt": "11-10-2026",
+       "val": 1603.62,
+       "pos": "29",
+       "rev": "N",
+       "itcavl": "Y",
+       "rsn": "",
+       "diffprcnt": 1,
+       "srctyp": "",
+       "txval": 1359.0,
+       "igst": 244.62,
+       "cgst": 0.0,
+       "sgst": 0.0,
+       "cess": 0,
+       "items": [
+        {
+         "num": 1,
+         "rt": 18,
+         "txval": 1359.0,
+         "igst": 244.62,
+         "cgst": 0.0,
+         "sgst": 0.0,
+         "cess": 0
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "ctin": "29CGAPV2240B1ZO",
+     "trdnm": "SRINIVASAN ENTERPRISES",
+     "supfildt": "10-11-2026",
+     "supprd": "102026",
+     "inv": [
+      {
+       "inum": "SE-1069",
+       "typ": "R",
+       "dt": "07-10-2026",
+       "val": 24054.3,
+       "pos": "29",
+       "rev": "N",
+       "itcavl": "Y",
+       "rsn": "",
+       "diffprcnt": 1,
+       "srctyp": "",
+       "txval": 20385.0,
+       "igst": 0.0,
+       "cgst": 1834.65,
+       "sgst": 1834.65,
+       "cess": 0,
+       "items": [
+        {
+         "num": 1,
+         "rt": 18,
+         "txval": 20385.0,
+         "igst": 0.0,
+         "cgst": 1834.65,
+         "sgst": 1834.65,
+         "cess": 0
+        }
+       ]
+      },
+      {
+       "inum": "SE-1075",
+       "typ": "R",
+       "dt": "14-10-2026",
+       "val": 222850.08,
+       "pos": "29",
+       "rev": "N",
+       "itcavl": "Y",
+       "rsn": "",
+       "diffprcnt": 1,
+       "srctyp": "",
+       "txval": 188856.0,
+       "igst": 0.0,
+       "cgst": 16997.04,
+       "sgst": 16997.04,
+       "cess": 0,
+       "items": [
+        {
+         "num": 1,
+         "rt": 18,
+         "txval": 188856.0,
+         "igst": 0.0,
+         "cgst": 16997.04,
+         "sgst": 16997.04,
+         "cess": 0
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "ctin": "29JUFCJ3462O1ZL",
+     "trdnm": "PANDIT ENTERPRISES",
+     "supfildt": "10-11-2026",
+     "supprd": "102026",
+     "inv": [
+      {
+       "inum": "01190",
+       "typ": "R",
+       "dt": "27-09-2026",
+       "val": 13380.02,
+       "pos": "29",
+       "rev": "N",
+       "itcavl": "Y",
+       "rsn": "",
+       "diffprcnt": 1,
+       "srctyp": "",
+       "txval": 11339.0,
+       "igst": 0.0,
+       "cgst": 1020.51,
+       "sgst": 1020.51,
+       "cess": 0,
+       "items": [
+        {
+         "num": 1,
+         "rt": 18,
+         "txval": 11339.0,
+         "igst": 0.0,
+         "cgst": 1020.51,
+         "sgst": 1020.51,
+         "cess": 0
+        }
+       ]
+      },
+      {
+       "inum": "01193",
+       "typ": "R",
+       "dt": "21-10-2026",
+       "val": 43896.0,
+       "pos": "29",
+       "rev": "N",
+       "itcavl": "Y",
+       "rsn": "",
+       "diffprcnt": 1,
+       "srctyp": "",
+       "txval": 37200.0,
+       "igst": 0.0,
+       "cgst": 3348.0,
+       "sgst": 3348.0,
+       "cess": 0,
+       "items": [
+        {
+         "num": 1,
+         "rt": 18,
+         "txval": 37200.0,
+         "igst": 0.0,
+         "cgst": 3348.0,
+         "sgst": 3348.0,
+         "cess": 0
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "ctin": "29PHXPG7274A1ZJ",
+     "trdnm": "MANGAT AGENCIES",
+     "supfildt": "10-11-2026",
+     "supprd": "102026",
+     "inv": [
+      {
+       "inum": "INV/2026-27/1152",
+       "typ": "R",
+       "dt": "03-10-2026",
+       "val": 2872.12,
+       "pos": "29",
+       "rev": "N",
+       "itcavl": "Y",
+       "rsn": "",
+       "diffprcnt": 1,
+       "srctyp": "",
+       "txval": 2434.0,
+       "igst": 0.0,
+       "cgst": 219.06,
+       "sgst": 219.06,
+       "cess": 0,
+       "items": [
+        {
+         "num": 1,
+         "rt": 18,
+         "txval": 2434.0,
+         "igst": 0.0,
+         "cgst": 219.06,
+         "sgst": 219.06,
+         "cess": 0
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "ctin": "29PQOCU3801U1Z0",
+     "trdnm": "KEER ENTERPRISES",
+     "supfildt": "10-11-2026",
+     "supprd": "102026",
+     "inv": [
+      {
+       "inum": "KE/0862/26-27",
+       "typ": "R",
+       "dt": "14-09-2026",
+       "val": 31410.42,
+       "pos": "29",
+       "rev": "N",
+       "itcavl": "Y",
+       "rsn": "",
+       "diffprcnt": 1,
+       "srctyp": "",
+       "txval": 26619.0,
+       "igst": 0.0,
+       "cgst": 2395.71,
+       "sgst": 2395.71,
+       "cess": 0,
+       "items": [
+        {
+         "num": 1,
+         "rt": 18,
+         "txval": 26619.0,
+         "igst": 0.0,
+         "cgst": 2395.71,
+         "sgst": 2395.71,
+         "cess": 0
+        }
+       ]
+      },
+      {
+       "inum": "KE/0871/26-27",
+       "typ": "R",
+       "dt": "18-10-2026",
+       "val": 188086.1,
+       "pos": "29",
+       "rev": "N",
+       "itcavl": "Y",
+       "rsn": "",
+       "diffprcnt": 1,
+       "srctyp": "",
+       "txval": 159395.0,
+       "igst": 0.0,
+       "cgst": 14345.55,
+       "sgst": 14345.55,
+       "cess": 0,
+       "items": [
+        {
+         "num": 1,
+         "rt": 18,
+         "txval": 159395.0,
+         "igst": 0.0,
+         "cgst": 14345.55,
+         "sgst": 14345.55,
+         "cess": 0
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "ctin": "29QRNFM5577L1ZX",
+     "trdnm": "TRIPATHI INDUSTRIES",
+     "supfildt": "10-11-2026",
+     "supprd": "102026",
+     "inv": [
+      {
+       "inum": "TI262700262",
+       "typ": "R",
+       "dt": "01-10-2026",
+       "val": 140890.82,
+       "pos": "29",
+       "rev": "N",
+       "itcavl": "Y",
+       "rsn": "",
+       "diffprcnt": 1,
+       "srctyp": "",
+       "txval": 119399.0,
+       "igst": 0.0,
+       "cgst": 10745.91,
+       "sgst": 10745.91,
+       "cess": 0,
+       "items": [
+        {
+         "num": 1,
+         "rt": 18,
+         "txval": 119399.0,
+         "igst": 0.0,
+         "cgst": 10745.91,
+         "sgst": 10745.91,
+         "cess": 0
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "ctin": "32FZHPZ3357B1Z8",
+     "trdnm": "SUNDARAM AGENCIES",
+     "supfildt": "10-11-2026",
+     "supprd": "102026",
+     "inv": [
+      {
+       "inum": "SAM/0722/26-27",
+       "typ": "R",
+       "dt": "17-10-2026",
+       "val": 144135.6,
+       "pos": "29",
+       "rev": "N",
+       "itcavl": "Y",
+       "rsn": "",
+       "diffprcnt": 1,
+       "srctyp": "",
+       "txval": 137272.0,
+       "igst": 6863.6,
+       "cgst": 0.0,
+       "sgst": 0.0,
+       "cess": 0,
+       "items": [
+        {
+         "num": 1,
+         "rt": 5,
+         "txval": 137272.0,
+         "igst": 6863.6,
+         "cgst": 0.0,
+         "sgst": 0.0,
+         "cess": 0
+        }
+       ]
+      },
+      {
+       "inum": "SAM/0732/26-27",
+       "typ": "R",
+       "dt": "28-10-2026",
+       "val": 250353.6,
+       "pos": "29",
+       "rev": "N",
+       "itcavl": "Y",
+       "rsn": "",
+       "diffprcnt": 1,
+       "srctyp": "",
+       "txval": 238432.0,
+       "igst": 11921.6,
+       "cgst": 0.0,
+       "sgst": 0.0,
+       "cess": 0,
+       "items": [
+        {
+         "num": 1,
+         "rt": 5,
+         "txval": 238432.0,
+         "igst": 11921.6,
+         "cgst": 0.0,
+         "sgst": 0.0,
+         "cess": 0
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "ctin": "33KSXPP2644A1ZF",
+     "trdnm": "MITRA PVT LTD",
+     "supfildt": "10-11-2026",
+     "supprd": "102026",
+     "inv": [
+      {
+       "inum": "MPL262700369",
+       "typ": "R",
+       "dt": "28-10-2026",
+       "val": 24858.75,
+       "pos": "29",
+       "rev": "N",
+       "itcavl": "Y",
+       "rsn": "",
+       "diffprcnt": 1,
+       "srctyp": "",
+       "txval": 23675.0,
+       "igst": 1183.75,
+       "cgst": 0.0,
+       "sgst": 0.0,
+       "cess": 0,
+       "items": [
+        {
+         "num": 1,
+         "rt": 5,
+         "txval": 23675.0,
+         "igst": 1183.75,
+         "cgst": 0.0,
+         "sgst": 0.0,
+         "cess": 0
+        }
+       ]
+      },
+      {
+       "inum": "MPL262700371",
+       "typ": "R",
+       "dt": "13-10-2026",
+       "val": 301616.7,
+       "pos": "29",
+       "rev": "N",
+       "itcavl": "Y",
+       "rsn": "",
+       "diffprcnt": 1,
+       "srctyp": "",
+       "txval": 287254.0,
+       "igst": 14362.7,
+       "cgst": 0.0,
+       "sgst": 0.0,
+       "cess": 0,
+       "items": [
+        {
+         "num": 1,
+         "rt": 5,
+         "txval": 287254.0,
+         "igst": 14362.7,
+         "cgst": 0.0,
+         "sgst": 0.0,
+         "cess": 0
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "ctin": "36DGLFC8466V1ZS",
+     "trdnm": "SANGHVI AGENCIES",
+     "supfildt": "10-11-2026",
+     "supprd": "102026",
+     "inv": [
+      {
+       "inum": "SA-314",
+       "typ": "R",
+       "dt": "01-10-2026",
+       "val": 205498.18,
+       "pos": "29",
+       "rev": "N",
+       "itcavl": "Y",
+       "rsn": "",
+       "diffprcnt": 1,
+       "srctyp": "",
+       "txval": 174151.0,
+       "igst": 31347.18,
+       "cgst": 0.0,
+       "sgst": 0.0,
+       "cess": 0,
+       "items": [
+        {
+         "num": 1,
+         "rt": 18,
+         "txval": 174151.0,
+         "igst": 31347.18,
+         "cgst": 0.0,
+         "sgst": 0.0,
+         "cess": 0
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  }
+ }
+}

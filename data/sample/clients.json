@@ -1,0 +1,215 @@
+[
+ {
+  "client_id": "c1",
+  "name": "Kibe-Padmanabhan LLP",
+  "gstin": "29WWHCL5580O1ZT",
+  "state_code": "29",
+  "city": "Mysuru",
+  "period": "092026",
+  "vendors": [
+   {
+    "name": "Mammen Industries",
+    "gstin": "29AITPW4599G1Z1",
+    "state": "29"
+   },
+   {
+    "name": "Dave Enterprises",
+    "gstin": "29AURCM2287K1ZI",
+    "state": "29"
+   },
+   {
+    "name": "Kalla Traders",
+    "gstin": "29OBXPT2441A1Z0",
+    "state": "29"
+   },
+   {
+    "name": "Behl Traders",
+    "gstin": "29QLUPA1204D1Z2",
+    "state": "29"
+   },
+   {
+    "name": "Mistry & Co",
+    "gstin": "29GJQPB7402E1Z5",
+    "state": "29"
+   },
+   {
+    "name": "Chhabra Distributors",
+    "gstin": "27ZIKFY3791P1ZX",
+    "state": "27"
+   },
+   {
+    "name": "Guha Supplies",
+    "gstin": "33DBPCQ5908C1ZA",
+    "state": "33"
+   },
+   {
+    "name": "Banik & Co",
+    "gstin": "07XJTCM6618Y1ZU",
+    "state": "07"
+   },
+   {
+    "name": "Tripathi Distributors",
+    "gstin": "36NVNFB5901D1Z5",
+    "state": "36"
+   },
+   {
+    "name": "Gupta Supplies",
+    "gstin": "24DJIPD6280S1ZL",
+    "state": "24"
+   },
+   {
+    "name": "Gandhi & Co",
+    "gstin": "32WZOCD7198W1ZB",
+    "state": "32"
+   },
+   {
+    "name": "Wason Industries",
+    "gstin": "37LRUCO8884R1ZI",
+    "state": "37"
+   }
+  ],
+  "n_invoices": 31
+ },
+ {
+  "client_id": "c2",
+  "name": "Doshi, Ramaswamy and Palan Pvt Ltd",
+  "gstin": "29MUUCV6688X1ZR",
+  "state_code": "29",
+  "city": "Hubballi",
+  "period": "092026",
+  "vendors": [
+   {
+    "name": "Verma & Co",
+    "gstin": "29RJIFW7752C1ZT",
+    "state": "29"
+   },
+   {
+    "name": "Zachariah Agencies",
+    "gstin": "29UZPPH3328H1ZJ",
+    "state": "29"
+   },
+   {
+    "name": "Shere Industries",
+    "gstin": "29FSEPK9208W1ZI",
+    "state": "29"
+   },
+   {
+    "name": "Jaggi & Co",
+    "gstin": "29ZNWPF6187X1ZL",
+    "state": "29"
+   },
+   {
+    "name": "Raghavan Pvt Ltd",
+    "gstin": "29TJOPX8631A1Z7",
+    "state": "29"
+   },
+   {
+    "name": "Narasimhan Agencies",
+    "gstin": "27BKRPW4129D1ZQ",
+    "state": "27"
+   },
+   {
+    "name": "Sandhu & Co",
+    "gstin": "33BGDPS9170R1ZK",
+    "state": "33"
+   },
+   {
+    "name": "Sundaram Supplies",
+    "gstin": "07FDNFJ4935A1Z5",
+    "state": "07"
+   },
+   {
+    "name": "Menon Distributors",
+    "gstin": "36XWIPU7218W1ZL",
+    "state": "36"
+   },
+   {
+    "name": "Parikh Pvt Ltd",
+    "gstin": "24GLAPU5446G1ZW",
+    "state": "24"
+   },
+   {
+    "name": "Raj Enterprises",
+    "gstin": "32RHLFZ5636K1ZT",
+    "state": "32"
+   },
+   {
+    "name": "Dasgupta & Co",
+    "gstin": "37EOXCH4421H1ZB",
+    "state": "37"
+   }
+  ],
+  "n_invoices": 33
+ },
+ {
+  "client_id": "c3",
+  "name": "Joshi-Som LLP",
+  "gstin": "29ZGPCH7489V1ZT",
+  "state_code": "29",
+  "city": "Mysuru",
+  "period": "092026",
+  "vendors": [
+   {
+    "name": "Keer Enterprises",
+    "gstin": "29PQOCU3801U1Z0",
+    "state": "29"
+   },
+   {
+    "name": "Tripathi Industries",
+    "gstin": "29QRNFM5577L1ZX",
+    "state": "29"
+   },
+   {
+    "name": "Mangat Agencies",
+    "gstin": "29PHXPG7274A1ZJ",
+    "state": "29"
+   },
+   {
+    "name": "Srinivasan Enterprises",
+    "gstin": "29CGAPV2240B1ZO",
+    "state": "29"
+   },
+   {
+    "name": "Pandit Enterprises",
+    "gstin": "29JUFCJ3462O1ZL",
+    "state": "29"
+   },
+   {
+    "name": "Dhawan Traders",
+    "gstin": "27JMECY5796R1Z4",
+    "state": "27"
+   },
+   {
+    "name": "Mitra Pvt Ltd",
+    "gstin": "33KSXPP2644A1ZF",
+    "state": "33"
+   },
+   {
+    "name": "Mannan Distributors",
+    "gstin": "07NNBFN9185V1Z1",
+    "state": "07"
+   },
+   {
+    "name": "Sanghvi Agencies",
+    "gstin": "36DGLFC8466V1ZS",
+    "state": "36"
+   },
+   {
+    "name": "Vyas Supplies",
+    "gstin": "24HSNCS2739K1ZQ",
+    "state": "24"
+   },
+   {
+    "name": "Sundaram Agencies",
+    "gstin": "32FZHPZ3357B1Z8",
+    "state": "32"
+   },
+   {
+    "name": "Virk Supplies",
+    "gstin": "37HWPFS3691C1ZF",
+    "state": "37"
+   }
+  ],
+  "n_invoices": 35
+ }
+]

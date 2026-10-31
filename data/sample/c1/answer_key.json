@@ -1,0 +1,778 @@
+[
+ {
+  "invoice_id": "c1-inv-001",
+  "case": "exact",
+  "supplier_gstin": "27ZIKFY3791P1ZX",
+  "invoice_no": "CD-1261",
+  "total": 331181.16,
+  "truth": {
+   "supplier_gstin": "27ZIKFY3791P1ZX",
+   "supplier_name": "Chhabra Distributors",
+   "invoice_no": "CD-1261",
+   "invoice_date": "2026-09-01",
+   "taxable_value": 280662.0,
+   "igst": 50519.16,
+   "cgst": 0.0,
+   "sgst": 0.0,
+   "total": 331181.16
+  },
+  "expected_2b_row_id": "09-007",
+  "expected_pass": 1,
+  "expected_cause": null,
+  "expected_action": "none",
+  "acceptable_actions": [
+   "none"
+  ]
+ },
+ {
+  "invoice_id": "c1-inv-002",
+  "case": "exact",
+  "supplier_gstin": "07XJTCM6618Y1ZU",
+  "invoice_no": "BC/1174/26-27",
+  "total": 150341.1,
+  "truth": {
+   "supplier_gstin": "07XJTCM6618Y1ZU",
+   "supplier_name": "Banik & Co",
+   "invoice_no": "BC/1174/26-27",
+   "invoice_date": "2026-09-03",
+   "taxable_value": 143182.0,
+   "igst": 7159.1,
+   "cgst": 0.0,
+   "sgst": 0.0,
+   "total": 150341.1
+  },
+  "expected_2b_row_id": "09-002",
+  "expected_pass": 1,
+  "expected_cause": null,
+  "expected_action": "none",
+  "acceptable_actions": [
+   "none"
+  ]
+ },
+ {
+  "invoice_id": "c1-inv-003",
+  "case": "exact",
+  "supplier_gstin": "24DJIPD6280S1ZL",
+  "invoice_no": "INV/2026-27/0037",
+  "total": 107191.35,
+  "truth": {
+   "supplier_gstin": "24DJIPD6280S1ZL",
+   "supplier_name": "Gupta Supplies",
+   "invoice_no": "INV/2026-27/0037",
+   "invoice_date": "2026-09-03",
+   "taxable_value": 102087.0,
+   "igst": 5104.35,
+   "cgst": 0.0,
+   "sgst": 0.0,
+   "total": 107191.35
+  },
+  "expected_2b_row_id": "09-005",
+  "expected_pass": 1,
+  "expected_cause": null,
+  "expected_action": "none",
+  "acceptable_actions": [
+   "none"
+  ]
+ },
+ {
+  "invoice_id": "c1-inv-004",
+  "case": "exact",
+  "supplier_gstin": "29GJQPB7402E1Z5",
+  "invoice_no": "INV/2026-27/1408",
+  "total": 20956.8,
+  "truth": {
+   "supplier_gstin": "29GJQPB7402E1Z5",
+   "supplier_name": "Mistry & Co",
+   "invoice_no": "INV/2026-27/1408",
+   "invoice_date": "2026-09-03",
+   "taxable_value": 17760.0,
+   "igst": 0.0,
+   "cgst": 1598.4,
+   "sgst": 1598.4,
+   "total": 20956.8
+  },
+  "expected_2b_row_id": "09-015",
+  "expected_pass": 1,
+  "expected_cause": null,
+  "expected_action": "none",
+  "acceptable_actions": [
+   "none"
+  ]
+ },
+ {
+  "invoice_id": "c1-inv-005",
+  "case": "vendor_not_filed",
+  "supplier_gstin": "37LRUCO8884R1ZI",
+  "invoice_no": "00728",
+  "total": 129513.26,
+  "truth": {
+   "supplier_gstin": "37LRUCO8884R1ZI",
+   "supplier_name": "Wason Industries",
+   "invoice_no": "00728",
+   "invoice_date": "2026-09-03",
+   "taxable_value": 109757.0,
+   "igst": 19756.26,
+   "cgst": 0.0,
+   "sgst": 0.0,
+   "total": 129513.26
+  },
+  "expected_2b_row_id": null,
+  "expected_pass": null,
+  "expected_cause": "vendor_not_filed",
+  "expected_action": "email_filing_reminder",
+  "acceptable_actions": [
+   "email_filing_reminder"
+  ]
+ },
+ {
+  "invoice_id": "c1-inv-006",
+  "case": "exact",
+  "supplier_gstin": "27ZIKFY3791P1ZX",
+  "invoice_no": "CD-1270",
+  "total": 139898.44,
+  "truth": {
+   "supplier_gstin": "27ZIKFY3791P1ZX",
+   "supplier_name": "Chhabra Distributors",
+   "invoice_no": "CD-1270",
+   "invoice_date": "2026-09-04",
+   "taxable_value": 118558.0,
+   "igst": 21340.44,
+   "cgst": 0.0,
+   "sgst": 0.0,
+   "total": 139898.44
+  },
+  "expected_2b_row_id": "09-008",
+  "expected_pass": 1,
+  "expected_cause": null,
+  "expected_action": "none",
+  "acceptable_actions": [
+   "none"
+  ]
+ },
+ {
+  "invoice_id": "c1-inv-007",
+  "case": "wrong_gstin",
+  "supplier_gstin": "33DBPCQ5908C1ZA",
+  "invoice_no": "00473",
+  "total": 66522.75,
+  "truth": {
+   "supplier_gstin": "33DBPCQ5908C1ZA",
+   "supplier_name": "Guha Supplies",
+   "invoice_no": "00473",
+   "invoice_date": "2026-09-05",
+   "taxable_value": 63355.0,
+   "igst": 3167.75,
+   "cgst": 0.0,
+   "sgst": 0.0,
+   "total": 66522.75
+  },
+  "expected_2b_row_id": null,
+  "expected_pass": null,
+  "expected_cause": "wrong_gstin",
+  "expected_action": "email_correction",
+  "acceptable_actions": [
+   "email_correction"
+  ]
+ },
+ {
+  "invoice_id": "c1-inv-008",
+  "case": "unreadable",
+  "supplier_gstin": "27ZIKFY3791P1ZX",
+  "invoice_no": "CD-1282",
+  "total": 173294.8,
+  "truth": {
+   "supplier_gstin": "27ZIKFY3791P1ZX",
+   "supplier_name": "Chhabra Distributors",
+   "invoice_no": "CD-1282",
+   "invoice_date": "2026-09-06",
+   "taxable_value": 146860.0,
+   "igst": 26434.8,
+   "cgst": 0.0,
+   "sgst": 0.0,
+   "total": 173294.8
+  },
+  "expected_2b_row_id": null,
+  "expected_pass": null,
+  "expected_cause": "unreadable",
+  "expected_action": "escalate",
+  "acceptable_actions": [
+   "escalate"
+  ]
+ },
+ {
+  "invoice_id": "c1-inv-009",
+  "case": "exact",
+  "supplier_gstin": "32WZOCD7198W1ZB",
+  "invoice_no": "GC-1161",
+  "total": 52026.2,
+  "truth": {
+   "supplier_gstin": "32WZOCD7198W1ZB",
+   "supplier_name": "Gandhi & Co",
+   "invoice_no": "GC-1161",
+   "invoice_date": "2026-09-07",
+   "taxable_value": 44090.0,
+   "igst": 7936.2,
+   "cgst": 0.0,
+   "sgst": 0.0,
+   "total": 52026.2
+  },
+  "expected_2b_row_id": "09-021",
+  "expected_pass": 1,
+  "expected_cause": null,
+  "expected_action": "none",
+  "acceptable_actions": [
+   "none"
+  ]
+ },
+ {
+  "invoice_id": "c1-inv-010",
+  "case": "unclear",
+  "supplier_gstin": "29QLUPA1204D1Z2",
+  "invoice_no": "BT262701262",
+  "total": 134558.55,
+  "truth": {
+   "supplier_gstin": "29QLUPA1204D1Z2",
+   "supplier_name": "Behl Traders",
+   "invoice_no": "BT262701262",
+   "invoice_date": "2026-09-08",
+   "taxable_value": 128151.0,
+   "igst": 0.0,
+   "cgst": 3203.78,
+   "sgst": 3203.77,
+   "total": 134558.55
+  },
+  "expected_2b_row_id": null,
+  "expected_pass": null,
+  "expected_cause": "unclear",
+  "expected_action": "escalate",
+  "acceptable_actions": [
+   "escalate"
+  ]
+ },
+ {
+  "invoice_id": "c1-inv-011",
+  "case": "exact",
+  "supplier_gstin": "29AURCM2287K1ZI",
+  "invoice_no": "00891",
+  "total": 7887.6,
+  "truth": {
+   "supplier_gstin": "29AURCM2287K1ZI",
+   "supplier_name": "Dave Enterprises",
+   "invoice_no": "00891",
+   "invoice_date": "2026-09-08",
+   "taxable_value": 7512.0,
+   "igst": 0.0,
+   "cgst": 187.8,
+   "sgst": 187.8,
+   "total": 7887.6
+  },
+  "expected_2b_row_id": "09-013",
+  "expected_pass": 1,
+  "expected_cause": null,
+  "expected_action": "none",
+  "acceptable_actions": [
+   "none"
+  ]
+ },
+ {
+  "invoice_id": "c1-inv-012",
+  "case": "exact",
+  "supplier_gstin": "32WZOCD7198W1ZB",
+  "invoice_no": "GC-1172",
+  "total": 191008.96,
+  "truth": {
+   "supplier_gstin": "32WZOCD7198W1ZB",
+   "supplier_name": "Gandhi & Co",
+   "invoice_no": "GC-1172",
+   "invoice_date": "2026-09-09",
+   "taxable_value": 161872.0,
+   "igst": 29136.96,
+   "cgst": 0.0,
+   "sgst": 0.0,
+   "total": 191008.96
+  },
+  "expected_2b_row_id": "09-022",
+  "expected_pass": 1,
+  "expected_cause": null,
+  "expected_action": "none",
+  "acceptable_actions": [
+   "none"
+  ]
+ },
+ {
+  "invoice_id": "c1-inv-013",
+  "case": "exact",
+  "supplier_gstin": "32WZOCD7198W1ZB",
+  "invoice_no": "GC-1183",
+  "total": 182576.68,
+  "truth": {
+   "supplier_gstin": "32WZOCD7198W1ZB",
+   "supplier_name": "Gandhi & Co",
+   "invoice_no": "GC-1183",
+   "invoice_date": "2026-09-10",
+   "taxable_value": 154726.0,
+   "igst": 27850.68,
+   "cgst": 0.0,
+   "sgst": 0.0,
+   "total": 182576.68
+  },
+  "expected_2b_row_id": "09-023",
+  "expected_pass": 1,
+  "expected_cause": null,
+  "expected_action": "none",
+  "acceptable_actions": [
+   "none"
+  ]
+ },
+ {
+  "invoice_id": "c1-inv-014",
+  "case": "exact",
+  "supplier_gstin": "29AURCM2287K1ZI",
+  "invoice_no": "00892",
+  "total": 120353.1,
+  "truth": {
+   "supplier_gstin": "29AURCM2287K1ZI",
+   "supplier_name": "Dave Enterprises",
+   "invoice_no": "00892",
+   "invoice_date": "2026-09-13",
+   "taxable_value": 114622.0,
+   "igst": 0.0,
+   "cgst": 2865.55,
+   "sgst": 2865.55,
+   "total": 120353.1
+  },
+  "expected_2b_row_id": "09-014",
+  "expected_pass": 1,
+  "expected_cause": null,
+  "expected_action": "none",
+  "acceptable_actions": [
+   "none"
+  ]
+ },
+ {
+  "invoice_id": "c1-inv-015",
+  "case": "exact",
+  "supplier_gstin": "36NVNFB5901D1Z5",
+  "invoice_no": "TD262700556",
+  "total": 22599.36,
+  "truth": {
+   "supplier_gstin": "36NVNFB5901D1Z5",
+   "supplier_name": "Tripathi Distributors",
+   "invoice_no": "TD262700556",
+   "invoice_date": "2026-09-13",
+   "taxable_value": 19152.0,
+   "igst": 3447.36,
+   "cgst": 0.0,
+   "sgst": 0.0,
+   "total": 22599.36
+  },
+  "expected_2b_row_id": "09-025",
+  "expected_pass": 1,
+  "expected_cause": null,
+  "expected_action": "none",
+  "acceptable_actions": [
+   "none"
+  ]
+ },
+ {
+  "invoice_id": "c1-inv-016",
+  "case": "exact",
+  "supplier_gstin": "29OBXPT2441A1Z0",
+  "invoice_no": "KT/1286/26-27",
+  "total": 134349.6,
+  "truth": {
+   "supplier_gstin": "29OBXPT2441A1Z0",
+   "supplier_name": "Kalla Traders",
+   "invoice_no": "KT/1286/26-27",
+   "invoice_date": "2026-09-16",
+   "taxable_value": 127952.0,
+   "igst": 0.0,
+   "cgst": 3198.8,
+   "sgst": 3198.8,
+   "total": 134349.6
+  },
+  "expected_2b_row_id": "09-017",
+  "expected_pass": 1,
+  "expected_cause": null,
+  "expected_action": "none",
+  "acceptable_actions": [
+   "none"
+  ]
+ },
+ {
+  "invoice_id": "c1-inv-017",
+  "case": "exact",
+  "supplier_gstin": "29GJQPB7402E1Z5",
+  "invoice_no": "INV/2026-27/1420",
+  "total": 109852.1,
+  "truth": {
+   "supplier_gstin": "29GJQPB7402E1Z5",
+   "supplier_name": "Mistry & Co",
+   "invoice_no": "INV/2026-27/1420",
+   "invoice_date": "2026-09-16",
+   "taxable_value": 93095.0,
+   "igst": 0.0,
+   "cgst": 8378.55,
+   "sgst": 8378.55,
+   "total": 109852.1
+  },
+  "expected_2b_row_id": "09-016",
+  "expected_pass": 1,
+  "expected_cause": null,
+  "expected_action": "none",
+  "acceptable_actions": [
+   "none"
+  ]
+ },
+ {
+  "invoice_id": "c1-inv-018",
+  "case": "exact",
+  "supplier_gstin": "36NVNFB5901D1Z5",
+  "invoice_no": "TD262700560",
+  "total": 247316.2,
+  "truth": {
+   "supplier_gstin": "36NVNFB5901D1Z5",
+   "supplier_name": "Tripathi Distributors",
+   "invoice_no": "TD262700560",
+   "invoice_date": "2026-09-16",
+   "taxable_value": 209590.0,
+   "igst": 37726.2,
+   "cgst": 0.0,
+   "sgst": 0.0,
+   "total": 247316.2
+  },
+  "expected_2b_row_id": "09-026",
+  "expected_pass": 1,
+  "expected_cause": null,
+  "expected_action": "none",
+  "acceptable_actions": [
+   "none"
+  ]
+ },
+ {
+  "invoice_id": "c1-inv-019",
+  "case": "exact",
+  "supplier_gstin": "29QLUPA1204D1Z2",
+  "invoice_no": "BT262701266",
+  "total": 32625.6,
+  "truth": {
+   "supplier_gstin": "29QLUPA1204D1Z2",
+   "supplier_name": "Behl Traders",
+   "invoice_no": "BT262701266",
+   "invoice_date": "2026-09-18",
+   "taxable_value": 31072.0,
+   "igst": 0.0,
+   "cgst": 776.8,
+   "sgst": 776.8,
+   "total": 32625.6
+  },
+  "expected_2b_row_id": "09-019",
+  "expected_pass": 1,
+  "expected_cause": null,
+  "expected_action": "none",
+  "acceptable_actions": [
+   "none"
+  ]
+ },
+ {
+  "invoice_id": "c1-inv-020",
+  "case": "date_drift",
+  "supplier_gstin": "29AITPW4599G1Z1",
+  "invoice_no": "MI-77",
+  "total": 75253.5,
+  "truth": {
+   "supplier_gstin": "29AITPW4599G1Z1",
+   "supplier_name": "Mammen Industries",
+   "invoice_no": "MI-77",
+   "invoice_date": "2026-09-21",
+   "taxable_value": 71670.0,
+   "igst": 0.0,
+   "cgst": 1791.75,
+   "sgst": 1791.75,
+   "total": 75253.5
+  },
+  "expected_2b_row_id": "09-011",
+  "expected_pass": 3,
+  "expected_cause": null,
+  "expected_action": "none",
+  "acceptable_actions": [
+   "none"
+  ]
+ },
+ {
+  "invoice_id": "c1-inv-021",
+  "case": "exact",
+  "supplier_gstin": "07XJTCM6618Y1ZU",
+  "invoice_no": "BC/1175/26-27",
+  "total": 99435.0,
+  "truth": {
+   "supplier_gstin": "07XJTCM6618Y1ZU",
+   "supplier_name": "Banik & Co",
+   "invoice_no": "BC/1175/26-27",
+   "invoice_date": "2026-09-22",
+   "taxable_value": 94700.0,
+   "igst": 4735.0,
+   "cgst": 0.0,
+   "sgst": 0.0,
+   "total": 99435.0
+  },
+  "expected_2b_row_id": "09-003",
+  "expected_pass": 1,
+  "expected_cause": null,
+  "expected_action": "none",
+  "acceptable_actions": [
+   "none"
+  ]
+ },
+ {
+  "invoice_id": "c1-inv-022",
+  "case": "exact",
+  "supplier_gstin": "29QLUPA1204D1Z2",
+  "invoice_no": "BT262701270",
+  "total": 30784.95,
+  "truth": {
+   "supplier_gstin": "29QLUPA1204D1Z2",
+   "supplier_name": "Behl Traders",
+   "invoice_no": "BT262701270",
+   "invoice_date": "2026-09-22",
+   "taxable_value": 29319.0,
+   "igst": 0.0,
+   "cgst": 732.98,
+   "sgst": 732.97,
+   "total": 30784.95
+  },
+  "expected_2b_row_id": "09-020",
+  "expected_pass": 1,
+  "expected_cause": null,
+  "expected_action": "none",
+  "acceptable_actions": [
+   "none"
+  ]
+ },
+ {
+  "invoice_id": "c1-inv-023",
+  "case": "rounding",
+  "supplier_gstin": "29OBXPT2441A1Z0",
+  "invoice_no": "KT/1296/26-27",
+  "total": 72631.65,
+  "truth": {
+   "supplier_gstin": "29OBXPT2441A1Z0",
+   "supplier_name": "Kalla Traders",
+   "invoice_no": "KT/1296/26-27",
+   "invoice_date": "2026-09-22",
+   "taxable_value": 69173.0,
+   "igst": 0.0,
+   "cgst": 1729.33,
+   "sgst": 1729.32,
+   "total": 72631.65
+  },
+  "expected_2b_row_id": "09-018",
+  "expected_pass": 2,
+  "expected_cause": null,
+  "expected_action": "none",
+  "acceptable_actions": [
+   "none"
+  ]
+ },
+ {
+  "invoice_id": "c1-inv-024",
+  "case": "exact",
+  "supplier_gstin": "27ZIKFY3791P1ZX",
+  "invoice_no": "CD-1286",
+  "total": 190500.38,
+  "truth": {
+   "supplier_gstin": "27ZIKFY3791P1ZX",
+   "supplier_name": "Chhabra Distributors",
+   "invoice_no": "CD-1286",
+   "invoice_date": "2026-09-23",
+   "taxable_value": 161441.0,
+   "igst": 29059.38,
+   "cgst": 0.0,
+   "sgst": 0.0,
+   "total": 190500.38
+  },
+  "expected_2b_row_id": "09-010",
+  "expected_pass": 1,
+  "expected_cause": null,
+  "expected_action": "none",
+  "acceptable_actions": [
+   "none"
+  ]
+ },
+ {
+  "invoice_id": "c1-inv-025",
+  "case": "exact",
+  "supplier_gstin": "24DJIPD6280S1ZL",
+  "invoice_no": "INV/2026-27/0046",
+  "total": 110430.6,
+  "truth": {
+   "supplier_gstin": "24DJIPD6280S1ZL",
+   "supplier_name": "Gupta Supplies",
+   "invoice_no": "INV/2026-27/0046",
+   "invoice_date": "2026-09-23",
+   "taxable_value": 105172.0,
+   "igst": 5258.6,
+   "cgst": 0.0,
+   "sgst": 0.0,
+   "total": 110430.6
+  },
+  "expected_2b_row_id": "09-006",
+  "expected_pass": 1,
+  "expected_cause": null,
+  "expected_action": "none",
+  "acceptable_actions": [
+   "none"
+  ]
+ },
+ {
+  "invoice_id": "c1-inv-026",
+  "case": "rounding",
+  "supplier_gstin": "29AITPW4599G1Z1",
+  "invoice_no": "MI-89",
+  "total": 192307.5,
+  "truth": {
+   "supplier_gstin": "29AITPW4599G1Z1",
+   "supplier_name": "Mammen Industries",
+   "invoice_no": "MI-89",
+   "invoice_date": "2026-09-24",
+   "taxable_value": 183150.0,
+   "igst": 0.0,
+   "cgst": 4578.75,
+   "sgst": 4578.75,
+   "total": 192307.5
+  },
+  "expected_2b_row_id": "09-012",
+  "expected_pass": 2,
+  "expected_cause": null,
+  "expected_action": "none",
+  "acceptable_actions": [
+   "none"
+  ]
+ },
+ {
+  "invoice_id": "c1-inv-027",
+  "case": "near_miss",
+  "supplier_gstin": "36NVNFB5901D1Z5",
+  "invoice_no": "TD262700562",
+  "total": 73927.0,
+  "truth": {
+   "supplier_gstin": "36NVNFB5901D1Z5",
+   "supplier_name": "Tripathi Distributors",
+   "invoice_no": "TD262700562",
+   "invoice_date": "2026-09-24",
+   "taxable_value": 62650.0,
+   "igst": 11277.0,
+   "cgst": 0.0,
+   "sgst": 0.0,
+   "total": 73927.0
+  },
+  "expected_2b_row_id": "09-027",
+  "expected_pass": 4,
+  "expected_cause": null,
+  "expected_action": "escalate",
+  "acceptable_actions": [
+   "none",
+   "escalate"
+  ]
+ },
+ {
+  "invoice_id": "c1-inv-028",
+  "case": "amount_typo",
+  "supplier_gstin": "07XJTCM6618Y1ZU",
+  "invoice_no": "BC/1185/26-27",
+  "total": 82280.1,
+  "truth": {
+   "supplier_gstin": "07XJTCM6618Y1ZU",
+   "supplier_name": "Banik & Co",
+   "invoice_no": "BC/1185/26-27",
+   "invoice_date": "2026-09-25",
+   "taxable_value": 78362.0,
+   "igst": 3918.1,
+   "cgst": 0.0,
+   "sgst": 0.0,
+   "total": 82280.1
+  },
+  "expected_2b_row_id": null,
+  "expected_pass": null,
+  "expected_cause": "amount_typo",
+  "expected_action": "email_amount_query",
+  "acceptable_actions": [
+   "email_amount_query"
+  ]
+ },
+ {
+  "invoice_id": "c1-inv-029",
+  "case": "exact",
+  "supplier_gstin": "33DBPCQ5908C1ZA",
+  "invoice_no": "00481",
+  "total": 34634.25,
+  "truth": {
+   "supplier_gstin": "33DBPCQ5908C1ZA",
+   "supplier_name": "Guha Supplies",
+   "invoice_no": "00481",
+   "invoice_date": "2026-09-25",
+   "taxable_value": 32985.0,
+   "igst": 1649.25,
+   "cgst": 0.0,
+   "sgst": 0.0,
+   "total": 34634.25
+  },
+  "expected_2b_row_id": "09-024",
+  "expected_pass": 1,
+  "expected_cause": null,
+  "expected_action": "none",
+  "acceptable_actions": [
+   "none"
+  ]
+ },
+ {
+  "invoice_id": "c1-inv-030",
+  "case": "exact",
+  "supplier_gstin": "36NVNFB5901D1Z5",
+  "invoice_no": "TD262700563",
+  "total": 73927.0,
+  "truth": {
+   "supplier_gstin": "36NVNFB5901D1Z5",
+   "supplier_name": "Tripathi Distributors",
+   "invoice_no": "TD262700563",
+   "invoice_date": "2026-09-26",
+   "taxable_value": 62650.0,
+   "igst": 11277.0,
+   "cgst": 0.0,
+   "sgst": 0.0,
+   "total": 73927.0
+  },
+  "expected_2b_row_id": "09-028",
+  "expected_pass": 1,
+  "expected_cause": null,
+  "expected_action": "none",
+  "acceptable_actions": [
+   "none"
+  ]
+ },
+ {
+  "invoice_id": "c1-inv-031",
+  "case": "period_mismatch",
+  "supplier_gstin": "24DJIPD6280S1ZL",
+  "invoice_no": "INV/2026-27/0043",
+  "total": 18490.5,
+  "truth": {
+   "supplier_gstin": "24DJIPD6280S1ZL",
+   "supplier_name": "Gupta Supplies",
+   "invoice_no": "INV/2026-27/0043",
+   "invoice_date": "2026-09-29",
+   "taxable_value": 17610.0,
+   "igst": 880.5,
+   "cgst": 0.0,
+   "sgst": 0.0,
+   "total": 18490.5
+  },
+  "expected_2b_row_id": null,
+  "expected_pass": null,
+  "expected_cause": "period_mismatch",
+  "expected_action": "flag_next_return",
+  "acceptable_actions": [
+   "flag_next_return"
+  ]
+ }
+]

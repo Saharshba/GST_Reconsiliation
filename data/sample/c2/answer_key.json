@@ -1,0 +1,828 @@
+[
+ {
+  "invoice_id": "c2-inv-001",
+  "case": "date_drift",
+  "supplier_gstin": "27BKRPW4129D1ZQ",
+  "invoice_no": "00180",
+  "total": 31039.9,
+  "truth": {
+   "supplier_gstin": "27BKRPW4129D1ZQ",
+   "supplier_name": "Narasimhan Agencies",
+   "invoice_no": "00180",
+   "invoice_date": "2026-09-01",
+   "taxable_value": 26305.0,
+   "igst": 4734.9,
+   "cgst": 0.0,
+   "sgst": 0.0,
+   "total": 31039.9
+  },
+  "expected_2b_row_id": "09-011",
+  "expected_pass": 3,
+  "expected_cause": null,
+  "expected_action": "none",
+  "acceptable_actions": [
+   "none"
+  ]
+ },
+ {
+  "invoice_id": "c2-inv-002",
+  "case": "exact",
+  "supplier_gstin": "29TJOPX8631A1Z7",
+  "invoice_no": "RPL-948",
+  "total": 187289.6,
+  "truth": {
+   "supplier_gstin": "29TJOPX8631A1Z7",
+   "supplier_name": "Raghavan Pvt Ltd",
+   "invoice_no": "RPL-948",
+   "invoice_date": "2026-09-02",
+   "taxable_value": 158720.0,
+   "igst": 0.0,
+   "cgst": 14284.8,
+   "sgst": 14284.8,
+   "total": 187289.6
+  },
+  "expected_2b_row_id": "09-015",
+  "expected_pass": 1,
+  "expected_cause": null,
+  "expected_action": "none",
+  "acceptable_actions": [
+   "none"
+  ]
+ },
+ {
+  "invoice_id": "c2-inv-003",
+  "case": "unreadable",
+  "supplier_gstin": "29ZNWPF6187X1ZL",
+  "invoice_no": "INV/2026-27/0579",
+  "total": 20788.06,
+  "truth": {
+   "supplier_gstin": "29ZNWPF6187X1ZL",
+   "supplier_name": "Jaggi & Co",
+   "invoice_no": "INV/2026-27/0579",
+   "invoice_date": "2026-09-03",
+   "taxable_value": 17617.0,
+   "igst": 0.0,
+   "cgst": 1585.53,
+   "sgst": 1585.53,
+   "total": 20788.06
+  },
+  "expected_2b_row_id": null,
+  "expected_pass": null,
+  "expected_cause": "unreadable",
+  "expected_action": "escalate",
+  "acceptable_actions": [
+   "escalate"
+  ]
+ },
+ {
+  "invoice_id": "c2-inv-004",
+  "case": "exact",
+  "supplier_gstin": "36XWIPU7218W1ZL",
+  "invoice_no": "INV/2026-27/0201",
+  "total": 136717.16,
+  "truth": {
+   "supplier_gstin": "36XWIPU7218W1ZL",
+   "supplier_name": "Menon Distributors",
+   "invoice_no": "INV/2026-27/0201",
+   "invoice_date": "2026-09-03",
+   "taxable_value": 115862.0,
+   "igst": 20855.16,
+   "cgst": 0.0,
+   "sgst": 0.0,
+   "total": 136717.16
+  },
+  "expected_2b_row_id": "09-029",
+  "expected_pass": 1,
+  "expected_cause": null,
+  "expected_action": "none",
+  "acceptable_actions": [
+   "none"
+  ]
+ },
+ {
+  "invoice_id": "c2-inv-005",
+  "case": "exact",
+  "supplier_gstin": "36XWIPU7218W1ZL",
+  "invoice_no": "INV/2026-27/0208",
+  "total": 59640.74,
+  "truth": {
+   "supplier_gstin": "36XWIPU7218W1ZL",
+   "supplier_name": "Menon Distributors",
+   "invoice_no": "INV/2026-27/0208",
+   "invoice_date": "2026-09-04",
+   "taxable_value": 50543.0,
+   "igst": 9097.74,
+   "cgst": 0.0,
+   "sgst": 0.0,
+   "total": 59640.74
+  },
+  "expected_2b_row_id": "09-030",
+  "expected_pass": 1,
+  "expected_cause": null,
+  "expected_action": "none",
+  "acceptable_actions": [
+   "none"
+  ]
+ },
+ {
+  "invoice_id": "c2-inv-006",
+  "case": "rounding",
+  "supplier_gstin": "29FSEPK9208W1ZI",
+  "invoice_no": "SI262700103",
+  "total": 62728.8,
+  "truth": {
+   "supplier_gstin": "29FSEPK9208W1ZI",
+   "supplier_name": "Shere Industries",
+   "invoice_no": "SI262700103",
+   "invoice_date": "2026-09-04",
+   "taxable_value": 53160.0,
+   "igst": 0.0,
+   "cgst": 4784.4,
+   "sgst": 4784.4,
+   "total": 62728.8
+  },
+  "expected_2b_row_id": "09-013",
+  "expected_pass": 2,
+  "expected_cause": null,
+  "expected_action": "none",
+  "acceptable_actions": [
+   "none"
+  ]
+ },
+ {
+  "invoice_id": "c2-inv-007",
+  "case": "exact",
+  "supplier_gstin": "07FDNFJ4935A1Z5",
+  "invoice_no": "SS262700210",
+  "total": 317690.22,
+  "truth": {
+   "supplier_gstin": "07FDNFJ4935A1Z5",
+   "supplier_name": "Sundaram Supplies",
+   "invoice_no": "SS262700210",
+   "invoice_date": "2026-09-04",
+   "taxable_value": 269229.0,
+   "igst": 48461.22,
+   "cgst": 0.0,
+   "sgst": 0.0,
+   "total": 317690.22
+  },
+  "expected_2b_row_id": "09-001",
+  "expected_pass": 1,
+  "expected_cause": null,
+  "expected_action": "none",
+  "acceptable_actions": [
+   "none"
+  ]
+ },
+ {
+  "invoice_id": "c2-inv-008",
+  "case": "exact",
+  "supplier_gstin": "24GLAPU5446G1ZW",
+  "invoice_no": "PPL-486",
+  "total": 248970.56,
+  "truth": {
+   "supplier_gstin": "24GLAPU5446G1ZW",
+   "supplier_name": "Parikh Pvt Ltd",
+   "invoice_no": "PPL-486",
+   "invoice_date": "2026-09-05",
+   "taxable_value": 210992.0,
+   "igst": 37978.56,
+   "cgst": 0.0,
+   "sgst": 0.0,
+   "total": 248970.56
+  },
+  "expected_2b_row_id": "09-007",
+  "expected_pass": 1,
+  "expected_cause": null,
+  "expected_action": "none",
+  "acceptable_actions": [
+   "none"
+  ]
+ },
+ {
+  "invoice_id": "c2-inv-009",
+  "case": "exact",
+  "supplier_gstin": "07FDNFJ4935A1Z5",
+  "invoice_no": "SS262700220",
+  "total": 146026.18,
+  "truth": {
+   "supplier_gstin": "07FDNFJ4935A1Z5",
+   "supplier_name": "Sundaram Supplies",
+   "invoice_no": "SS262700220",
+   "invoice_date": "2026-09-06",
+   "taxable_value": 123751.0,
+   "igst": 22275.18,
+   "cgst": 0.0,
+   "sgst": 0.0,
+   "total": 146026.18
+  },
+  "expected_2b_row_id": "09-002",
+  "expected_pass": 1,
+  "expected_cause": null,
+  "expected_action": "none",
+  "acceptable_actions": [
+   "none"
+  ]
+ },
+ {
+  "invoice_id": "c2-inv-010",
+  "case": "near_miss",
+  "supplier_gstin": "24GLAPU5446G1ZW",
+  "invoice_no": "PPL-489",
+  "total": 85639.68,
+  "truth": {
+   "supplier_gstin": "24GLAPU5446G1ZW",
+   "supplier_name": "Parikh Pvt Ltd",
+   "invoice_no": "PPL-489",
+   "invoice_date": "2026-09-10",
+   "taxable_value": 72576.0,
+   "igst": 13063.68,
+   "cgst": 0.0,
+   "sgst": 0.0,
+   "total": 85639.68
+  },
+  "expected_2b_row_id": "09-008",
+  "expected_pass": 4,
+  "expected_cause": null,
+  "expected_action": "escalate",
+  "acceptable_actions": [
+   "none",
+   "escalate"
+  ]
+ },
+ {
+  "invoice_id": "c2-inv-011",
+  "case": "exact",
+  "supplier_gstin": "29ZNWPF6187X1ZL",
+  "invoice_no": "INV/2026-27/0589",
+  "total": 133703.44,
+  "truth": {
+   "supplier_gstin": "29ZNWPF6187X1ZL",
+   "supplier_name": "Jaggi & Co",
+   "invoice_no": "INV/2026-27/0589",
+   "invoice_date": "2026-09-12",
+   "taxable_value": 113308.0,
+   "igst": 0.0,
+   "cgst": 10197.72,
+   "sgst": 10197.72,
+   "total": 133703.44
+  },
+  "expected_2b_row_id": "09-020",
+  "expected_pass": 1,
+  "expected_cause": null,
+  "expected_action": "none",
+  "acceptable_actions": [
+   "none"
+  ]
+ },
+ {
+  "invoice_id": "c2-inv-012",
+  "case": "exact",
+  "supplier_gstin": "24GLAPU5446G1ZW",
+  "invoice_no": "PPL-498",
+  "total": 85639.68,
+  "truth": {
+   "supplier_gstin": "24GLAPU5446G1ZW",
+   "supplier_name": "Parikh Pvt Ltd",
+   "invoice_no": "PPL-498",
+   "invoice_date": "2026-09-12",
+   "taxable_value": 72576.0,
+   "igst": 13063.68,
+   "cgst": 0.0,
+   "sgst": 0.0,
+   "total": 85639.68
+  },
+  "expected_2b_row_id": "09-009",
+  "expected_pass": 1,
+  "expected_cause": null,
+  "expected_action": "none",
+  "acceptable_actions": [
+   "none"
+  ]
+ },
+ {
+  "invoice_id": "c2-inv-013",
+  "case": "exact",
+  "supplier_gstin": "29TJOPX8631A1Z7",
+  "invoice_no": "RPL-954",
+  "total": 1538.72,
+  "truth": {
+   "supplier_gstin": "29TJOPX8631A1Z7",
+   "supplier_name": "Raghavan Pvt Ltd",
+   "invoice_no": "RPL-954",
+   "invoice_date": "2026-09-13",
+   "taxable_value": 1304.0,
+   "igst": 0.0,
+   "cgst": 117.36,
+   "sgst": 117.36,
+   "total": 1538.72
+  },
+  "expected_2b_row_id": "09-016",
+  "expected_pass": 1,
+  "expected_cause": null,
+  "expected_action": "none",
+  "acceptable_actions": [
+   "none"
+  ]
+ },
+ {
+  "invoice_id": "c2-inv-014",
+  "case": "exact",
+  "supplier_gstin": "32RHLFZ5636K1ZT",
+  "invoice_no": "00446",
+  "total": 216004.9,
+  "truth": {
+   "supplier_gstin": "32RHLFZ5636K1ZT",
+   "supplier_name": "Raj Enterprises",
+   "invoice_no": "00446",
+   "invoice_date": "2026-09-13",
+   "taxable_value": 183055.0,
+   "igst": 32949.9,
+   "cgst": 0.0,
+   "sgst": 0.0,
+   "total": 216004.9
+  },
+  "expected_2b_row_id": "09-022",
+  "expected_pass": 1,
+  "expected_cause": null,
+  "expected_action": "none",
+  "acceptable_actions": [
+   "none"
+  ]
+ },
+ {
+  "invoice_id": "c2-inv-015",
+  "case": "date_drift",
+  "supplier_gstin": "32RHLFZ5636K1ZT",
+  "invoice_no": "00450",
+  "total": 350854.12,
+  "truth": {
+   "supplier_gstin": "32RHLFZ5636K1ZT",
+   "supplier_name": "Raj Enterprises",
+   "invoice_no": "00450",
+   "invoice_date": "2026-09-14",
+   "taxable_value": 297334.0,
+   "igst": 53520.12,
+   "cgst": 0.0,
+   "sgst": 0.0,
+   "total": 350854.12
+  },
+  "expected_2b_row_id": "09-023",
+  "expected_pass": 3,
+  "expected_cause": null,
+  "expected_action": "none",
+  "acceptable_actions": [
+   "none"
+  ]
+ },
+ {
+  "invoice_id": "c2-inv-016",
+  "case": "exact",
+  "supplier_gstin": "33BGDPS9170R1ZK",
+  "invoice_no": "SC/0205/26-27",
+  "total": 66599.4,
+  "truth": {
+   "supplier_gstin": "33BGDPS9170R1ZK",
+   "supplier_name": "Sandhu & Co",
+   "invoice_no": "SC/0205/26-27",
+   "invoice_date": "2026-09-15",
+   "taxable_value": 63428.0,
+   "igst": 3171.4,
+   "cgst": 0.0,
+   "sgst": 0.0,
+   "total": 66599.4
+  },
+  "expected_2b_row_id": "09-025",
+  "expected_pass": 1,
+  "expected_cause": null,
+  "expected_action": "none",
+  "acceptable_actions": [
+   "none"
+  ]
+ },
+ {
+  "invoice_id": "c2-inv-017",
+  "case": "exact",
+  "supplier_gstin": "33BGDPS9170R1ZK",
+  "invoice_no": "SC/0213/26-27",
+  "total": 288067.5,
+  "truth": {
+   "supplier_gstin": "33BGDPS9170R1ZK",
+   "supplier_name": "Sandhu & Co",
+   "invoice_no": "SC/0213/26-27",
+   "invoice_date": "2026-09-18",
+   "taxable_value": 274350.0,
+   "igst": 13717.5,
+   "cgst": 0.0,
+   "sgst": 0.0,
+   "total": 288067.5
+  },
+  "expected_2b_row_id": "09-026",
+  "expected_pass": 1,
+  "expected_cause": null,
+  "expected_action": "none",
+  "acceptable_actions": [
+   "none"
+  ]
+ },
+ {
+  "invoice_id": "c2-inv-018",
+  "case": "wrong_gstin",
+  "supplier_gstin": "29RJIFW7752C1ZT",
+  "invoice_no": "01089",
+  "total": 231681.2,
+  "truth": {
+   "supplier_gstin": "29RJIFW7752C1ZT",
+   "supplier_name": "Verma & Co",
+   "invoice_no": "01089",
+   "invoice_date": "2026-09-18",
+   "taxable_value": 196340.0,
+   "igst": 0.0,
+   "cgst": 17670.6,
+   "sgst": 17670.6,
+   "total": 231681.2
+  },
+  "expected_2b_row_id": null,
+  "expected_pass": null,
+  "expected_cause": "wrong_gstin",
+  "expected_action": "email_correction",
+  "acceptable_actions": [
+   "email_correction"
+  ]
+ },
+ {
+  "invoice_id": "c2-inv-019",
+  "case": "amount_typo",
+  "supplier_gstin": "07FDNFJ4935A1Z5",
+  "invoice_no": "SS262700225",
+  "total": 318064.28,
+  "truth": {
+   "supplier_gstin": "07FDNFJ4935A1Z5",
+   "supplier_name": "Sundaram Supplies",
+   "invoice_no": "SS262700225",
+   "invoice_date": "2026-09-19",
+   "taxable_value": 269546.0,
+   "igst": 48518.28,
+   "cgst": 0.0,
+   "sgst": 0.0,
+   "total": 318064.28
+  },
+  "expected_2b_row_id": null,
+  "expected_pass": null,
+  "expected_cause": "amount_typo",
+  "expected_action": "email_amount_query",
+  "acceptable_actions": [
+   "email_amount_query"
+  ]
+ },
+ {
+  "invoice_id": "c2-inv-020",
+  "case": "vendor_not_filed",
+  "supplier_gstin": "37EOXCH4421H1ZB",
+  "invoice_no": "DC/0700/26-27",
+  "total": 98488.7,
+  "truth": {
+   "supplier_gstin": "37EOXCH4421H1ZB",
+   "supplier_name": "Dasgupta & Co",
+   "invoice_no": "DC/0700/26-27",
+   "invoice_date": "2026-09-20",
+   "taxable_value": 83465.0,
+   "igst": 15023.7,
+   "cgst": 0.0,
+   "sgst": 0.0,
+   "total": 98488.7
+  },
+  "expected_2b_row_id": null,
+  "expected_pass": null,
+  "expected_cause": "vendor_not_filed",
+  "expected_action": "email_filing_reminder",
+  "acceptable_actions": [
+   "email_filing_reminder"
+  ]
+ },
+ {
+  "invoice_id": "c2-inv-021",
+  "case": "exact",
+  "supplier_gstin": "24GLAPU5446G1ZW",
+  "invoice_no": "PPL-497",
+  "total": 304116.68,
+  "truth": {
+   "supplier_gstin": "24GLAPU5446G1ZW",
+   "supplier_name": "Parikh Pvt Ltd",
+   "invoice_no": "PPL-497",
+   "invoice_date": "2026-09-20",
+   "taxable_value": 257726.0,
+   "igst": 46390.68,
+   "cgst": 0.0,
+   "sgst": 0.0,
+   "total": 304116.68
+  },
+  "expected_2b_row_id": "09-010",
+  "expected_pass": 1,
+  "expected_cause": null,
+  "expected_action": "none",
+  "acceptable_actions": [
+   "none"
+  ]
+ },
+ {
+  "invoice_id": "c2-inv-022",
+  "case": "exact",
+  "supplier_gstin": "36XWIPU7218W1ZL",
+  "invoice_no": "INV/2026-27/0220",
+  "total": 29555.46,
+  "truth": {
+   "supplier_gstin": "36XWIPU7218W1ZL",
+   "supplier_name": "Menon Distributors",
+   "invoice_no": "INV/2026-27/0220",
+   "invoice_date": "2026-09-21",
+   "taxable_value": 25047.0,
+   "igst": 4508.46,
+   "cgst": 0.0,
+   "sgst": 0.0,
+   "total": 29555.46
+  },
+  "expected_2b_row_id": "09-031",
+  "expected_pass": 1,
+  "expected_cause": null,
+  "expected_action": "none",
+  "acceptable_actions": [
+   "none"
+  ]
+ },
+ {
+  "invoice_id": "c2-inv-023",
+  "case": "exact",
+  "supplier_gstin": "07FDNFJ4935A1Z5",
+  "invoice_no": "SS262700235",
+  "total": 45217.6,
+  "truth": {
+   "supplier_gstin": "07FDNFJ4935A1Z5",
+   "supplier_name": "Sundaram Supplies",
+   "invoice_no": "SS262700235",
+   "invoice_date": "2026-09-21",
+   "taxable_value": 38320.0,
+   "igst": 6897.6,
+   "cgst": 0.0,
+   "sgst": 0.0,
+   "total": 45217.6
+  },
+  "expected_2b_row_id": "09-004",
+  "expected_pass": 1,
+  "expected_cause": null,
+  "expected_action": "none",
+  "acceptable_actions": [
+   "none"
+  ]
+ },
+ {
+  "invoice_id": "c2-inv-024",
+  "case": "exact",
+  "supplier_gstin": "33BGDPS9170R1ZK",
+  "invoice_no": "SC/0224/26-27",
+  "total": 5235.3,
+  "truth": {
+   "supplier_gstin": "33BGDPS9170R1ZK",
+   "supplier_name": "Sandhu & Co",
+   "invoice_no": "SC/0224/26-27",
+   "invoice_date": "2026-09-22",
+   "taxable_value": 4986.0,
+   "igst": 249.3,
+   "cgst": 0.0,
+   "sgst": 0.0,
+   "total": 5235.3
+  },
+  "expected_2b_row_id": "09-027",
+  "expected_pass": 1,
+  "expected_cause": null,
+  "expected_action": "none",
+  "acceptable_actions": [
+   "none"
+  ]
+ },
+ {
+  "invoice_id": "c2-inv-025",
+  "case": "unclear",
+  "supplier_gstin": "29FSEPK9208W1ZI",
+  "invoice_no": "SI262700114",
+  "total": 228588.42,
+  "truth": {
+   "supplier_gstin": "29FSEPK9208W1ZI",
+   "supplier_name": "Shere Industries",
+   "invoice_no": "SI262700114",
+   "invoice_date": "2026-09-22",
+   "taxable_value": 193719.0,
+   "igst": 0.0,
+   "cgst": 17434.71,
+   "sgst": 17434.71,
+   "total": 228588.42
+  },
+  "expected_2b_row_id": null,
+  "expected_pass": null,
+  "expected_cause": "unclear",
+  "expected_action": "escalate",
+  "acceptable_actions": [
+   "escalate"
+  ]
+ },
+ {
+  "invoice_id": "c2-inv-026",
+  "case": "rounding",
+  "supplier_gstin": "29UZPPH3328H1ZJ",
+  "invoice_no": "ZA/1256/26-27",
+  "total": 81409.38,
+  "truth": {
+   "supplier_gstin": "29UZPPH3328H1ZJ",
+   "supplier_name": "Zachariah Agencies",
+   "invoice_no": "ZA/1256/26-27",
+   "invoice_date": "2026-09-22",
+   "taxable_value": 68991.0,
+   "igst": 0.0,
+   "cgst": 6209.19,
+   "sgst": 6209.19,
+   "total": 81409.38
+  },
+  "expected_2b_row_id": "09-018",
+  "expected_pass": 2,
+  "expected_cause": null,
+  "expected_action": "none",
+  "acceptable_actions": [
+   "none"
+  ]
+ },
+ {
+  "invoice_id": "c2-inv-027",
+  "case": "exact",
+  "supplier_gstin": "29TJOPX8631A1Z7",
+  "invoice_no": "RPL-965",
+  "total": 24402.4,
+  "truth": {
+   "supplier_gstin": "29TJOPX8631A1Z7",
+   "supplier_name": "Raghavan Pvt Ltd",
+   "invoice_no": "RPL-965",
+   "invoice_date": "2026-09-23",
+   "taxable_value": 20680.0,
+   "igst": 0.0,
+   "cgst": 1861.2,
+   "sgst": 1861.2,
+   "total": 24402.4
+  },
+  "expected_2b_row_id": "09-017",
+  "expected_pass": 1,
+  "expected_cause": null,
+  "expected_action": "none",
+  "acceptable_actions": [
+   "none"
+  ]
+ },
+ {
+  "invoice_id": "c2-inv-028",
+  "case": "exact",
+  "supplier_gstin": "32RHLFZ5636K1ZT",
+  "invoice_no": "00452",
+  "total": 86250.92,
+  "truth": {
+   "supplier_gstin": "32RHLFZ5636K1ZT",
+   "supplier_name": "Raj Enterprises",
+   "invoice_no": "00452",
+   "invoice_date": "2026-09-23",
+   "taxable_value": 73094.0,
+   "igst": 13156.92,
+   "cgst": 0.0,
+   "sgst": 0.0,
+   "total": 86250.92
+  },
+  "expected_2b_row_id": "09-024",
+  "expected_pass": 1,
+  "expected_cause": null,
+  "expected_action": "none",
+  "acceptable_actions": [
+   "none"
+  ]
+ },
+ {
+  "invoice_id": "c2-inv-029",
+  "case": "exact",
+  "supplier_gstin": "07FDNFJ4935A1Z5",
+  "invoice_no": "SS262700242",
+  "total": 150526.7,
+  "truth": {
+   "supplier_gstin": "07FDNFJ4935A1Z5",
+   "supplier_name": "Sundaram Supplies",
+   "invoice_no": "SS262700242",
+   "invoice_date": "2026-09-23",
+   "taxable_value": 127565.0,
+   "igst": 22961.7,
+   "cgst": 0.0,
+   "sgst": 0.0,
+   "total": 150526.7
+  },
+  "expected_2b_row_id": "09-005",
+  "expected_pass": 1,
+  "expected_cause": null,
+  "expected_action": "none",
+  "acceptable_actions": [
+   "none"
+  ]
+ },
+ {
+  "invoice_id": "c2-inv-030",
+  "case": "exact",
+  "supplier_gstin": "29ZNWPF6187X1ZL",
+  "invoice_no": "INV/2026-27/0596",
+  "total": 152467.8,
+  "truth": {
+   "supplier_gstin": "29ZNWPF6187X1ZL",
+   "supplier_name": "Jaggi & Co",
+   "invoice_no": "INV/2026-27/0596",
+   "invoice_date": "2026-09-25",
+   "taxable_value": 129210.0,
+   "igst": 0.0,
+   "cgst": 11628.9,
+   "sgst": 11628.9,
+   "total": 152467.8
+  },
+  "expected_2b_row_id": "09-021",
+  "expected_pass": 1,
+  "expected_cause": null,
+  "expected_action": "none",
+  "acceptable_actions": [
+   "none"
+  ]
+ },
+ {
+  "invoice_id": "c2-inv-031",
+  "case": "exact",
+  "supplier_gstin": "27BKRPW4129D1ZQ",
+  "invoice_no": "00190",
+  "total": 92954.5,
+  "truth": {
+   "supplier_gstin": "27BKRPW4129D1ZQ",
+   "supplier_name": "Narasimhan Agencies",
+   "invoice_no": "00190",
+   "invoice_date": "2026-09-25",
+   "taxable_value": 78775.0,
+   "igst": 14179.5,
+   "cgst": 0.0,
+   "sgst": 0.0,
+   "total": 92954.5
+  },
+  "expected_2b_row_id": "09-012",
+  "expected_pass": 1,
+  "expected_cause": null,
+  "expected_action": "none",
+  "acceptable_actions": [
+   "none"
+  ]
+ },
+ {
+  "invoice_id": "c2-inv-032",
+  "case": "exact",
+  "supplier_gstin": "29RJIFW7752C1ZT",
+  "invoice_no": "01093",
+  "total": 405802.0,
+  "truth": {
+   "supplier_gstin": "29RJIFW7752C1ZT",
+   "supplier_name": "Verma & Co",
+   "invoice_no": "01093",
+   "invoice_date": "2026-09-25",
+   "taxable_value": 343900.0,
+   "igst": 0.0,
+   "cgst": 30951.0,
+   "sgst": 30951.0,
+   "total": 405802.0
+  },
+  "expected_2b_row_id": "09-014",
+  "expected_pass": 1,
+  "expected_cause": null,
+  "expected_action": "none",
+  "acceptable_actions": [
+   "none"
+  ]
+ },
+ {
+  "invoice_id": "c2-inv-033",
+  "case": "period_mismatch",
+  "supplier_gstin": "29UZPPH3328H1ZJ",
+  "invoice_no": "ZA/1247/26-27",
+  "total": 211483.14,
+  "truth": {
+   "supplier_gstin": "29UZPPH3328H1ZJ",
+   "supplier_name": "Zachariah Agencies",
+   "invoice_no": "ZA/1247/26-27",
+   "invoice_date": "2026-09-28",
+   "taxable_value": 179223.0,
+   "igst": 0.0,
+   "cgst": 16130.07,
+   "sgst": 16130.07,
+   "total": 211483.14
+  },
+  "expected_2b_row_id": null,
+  "expected_pass": null,
+  "expected_cause": "period_mismatch",
+  "expected_action": "flag_next_return",
+  "acceptable_actions": [
+   "flag_next_return"
+  ]
+ }
+]
