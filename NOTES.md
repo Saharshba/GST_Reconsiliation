@@ -28,6 +28,30 @@ Environment verified:
   fires); c2 = wrong-GSTIN row + copy in next period (two rules fire); c3 = amount gap + copy in next period.
 - Supplier name accuracy is compared case-insensitively: the two-column layout prints the name in capitals.
 
+## Status (2026-10-31)
+
+| Milestone | State |
+|---|---|
+| M0 spike | script ready, **not run** (needs key) |
+| M1–M3 | done, tested offline |
+| M4 agent + tools + gate + done check | done; verified end to end through ADK with the offline scripted model |
+| M5 Streamlit (4 steps, live trace, replay, offline) | done; checked in the browser |
+| M6 evaluator + metrics tab | done; offline numbers below are a pipeline check only |
+| M7 LLM-only experiment | script ready (`--dry-run` works, ~1.6k tokens/client), **not run** (needs key) |
+| Fallback A (`AGENT_MODE=driven`) | done, tested offline |
+| M8 README / pinned requirements | done; replay runs still need recording with the live model |
+
+To do once the NVIDIA key is in `.env` (all use credits):
+1. `python spike/m0_tool_calling.py`: record here whether tool calls work, plus latency and 429 behaviour.
+   If they don't, set `AGENT_MODE=driven`.
+2. `python -m agent.runner --client c1` (then c2, c3 with `--pin`), then `python eval/evaluate.py --source saved --mode live`.
+3. `python experiments/llm_only_matching.py --clients all`.
+4. Deck: slide 5 LLM = "Gemma 4 31B IT (NVIDIA NIM)", framework = "Google ADK"; slide 10 "what didn't work" from step 3.
+
+Things to watch in live runs: Gemma may skip validate_gstin, pass confidence as a string (coerced), or stop
+early (the done check catches it and counts `agent_did_not_decide`). If the system prompt is rejected by the
+endpoint, LiteLLM/NIM chat template handling is the first thing to check.
+
 ## M1–M3 results (offline)
 
 - 3 clients, 31 / 33 / 35 invoices, 12 vendors each, intra- and inter-state, 5% and 18% slabs, 4 PDF layouts.
