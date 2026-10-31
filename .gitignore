@@ -6,3 +6,4 @@ __pycache__/
 runs/*.json
 !runs/.gitkeep
 !runs/replay_*.json
+runs/mcp/

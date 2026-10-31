@@ -32,8 +32,23 @@ FIELDS: dict[str, list[str]] = {
 HEADER_WORDS = re.compile(r"^(TAX\s+INVOICE|INVOICE|ORIGINAL FOR RECIPIENT|BILL OF SUPPLY)$", re.I)
 
 
-def extract_text(path: str | Path) -> str:
+STRATEGIES = ("default", "layout", "words")
+
+
+def extract_text(path: str | Path, strategy: str = "default") -> str:
+    """default = pdfplumber text; layout = keeps horizontal spacing (helps multi-column pages);
+    words = rebuilds lines from individual words (helps odd character spacing)."""
     with pdfplumber.open(str(path)) as pdf:
+        if strategy == "layout":
+            return "\n".join((p.extract_text(layout=True) or "") for p in pdf.pages)
+        if strategy == "words":
+            out = []
+            for p in pdf.pages:
+                lines: dict[int, list] = {}
+                for w in p.extract_words(keep_blank_chars=False, x_tolerance=1.5):
+                    lines.setdefault(round(w["top"] / 3), []).append(w)
+                out += [" ".join(w["text"] for w in sorted(ws, key=lambda w: w["x0"])) for _, ws in sorted(lines.items())]
+            return "\n".join(out)
         return "\n".join((p.extract_text() or "") for p in pdf.pages)
 
 
@@ -119,15 +134,18 @@ def parse_text(text: str, *, invoice_id: str, client_id: str, source_file: str, 
     )
 
 
-def parse_pdf(path: str | Path, *, client_id: str, client_gstin: str) -> Invoice:
+def parse_pdf(path: str | Path, *, client_id: str, client_gstin: str, strategy: str = "default") -> Invoice:
     path = Path(path)
     try:
-        text = extract_text(path)
+        text = extract_text(path, strategy)
     except Exception as e:  # corrupt file: flag it, don't guess
         return Invoice(invoice_id=path.stem, client_id=client_id, source_file=path.name,
                        parse_status="unreadable", parse_notes=f"PDF could not be opened: {type(e).__name__}")
-    return parse_text(text, invoice_id=path.stem, client_id=client_id, source_file=path.name,
-                      client_gstin=client_gstin)
+    inv = parse_text(text, invoice_id=path.stem, client_id=client_id, source_file=path.name,
+                     client_gstin=client_gstin)
+    if strategy != "default":
+        inv.parse_notes = f"[{strategy} extraction] " + inv.parse_notes
+    return inv
 
 
 def parse_client(client_dir: str | Path, *, client_id: str, client_gstin: str) -> list[Invoice]:

@@ -29,14 +29,20 @@ def _amount_key(x: float) -> float:
     return round(x, 0)
 
 
-def match(invoices: list[Invoice], rows: list[TwoBRow], period: str) -> MatchResult:
+def match(invoices: list[Invoice], rows: list[TwoBRow], period: str,
+          passes: tuple[int, ...] = (1, 2, 3, 4), prior: list[Match] | None = None) -> MatchResult:
+    """Run the given passes. `prior` matches (from earlier passes) are kept and their rows/invoices skipped,
+    so the passes can be run one at a time; the result always holds prior + new matches."""
     p_start, p_end = N.period_bounds(period)
     win_lo, win_hi = p_start - timedelta(days=DATE_WINDOW_DAYS), p_end + timedelta(days=DATE_WINDOW_DAYS)
 
     usable = [i for i in invoices if i.parse_status != "unreadable" and i.supplier_gstin and i.total is not None]
     open_inv = {i.invoice_id: i for i in usable}
     open_rows = {r.row_id: r for r in rows}
-    res = MatchResult()
+    res = MatchResult(matches=list(prior or []))
+    for m in prior or []:
+        open_inv.pop(m.invoice_id, None)
+        open_rows.pop(m.row_id, None)
 
     def take(inv: Invoice, row: TwoBRow, pass_no: int, conf: float, notes: str):
         res.matches.append(Match(invoice_id=inv.invoice_id, row_id=row.row_id, pass_no=pass_no,
@@ -48,14 +54,14 @@ def match(invoices: list[Invoice], rows: list[TwoBRow], period: str) -> MatchRes
         return [r for r in open_rows.values() if r.supplier_gstin == gstin]
 
     # Pass 1: exact GSTIN + raw invoice number + total
-    for inv in list(open_inv.values()):
+    for inv in list(open_inv.values()) if 1 in passes else []:
         for r in rows_of(inv.supplier_gstin):
             if r.invoice_no.strip() == (inv.invoice_no or "").strip() and abs(r.total - inv.total) < 0.005:
                 take(inv, r, 1, 1.0, "exact")
                 break
 
     # Pass 2: normalised number + total within tolerance (closest amount wins)
-    for inv in list(open_inv.values()):
+    for inv in list(open_inv.values()) if 2 in passes else []:
         cands = [r for r in rows_of(inv.supplier_gstin)
                  if r.invoice_no_norm == inv.invoice_no_norm and N.within_tolerance(r.total, inv.total)]
         if cands:
@@ -71,7 +77,7 @@ def match(invoices: list[Invoice], rows: list[TwoBRow], period: str) -> MatchRes
     # An amount is only a usable key if this vendor did not bill that amount more than once.
     inv_amounts = Counter((i.supplier_gstin, _amount_key(i.total)) for i in usable)
     row_amounts = Counter((r.supplier_gstin, _amount_key(r.total)) for r in rows)
-    for inv in list(open_inv.values()):
+    for inv in list(open_inv.values()) if 3 in passes else []:
         if not inv.invoice_date or not (win_lo <= inv.invoice_date <= win_hi):
             continue
         if inv_amounts[(inv.supplier_gstin, _amount_key(inv.total))] > 1:
@@ -86,7 +92,7 @@ def match(invoices: list[Invoice], rows: list[TwoBRow], period: str) -> MatchRes
                  f"date {inv.invoice_date} vs {r.invoice_date}")
 
     # Pass 4: fuzzy invoice number + total within tolerance (low confidence, sent to the agent)
-    for inv in list(open_inv.values()):
+    for inv in list(open_inv.values()) if 4 in passes else []:
         scored = [(fuzz.ratio(inv.invoice_no_norm, r.invoice_no_norm), r) for r in rows_of(inv.supplier_gstin)
                   if N.within_tolerance(r.total, inv.total)]
         scored = [(s, r) for s, r in scored if s >= FUZZY_MIN]

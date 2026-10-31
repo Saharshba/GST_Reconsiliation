@@ -22,6 +22,7 @@ from dotenv import load_dotenv  # noqa: E402
 load_dotenv(ROOT / ".env")
 
 from agent import tools as T  # noqa: E402
+from agent.runner import RUNS_DIR as RUNS  # noqa: E402
 from agent.runner import latest_run, run_client_async  # noqa: E402
 from zero_balance import gstr2b  # noqa: E402
 from zero_balance.normalise import fmt_inr  # noqa: E402
@@ -40,6 +41,8 @@ st.markdown("""
 .trace-user {border-color: #10b981; background: rgba(16,185,129,.08); font-family: inherit;}
 .email-box {border: 1px solid #ddd; border-radius: 8px; padding: 14px 18px;
             font-family: inherit; line-height: 1.5; background: rgba(127,127,127,.04);}
+.agent-badge {display: inline-block; min-width: 74px; font-size: 11px; font-weight: 600; padding: 0 5px; margin-right: 6px;
+               border-radius: 4px; background: rgba(99,102,241,.18); font-family: inherit;}
 mark {background: #fde68a; color: #111; padding: 0 2px; border-radius: 3px;}
 </style>
 """, unsafe_allow_html=True)
@@ -54,9 +57,9 @@ with st.sidebar:
     st.caption("GSTR-2B reconciliation agent · Google ADK + MiniLM (local)")
     cid = st.selectbox("Client", list(CLIENTS), format_func=lambda c: f"{c} · {CLIENTS[c]['name']}")
     has_key = bool(os.environ.get("NVIDIA_NIM_API_KEY"))
-    modes = ["Run with MiniLM (local)", "Replay saved run", "Live (Gemma 4 via NVIDIA NIM)",
-             "Offline scripted (no model)"]
-    default = 1 if os.environ.get("LLM_MODE") == "replay" else 0
+    modes = ["Multi-agent team (MCP, local)", "Run with MiniLM (local)", "Replay multi-agent run",
+             "Replay saved run", "Live (Gemma 4 via NVIDIA NIM)", "Offline scripted (no model)"]
+    default = 2 if os.environ.get("LLM_MODE") == "replay" else 0
     mode = st.radio("Mode", modes, index=default)
     if mode.startswith("Live") and not has_key:
         st.warning("NVIDIA_NIM_API_KEY is not set in .env, so live mode is unavailable.")
@@ -82,6 +85,10 @@ def pdf_image(path: str):
 
 def trace_html(ev: TraceEvent) -> str:
     t = f"{ev.t:5.1f}s"
+    if ev.agent:
+        t = f'<span class="agent-badge">{html.escape(ev.agent)}</span>{t}'
+    if ev.kind == "llm_text" and ev.agent:
+        return f'<div class="trace-line trace-llm">{t}  {html.escape(str(ev.data))}</div>'
     if ev.kind == "user":
         return f'<div class="trace-line trace-user">👤 {t}  {html.escape(str(ev.data))}</div>'
     if ev.kind == "llm_text":
@@ -91,7 +98,7 @@ def trace_html(ev: TraceEvent) -> str:
         return f'<div class="trace-line trace-call">{TOOL_ICON.get(ev.name, "🔧")} {t}  <b>{ev.name}</b>({html.escape(args)})</div>'
     if ev.kind == "tool_result":
         d = ev.data
-        if isinstance(d, dict) and "open_items" in d:
+        if isinstance(d, dict) and isinstance(d.get("open_items"), list):
             head = json.dumps({k: v for k, v in d.items() if k != "open_items"}, ensure_ascii=False)
             items = "".join(f"\n     • {o['invoice_id']}  {o.get('supplier') or ''}  →  suggested "
                             f"{o['suggested_cause']}: {'; '.join(o.get('facts', []))}" for o in d["open_items"])
@@ -160,11 +167,18 @@ with tab2:
     go = run_col.button("▶ Run agent", type="primary", width="stretch",
                         disabled=mode.startswith("Live") and not has_key)
     info_col.caption({"Replay saved run": "Replays the latest recorded run with realistic delays (demo insurance).",
+                      "Multi-agent team (MCP, local)": "Nine single-job agents share one MCP server. Diagnosis ↔ "
+                                                       "critic loop until every proposal fits the evidence.",
+                      "Replay multi-agent run": "Replays the pinned multi-agent run with realistic delays.",
                       "Run with MiniLM (local)": "Runs the ADK pipeline; all-MiniLM-L6-v2 diagnoses each open item "
                                                  "locally (no API, no credits).",
                       "Offline scripted (no model)": "Runs the real ADK pipeline with a scripted stand-in for the "
                                                    "model. No network, no credits.",
                       }.get(mode, "Calls Gemma 4 on NVIDIA NIM. Free tier: expect rate-limit pauses."))
+    if mode.startswith(("Multi-agent", "Replay multi")):
+        from multiagent.agents import AGENT_ROLES
+        with st.expander("The agent team (one job each; all data access goes through the MCP server)"):
+            st.table(pd.DataFrame([{"agent": k, "single responsibility": v} for k, v in AGENT_ROLES.items()]))
     left, right = st.columns([5, 6])
     with left:
         st.markdown("**Agent trace**")
@@ -189,13 +203,15 @@ with tab2:
     if go:
         events: list[TraceEvent] = []
         if mode.startswith("Replay"):
-            saved = latest_run(cid)
+            pinned = RUNS / f"replay_multi_{cid}.json"
+            saved = (RunResult.model_validate_json(pinned.read_text()) if mode.startswith("Replay multi")
+                     and pinned.exists() else latest_run(cid) if not mode.startswith("Replay multi") else None)
             if saved is None:
                 st.error("No saved run for this client yet. Do a live or offline run first.")
             else:
                 prev = 0.0
                 for ev in saved.trace:
-                    time.sleep(min(max(ev.t - prev, 0.15), 1.5))
+                    time.sleep(min(max(ev.t - prev, 0.06), 1.5))
                     prev = ev.t
                     events.append(ev)
                     render_trace(events)
@@ -208,7 +224,11 @@ with tab2:
 
             def work():
                 try:
-                    box["result"] = asyncio.run(run_client_async(cid, mid, on_event=q.put))
+                    if mode.startswith("Multi-agent"):
+                        from multiagent.runner import run_client_async as run_team
+                        box["result"] = asyncio.run(run_team(cid, on_event=q.put))
+                    else:
+                        box["result"] = asyncio.run(run_client_async(cid, mid, on_event=q.put))
                 except Exception as e:  # noqa: BLE001
                     box["error"] = e
 

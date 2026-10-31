@@ -187,3 +187,15 @@ Failure examples:
 - c1-inv-010 (unclear): invoice `29QLUPA1204D1Z2 BT262701262 Rs 134558.55` matched to `09-029: 37QLUPA1204D2Z4 BT262701262 Rs 117065.94` (sim 0.958); expected None
 - c1-inv-031 (period_mismatch): invoice `24DJIPD6280S1ZL INV/2026-27/0043 Rs 18490.5` matched to `09-009: 27ZIKFY3791P1ZX CD-1282 Rs 173294.8` (sim 0.864); expected None
 <!-- EMBEDDING-ONLY:END -->
+
+<!-- ARCH-COMPARE:START -->
+### Architecture comparison (3 clients, demo data)
+
+| Configuration | Match P / R | Diagnosis acc. | Unsafe auto-clears | Escalation rate | Model calls / client | Tool calls / client | Diagnosis rounds | Time / client |
+|---|---|---|---|---|---|---|---|---|
+| Single agent · MiniLM few-shot | 100% / 100% | 100.0% | **0** | 43% | 13.0 | 12 | 1 | 3.0s |
+| Single agent · MiniLM zero-shot | 100% / 100% | 55.6% | **0** | 76% | 15.3 | 14 | 1 | 3.0s |
+| Multi-agent · zero-shot only (no retry) | 100% / 100% | 55.6% | **0** | 76% | 7.0 | 29 | 1 | 3.6s |
+| Multi-agent · few-shot only | 100% / 100% | 100.0% | **0** | 43% | 7.0 | 29 | 1 | 3.6s |
+| Multi-agent · zero-shot → few-shot (default) | 100% / 100% | 100.0% | **0** | 43% | 9.7 | 32 | 2 | 3.6s |
+<!-- ARCH-COMPARE:END -->

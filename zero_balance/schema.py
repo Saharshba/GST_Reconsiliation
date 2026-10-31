@@ -98,6 +98,7 @@ class TraceEvent(BaseModel):
     kind: Literal["user", "llm_text", "tool_call", "tool_result", "info", "warning", "error"]
     name: str = ""
     data: Any = None
+    agent: str = ""  # which agent emitted it (multi-agent runs)
 
 
 class RunResult(BaseModel):

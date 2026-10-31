@@ -1,0 +1,2781 @@
+{
+ "run_id": "c1_20261031-194751_13fb",
+ "client_id": "c1",
+ "mode": "multiagent",
+ "model": "local/minilm (zeroshot→fewshot)",
+ "started_at": "2026-10-31T19:47:47",
+ "finished_at": "2026-10-31T19:47:51",
+ "duration_s": 3.25,
+ "invoices": [
+  {
+   "invoice_id": "c1-inv-001",
+   "client_id": "c1",
+   "source_file": "c1-inv-001.pdf",
+   "supplier_gstin": "27ZIKFY3791P1ZX",
+   "supplier_name": "Chhabra Distributors",
+   "invoice_no": "CD-1261",
+   "invoice_no_norm": "CD-1261",
+   "invoice_date": "2026-09-01",
+   "taxable_value": 280662.0,
+   "igst": 50519.16,
+   "cgst": 0.0,
+   "sgst": 0.0,
+   "cess": 0.0,
+   "total": 331181.16,
+   "parse_status": "ok",
+   "parse_notes": ""
+  },
+  {
+   "invoice_id": "c1-inv-002",
+   "client_id": "c1",
+   "source_file": "c1-inv-002.pdf",
+   "supplier_gstin": "07XJTCM6618Y1ZU",
+   "supplier_name": "Banik & Co",
+   "invoice_no": "BC/1174/26-27",
+   "invoice_no_norm": "BC-1174-26-27",
+   "invoice_date": "2026-09-03",
+   "taxable_value": 143182.0,
+   "igst": 7159.1,
+   "cgst": 0.0,
+   "sgst": 0.0,
+   "cess": 0.0,
+   "total": 150341.1,
+   "parse_status": "ok",
+   "parse_notes": ""
+  },
+  {
+   "invoice_id": "c1-inv-003",
+   "client_id": "c1",
+   "source_file": "c1-inv-003.pdf",
+   "supplier_gstin": "24DJIPD6280S1ZL",
+   "supplier_name": "Gupta Supplies",
+   "invoice_no": "INV/2026-27/0037",
+   "invoice_no_norm": "INV-2026-27-37",
+   "invoice_date": "2026-09-03",
+   "taxable_value": 102087.0,
+   "igst": 5104.35,
+   "cgst": 0.0,
+   "sgst": 0.0,
+   "cess": 0.0,
+   "total": 107191.35,
+   "parse_status": "ok",
+   "parse_notes": ""
+  },
+  {
+   "invoice_id": "c1-inv-004",
+   "client_id": "c1",
+   "source_file": "c1-inv-004.pdf",
+   "supplier_gstin": "29GJQPB7402E1Z5",
+   "supplier_name": "MISTRY & CO",
+   "invoice_no": "INV/2026-27/1408",
+   "invoice_no_norm": "INV-2026-27-1408",
+   "invoice_date": "2026-09-03",
+   "taxable_value": 17760.0,
+   "igst": 0.0,
+   "cgst": 1598.4,
+   "sgst": 1598.4,
+   "cess": 0.0,
+   "total": 20956.8,
+   "parse_status": "ok",
+   "parse_notes": ""
+  },
+  {
+   "invoice_id": "c1-inv-005",
+   "client_id": "c1",
+   "source_file": "c1-inv-005.pdf",
+   "supplier_gstin": "37LRUCO8884R1ZI",
+   "supplier_name": "Wason Industries",
+   "invoice_no": "00728",
+   "invoice_no_norm": "728",
+   "invoice_date": "2026-09-03",
+   "taxable_value": 109757.0,
+   "igst": 19756.26,
+   "cgst": 0.0,
+   "sgst": 0.0,
+   "cess": 0.0,
+   "total": 129513.26,
+   "parse_status": "ok",
+   "parse_notes": ""
+  },
+  {
+   "invoice_id": "c1-inv-006",
+   "client_id": "c1",
+   "source_file": "c1-inv-006.pdf",
+   "supplier_gstin": "27ZIKFY3791P1ZX",
+   "supplier_name": "Chhabra Distributors",
+   "invoice_no": "CD-1270",
+   "invoice_no_norm": "CD-1270",
+   "invoice_date": "2026-09-04",
+   "taxable_value": 118558.0,
+   "igst": 21340.44,
+   "cgst": 0.0,
+   "sgst": 0.0,
+   "cess": 0.0,
+   "total": 139898.44,
+   "parse_status": "ok",
+   "parse_notes": ""
+  },
+  {
+   "invoice_id": "c1-inv-007",
+   "client_id": "c1",
+   "source_file": "c1-inv-007.pdf",
+   "supplier_gstin": "33DBPCQ5908C1ZA",
+   "supplier_name": "Guha Supplies",
+   "invoice_no": "00473",
+   "invoice_no_norm": "473",
+   "invoice_date": "2026-09-05",
+   "taxable_value": 63355.0,
+   "igst": 3167.75,
+   "cgst": 0.0,
+   "sgst": 0.0,
+   "cess": 0.0,
+   "total": 66522.75,
+   "parse_status": "ok",
+   "parse_notes": ""
+  },
+  {
+   "invoice_id": "c1-inv-008",
+   "client_id": "c1",
+   "source_file": "c1-inv-008.pdf",
+   "supplier_gstin": null,
+   "supplier_name": null,
+   "invoice_no": null,
+   "invoice_no_norm": null,
+   "invoice_date": null,
+   "taxable_value": null,
+   "igst": 0.0,
+   "cgst": 0.0,
+   "sgst": 0.0,
+   "cess": 0.0,
+   "total": null,
+   "parse_status": "unreadable",
+   "parse_notes": "no text layer (image-only scan?)"
+  },
+  {
+   "invoice_id": "c1-inv-009",
+   "client_id": "c1",
+   "source_file": "c1-inv-009.pdf",
+   "supplier_gstin": "32WZOCD7198W1ZB",
+   "supplier_name": "Gandhi & Co",
+   "invoice_no": "GC-1161",
+   "invoice_no_norm": "GC-1161",
+   "invoice_date": "2026-09-07",
+   "taxable_value": 44090.0,
+   "igst": 7936.2,
+   "cgst": 0.0,
+   "sgst": 0.0,
+   "cess": 0.0,
+   "total": 52026.2,
+   "parse_status": "ok",
+   "parse_notes": ""
+  },
+  {
+   "invoice_id": "c1-inv-010",
+   "client_id": "c1",
+   "source_file": "c1-inv-010.pdf",
+   "supplier_gstin": "29QLUPA1204D1Z2",
+   "supplier_name": "Behl Traders",
+   "invoice_no": "BT262701262",
+   "invoice_no_norm": "BT262701262",
+   "invoice_date": "2026-09-08",
+   "taxable_value": 128151.0,
+   "igst": 0.0,
+   "cgst": 3203.78,
+   "sgst": 3203.77,
+   "cess": 0.0,
+   "total": 134558.55,
+   "parse_status": "ok",
+   "parse_notes": ""
+  },
+  {
+   "invoice_id": "c1-inv-011",
+   "client_id": "c1",
+   "source_file": "c1-inv-011.pdf",
+   "supplier_gstin": "29AURCM2287K1ZI",
+   "supplier_name": "Dave Enterprises",
+   "invoice_no": "00891",
+   "invoice_no_norm": "891",
+   "invoice_date": "2026-09-08",
+   "taxable_value": 7512.0,
+   "igst": 0.0,
+   "cgst": 187.8,
+   "sgst": 187.8,
+   "cess": 0.0,
+   "total": 7887.6,
+   "parse_status": "ok",
+   "parse_notes": ""
+  },
+  {
+   "invoice_id": "c1-inv-012",
+   "client_id": "c1",
+   "source_file": "c1-inv-012.pdf",
+   "supplier_gstin": "32WZOCD7198W1ZB",
+   "supplier_name": "Gandhi & Co",
+   "invoice_no": "GC-1172",
+   "invoice_no_norm": "GC-1172",
+   "invoice_date": "2026-09-09",
+   "taxable_value": 161872.0,
+   "igst": 29136.96,
+   "cgst": 0.0,
+   "sgst": 0.0,
+   "cess": 0.0,
+   "total": 191008.96,
+   "parse_status": "ok",
+   "parse_notes": ""
+  },
+  {
+   "invoice_id": "c1-inv-013",
+   "client_id": "c1",
+   "source_file": "c1-inv-013.pdf",
+   "supplier_gstin": "32WZOCD7198W1ZB",
+   "supplier_name": "Gandhi & Co",
+   "invoice_no": "GC-1183",
+   "invoice_no_norm": "GC-1183",
+   "invoice_date": "2026-09-10",
+   "taxable_value": 154726.0,
+   "igst": 27850.68,
+   "cgst": 0.0,
+   "sgst": 0.0,
+   "cess": 0.0,
+   "total": 182576.68,
+   "parse_status": "ok",
+   "parse_notes": ""
+  },
+  {
+   "invoice_id": "c1-inv-014",
+   "client_id": "c1",
+   "source_file": "c1-inv-014.pdf",
+   "supplier_gstin": "29AURCM2287K1ZI",
+   "supplier_name": "Dave Enterprises",
+   "invoice_no": "00892",
+   "invoice_no_norm": "892",
+   "invoice_date": "2026-09-13",
+   "taxable_value": 114622.0,
+   "igst": 0.0,
+   "cgst": 2865.55,
+   "sgst": 2865.55,
+   "cess": 0.0,
+   "total": 120353.1,
+   "parse_status": "ok",
+   "parse_notes": ""
+  },
+  {
+   "invoice_id": "c1-inv-015",
+   "client_id": "c1",
+   "source_file": "c1-inv-015.pdf",
+   "supplier_gstin": "36NVNFB5901D1Z5",
+   "supplier_name": "TRIPATHI DISTRIBUTORS",
+   "invoice_no": "TD262700556",
+   "invoice_no_norm": "TD262700556",
+   "invoice_date": "2026-09-13",
+   "taxable_value": 19152.0,
+   "igst": 3447.36,
+   "cgst": 0.0,
+   "sgst": 0.0,
+   "cess": 0.0,
+   "total": 22599.36,
+   "parse_status": "ok",
+   "parse_notes": ""
+  },
+  {
+   "invoice_id": "c1-inv-016",
+   "client_id": "c1",
+   "source_file": "c1-inv-016.pdf",
+   "supplier_gstin": "29OBXPT2441A1Z0",
+   "supplier_name": "Kalla Traders",
+   "invoice_no": "KT/1286/26-27",
+   "invoice_no_norm": "KT-1286-26-27",
+   "invoice_date": "2026-09-16",
+   "taxable_value": 127952.0,
+   "igst": 0.0,
+   "cgst": 3198.8,
+   "sgst": 3198.8,
+   "cess": 0.0,
+   "total": 134349.6,
+   "parse_status": "ok",
+   "parse_notes": ""
+  },
+  {
+   "invoice_id": "c1-inv-017",
+   "client_id": "c1",
+   "source_file": "c1-inv-017.pdf",
+   "supplier_gstin": "29GJQPB7402E1Z5",
+   "supplier_name": "MISTRY & CO",
+   "invoice_no": "INV/2026-27/1420",
+   "invoice_no_norm": "INV-2026-27-1420",
+   "invoice_date": "2026-09-16",
+   "taxable_value": 93095.0,
+   "igst": 0.0,
+   "cgst": 8378.55,
+   "sgst": 8378.55,
+   "cess": 0.0,
+   "total": 109852.1,
+   "parse_status": "ok",
+   "parse_notes": ""
+  },
+  {
+   "invoice_id": "c1-inv-018",
+   "client_id": "c1",
+   "source_file": "c1-inv-018.pdf",
+   "supplier_gstin": "36NVNFB5901D1Z5",
+   "supplier_name": "TRIPATHI DISTRIBUTORS",
+   "invoice_no": "TD262700560",
+   "invoice_no_norm": "TD262700560",
+   "invoice_date": "2026-09-16",
+   "taxable_value": 209590.0,
+   "igst": 37726.2,
+   "cgst": 0.0,
+   "sgst": 0.0,
+   "cess": 0.0,
+   "total": 247316.2,
+   "parse_status": "ok",
+   "parse_notes": ""
+  },
+  {
+   "invoice_id": "c1-inv-019",
+   "client_id": "c1",
+   "source_file": "c1-inv-019.pdf",
+   "supplier_gstin": "29QLUPA1204D1Z2",
+   "supplier_name": "Behl Traders",
+   "invoice_no": "BT262701266",
+   "invoice_no_norm": "BT262701266",
+   "invoice_date": "2026-09-18",
+   "taxable_value": 31072.0,
+   "igst": 0.0,
+   "cgst": 776.8,
+   "sgst": 776.8,
+   "cess": 0.0,
+   "total": 32625.6,
+   "parse_status": "ok",
+   "parse_notes": ""
+  },
+  {
+   "invoice_id": "c1-inv-020",
+   "client_id": "c1",
+   "source_file": "c1-inv-020.pdf",
+   "supplier_gstin": "29AITPW4599G1Z1",
+   "supplier_name": "MAMMEN INDUSTRIES",
+   "invoice_no": "MI-77",
+   "invoice_no_norm": "MI-77",
+   "invoice_date": "2026-09-21",
+   "taxable_value": 71670.0,
+   "igst": 0.0,
+   "cgst": 1791.75,
+   "sgst": 1791.75,
+   "cess": 0.0,
+   "total": 75253.5,
+   "parse_status": "ok",
+   "parse_notes": ""
+  },
+  {
+   "invoice_id": "c1-inv-021",
+   "client_id": "c1",
+   "source_file": "c1-inv-021.pdf",
+   "supplier_gstin": "07XJTCM6618Y1ZU",
+   "supplier_name": "Banik & Co",
+   "invoice_no": "BC/1175/26-27",
+   "invoice_no_norm": "BC-1175-26-27",
+   "invoice_date": "2026-09-22",
+   "taxable_value": 94700.0,
+   "igst": 4735.0,
+   "cgst": 0.0,
+   "sgst": 0.0,
+   "cess": 0.0,
+   "total": 99435.0,
+   "parse_status": "ok",
+   "parse_notes": ""
+  },
+  {
+   "invoice_id": "c1-inv-022",
+   "client_id": "c1",
+   "source_file": "c1-inv-022.pdf",
+   "supplier_gstin": "29QLUPA1204D1Z2",
+   "supplier_name": "Behl Traders",
+   "invoice_no": "BT262701270",
+   "invoice_no_norm": "BT262701270",
+   "invoice_date": "2026-09-22",
+   "taxable_value": 29319.0,
+   "igst": 0.0,
+   "cgst": 732.98,
+   "sgst": 732.97,
+   "cess": 0.0,
+   "total": 30784.95,
+   "parse_status": "ok",
+   "parse_notes": ""
+  },
+  {
+   "invoice_id": "c1-inv-023",
+   "client_id": "c1",
+   "source_file": "c1-inv-023.pdf",
+   "supplier_gstin": "29OBXPT2441A1Z0",
+   "supplier_name": "Kalla Traders",
+   "invoice_no": "KT/1296/26-27",
+   "invoice_no_norm": "KT-1296-26-27",
+   "invoice_date": "2026-09-22",
+   "taxable_value": 69173.0,
+   "igst": 0.0,
+   "cgst": 1729.33,
+   "sgst": 1729.32,
+   "cess": 0.0,
+   "total": 72631.65,
+   "parse_status": "ok",
+   "parse_notes": ""
+  },
+  {
+   "invoice_id": "c1-inv-024",
+   "client_id": "c1",
+   "source_file": "c1-inv-024.pdf",
+   "supplier_gstin": "27ZIKFY3791P1ZX",
+   "supplier_name": "Chhabra Distributors",
+   "invoice_no": "CD-1286",
+   "invoice_no_norm": "CD-1286",
+   "invoice_date": "2026-09-23",
+   "taxable_value": 161441.0,
+   "igst": 29059.38,
+   "cgst": 0.0,
+   "sgst": 0.0,
+   "cess": 0.0,
+   "total": 190500.38,
+   "parse_status": "ok",
+   "parse_notes": ""
+  },
+  {
+   "invoice_id": "c1-inv-025",
+   "client_id": "c1",
+   "source_file": "c1-inv-025.pdf",
+   "supplier_gstin": "24DJIPD6280S1ZL",
+   "supplier_name": "Gupta Supplies",
+   "invoice_no": "INV/2026-27/0046",
+   "invoice_no_norm": "INV-2026-27-46",
+   "invoice_date": "2026-09-23",
+   "taxable_value": 105172.0,
+   "igst": 5258.6,
+   "cgst": 0.0,
+   "sgst": 0.0,
+   "cess": 0.0,
+   "total": 110430.6,
+   "parse_status": "ok",
+   "parse_notes": ""
+  },
+  {
+   "invoice_id": "c1-inv-026",
+   "client_id": "c1",
+   "source_file": "c1-inv-026.pdf",
+   "supplier_gstin": "29AITPW4599G1Z1",
+   "supplier_name": "MAMMEN INDUSTRIES",
+   "invoice_no": "MI-89",
+   "invoice_no_norm": "MI-89",
+   "invoice_date": "2026-09-24",
+   "taxable_value": 183150.0,
+   "igst": 0.0,
+   "cgst": 4578.75,
+   "sgst": 4578.75,
+   "cess": 0.0,
+   "total": 192307.5,
+   "parse_status": "ok",
+   "parse_notes": ""
+  },
+  {
+   "invoice_id": "c1-inv-027",
+   "client_id": "c1",
+   "source_file": "c1-inv-027.pdf",
+   "supplier_gstin": "36NVNFB5901D1Z5",
+   "supplier_name": "TRIPATHI DISTRIBUTORS",
+   "invoice_no": "TD262700562",
+   "invoice_no_norm": "TD262700562",
+   "invoice_date": "2026-09-24",
+   "taxable_value": 62650.0,
+   "igst": 11277.0,
+   "cgst": 0.0,
+   "sgst": 0.0,
+   "cess": 0.0,
+   "total": 73927.0,
+   "parse_status": "ok",
+   "parse_notes": ""
+  },
+  {
+   "invoice_id": "c1-inv-028",
+   "client_id": "c1",
+   "source_file": "c1-inv-028.pdf",
+   "supplier_gstin": "07XJTCM6618Y1ZU",
+   "supplier_name": "Banik & Co",
+   "invoice_no": "BC/1185/26-27",
+   "invoice_no_norm": "BC-1185-26-27",
+   "invoice_date": "2026-09-25",
+   "taxable_value": 78362.0,
+   "igst": 3918.1,
+   "cgst": 0.0,
+   "sgst": 0.0,
+   "cess": 0.0,
+   "total": 82280.1,
+   "parse_status": "ok",
+   "parse_notes": ""
+  },
+  {
+   "invoice_id": "c1-inv-029",
+   "client_id": "c1",
+   "source_file": "c1-inv-029.pdf",
+   "supplier_gstin": "33DBPCQ5908C1ZA",
+   "supplier_name": "Guha Supplies",
+   "invoice_no": "00481",
+   "invoice_no_norm": "481",
+   "invoice_date": "2026-09-25",
+   "taxable_value": 32985.0,
+   "igst": 1649.25,
+   "cgst": 0.0,
+   "sgst": 0.0,
+   "cess": 0.0,
+   "total": 34634.25,
+   "parse_status": "ok",
+   "parse_notes": ""
+  },
+  {
+   "invoice_id": "c1-inv-030",
+   "client_id": "c1",
+   "source_file": "c1-inv-030.pdf",
+   "supplier_gstin": "36NVNFB5901D1Z5",
+   "supplier_name": "TRIPATHI DISTRIBUTORS",
+   "invoice_no": "TD262700563",
+   "invoice_no_norm": "TD262700563",
+   "invoice_date": "2026-09-26",
+   "taxable_value": 62650.0,
+   "igst": 11277.0,
+   "cgst": 0.0,
+   "sgst": 0.0,
+   "cess": 0.0,
+   "total": 73927.0,
+   "parse_status": "ok",
+   "parse_notes": ""
+  },
+  {
+   "invoice_id": "c1-inv-031",
+   "client_id": "c1",
+   "source_file": "c1-inv-031.pdf",
+   "supplier_gstin": "24DJIPD6280S1ZL",
+   "supplier_name": "Gupta Supplies",
+   "invoice_no": "INV/2026-27/0043",
+   "invoice_no_norm": "INV-2026-27-43",
+   "invoice_date": "2026-09-29",
+   "taxable_value": 17610.0,
+   "igst": 880.5,
+   "cgst": 0.0,
+   "sgst": 0.0,
+   "cess": 0.0,
+   "total": 18490.5,
+   "parse_status": "ok",
+   "parse_notes": ""
+  }
+ ],
+ "rows": [
+  {
+   "row_id": "09-001",
+   "period": "092026",
+   "supplier_gstin": "07DBPCQ5908C3Z3",
+   "supplier_name": "GUHA SUPPLIES",
+   "invoice_no": "00473",
+   "invoice_no_norm": "473",
+   "invoice_date": "2026-09-05",
+   "taxable_value": 63355.0,
+   "igst": 3167.75,
+   "cgst": 0.0,
+   "sgst": 0.0,
+   "cess": 0.0,
+   "total": 66522.75,
+   "itc_available": true
+  },
+  {
+   "row_id": "09-002",
+   "period": "092026",
+   "supplier_gstin": "07XJTCM6618Y1ZU",
+   "supplier_name": "BANIK & CO",
+   "invoice_no": "BC/1174/26-27",
+   "invoice_no_norm": "BC-1174-26-27",
+   "invoice_date": "2026-09-03",
+   "taxable_value": 143182.0,
+   "igst": 7159.1,
+   "cgst": 0.0,
+   "sgst": 0.0,
+   "cess": 0.0,
+   "total": 150341.1,
+   "itc_available": true
+  },
+  {
+   "row_id": "09-003",
+   "period": "092026",
+   "supplier_gstin": "07XJTCM6618Y1ZU",
+   "supplier_name": "BANIK & CO",
+   "invoice_no": "BC/1175/26-27",
+   "invoice_no_norm": "BC-1175-26-27",
+   "invoice_date": "2026-09-22",
+   "taxable_value": 94700.0,
+   "igst": 4735.0,
+   "cgst": 0.0,
+   "sgst": 0.0,
+   "cess": 0.0,
+   "total": 99435.0,
+   "itc_available": true
+  },
+  {
+   "row_id": "09-004",
+   "period": "092026",
+   "supplier_gstin": "07XJTCM6618Y1ZU",
+   "supplier_name": "BANIK & CO",
+   "invoice_no": "BC/1185/26-27",
+   "invoice_no_norm": "BC-1185-26-27",
+   "invoice_date": "2026-09-25",
+   "taxable_value": 87362.0,
+   "igst": 4368.1,
+   "cgst": 0.0,
+   "sgst": 0.0,
+   "cess": 0.0,
+   "total": 91730.1,
+   "itc_available": true
+  },
+  {
+   "row_id": "09-005",
+   "period": "092026",
+   "supplier_gstin": "24DJIPD6280S1ZL",
+   "supplier_name": "GUPTA SUPPLIES",
+   "invoice_no": "INV/2026-27/0037",
+   "invoice_no_norm": "INV-2026-27-37",
+   "invoice_date": "2026-09-03",
+   "taxable_value": 102087.0,
+   "igst": 5104.35,
+   "cgst": 0.0,
+   "sgst": 0.0,
+   "cess": 0.0,
+   "total": 107191.35,
+   "itc_available": true
+  },
+  {
+   "row_id": "09-006",
+   "period": "092026",
+   "supplier_gstin": "24DJIPD6280S1ZL",
+   "supplier_name": "GUPTA SUPPLIES",
+   "invoice_no": "INV/2026-27/0046",
+   "invoice_no_norm": "INV-2026-27-46",
+   "invoice_date": "2026-09-23",
+   "taxable_value": 105172.0,
+   "igst": 5258.6,
+   "cgst": 0.0,
+   "sgst": 0.0,
+   "cess": 0.0,
+   "total": 110430.6,
+   "itc_available": true
+  },
+  {
+   "row_id": "09-007",
+   "period": "092026",
+   "supplier_gstin": "27ZIKFY3791P1ZX",
+   "supplier_name": "CHHABRA DISTRIBUTORS",
+   "invoice_no": "CD-1261",
+   "invoice_no_norm": "CD-1261",
+   "invoice_date": "2026-09-01",
+   "taxable_value": 280662.0,
+   "igst": 50519.16,
+   "cgst": 0.0,
+   "sgst": 0.0,
+   "cess": 0.0,
+   "total": 331181.16,
+   "itc_available": true
+  },
+  {
+   "row_id": "09-008",
+   "period": "092026",
+   "supplier_gstin": "27ZIKFY3791P1ZX",
+   "supplier_name": "CHHABRA DISTRIBUTORS",
+   "invoice_no": "CD-1270",
+   "invoice_no_norm": "CD-1270",
+   "invoice_date": "2026-09-04",
+   "taxable_value": 118558.0,
+   "igst": 21340.44,
+   "cgst": 0.0,
+   "sgst": 0.0,
+   "cess": 0.0,
+   "total": 139898.44,
+   "itc_available": true
+  },
+  {
+   "row_id": "09-009",
+   "period": "092026",
+   "supplier_gstin": "27ZIKFY3791P1ZX",
+   "supplier_name": "CHHABRA DISTRIBUTORS",
+   "invoice_no": "CD-1282",
+   "invoice_no_norm": "CD-1282",
+   "invoice_date": "2026-09-06",
+   "taxable_value": 146860.0,
+   "igst": 26434.8,
+   "cgst": 0.0,
+   "sgst": 0.0,
+   "cess": 0.0,
+   "total": 173294.8,
+   "itc_available": true
+  },
+  {
+   "row_id": "09-010",
+   "period": "092026",
+   "supplier_gstin": "27ZIKFY3791P1ZX",
+   "supplier_name": "CHHABRA DISTRIBUTORS",
+   "invoice_no": "CD-1286",
+   "invoice_no_norm": "CD-1286",
+   "invoice_date": "2026-09-23",
+   "taxable_value": 161441.0,
+   "igst": 29059.38,
+   "cgst": 0.0,
+   "sgst": 0.0,
+   "cess": 0.0,
+   "total": 190500.38,
+   "itc_available": true
+  },
+  {
+   "row_id": "09-011",
+   "period": "092026",
+   "supplier_gstin": "29AITPW4599G1Z1",
+   "supplier_name": "MAMMEN INDUSTRIES",
+   "invoice_no": "77",
+   "invoice_no_norm": "77",
+   "invoice_date": "2026-09-19",
+   "taxable_value": 71670.0,
+   "igst": 0.0,
+   "cgst": 1791.75,
+   "sgst": 1791.75,
+   "cess": 0.0,
+   "total": 75253.5,
+   "itc_available": true
+  },
+  {
+   "row_id": "09-012",
+   "period": "092026",
+   "supplier_gstin": "29AITPW4599G1Z1",
+   "supplier_name": "MAMMEN INDUSTRIES",
+   "invoice_no": "mi-89",
+   "invoice_no_norm": "MI-89",
+   "invoice_date": "2026-09-24",
+   "taxable_value": 183150.0,
+   "igst": 0.0,
+   "cgst": 4578.75,
+   "sgst": 4578.75,
+   "cess": 0.0,
+   "total": 192307.5,
+   "itc_available": true
+  },
+  {
+   "row_id": "09-013",
+   "period": "092026",
+   "supplier_gstin": "29AURCM2287K1ZI",
+   "supplier_name": "DAVE ENTERPRISES",
+   "invoice_no": "00891",
+   "invoice_no_norm": "891",
+   "invoice_date": "2026-09-08",
+   "taxable_value": 7512.0,
+   "igst": 0.0,
+   "cgst": 187.8,
+   "sgst": 187.8,
+   "cess": 0.0,
+   "total": 7887.6,
+   "itc_available": true
+  },
+  {
+   "row_id": "09-014",
+   "period": "092026",
+   "supplier_gstin": "29AURCM2287K1ZI",
+   "supplier_name": "DAVE ENTERPRISES",
+   "invoice_no": "00892",
+   "invoice_no_norm": "892",
+   "invoice_date": "2026-09-13",
+   "taxable_value": 114622.0,
+   "igst": 0.0,
+   "cgst": 2865.55,
+   "sgst": 2865.55,
+   "cess": 0.0,
+   "total": 120353.1,
+   "itc_available": true
+  },
+  {
+   "row_id": "09-015",
+   "period": "092026",
+   "supplier_gstin": "29GJQPB7402E1Z5",
+   "supplier_name": "MISTRY & CO",
+   "invoice_no": "INV/2026-27/1408",
+   "invoice_no_norm": "INV-2026-27-1408",
+   "invoice_date": "2026-09-03",
+   "taxable_value": 17760.0,
+   "igst": 0.0,
+   "cgst": 1598.4,
+   "sgst": 1598.4,
+   "cess": 0.0,
+   "total": 20956.8,
+   "itc_available": true
+  },
+  {
+   "row_id": "09-016",
+   "period": "092026",
+   "supplier_gstin": "29GJQPB7402E1Z5",
+   "supplier_name": "MISTRY & CO",
+   "invoice_no": "INV/2026-27/1420",
+   "invoice_no_norm": "INV-2026-27-1420",
+   "invoice_date": "2026-09-16",
+   "taxable_value": 93095.0,
+   "igst": 0.0,
+   "cgst": 8378.55,
+   "sgst": 8378.55,
+   "cess": 0.0,
+   "total": 109852.1,
+   "itc_available": true
+  },
+  {
+   "row_id": "09-017",
+   "period": "092026",
+   "supplier_gstin": "29OBXPT2441A1Z0",
+   "supplier_name": "KALLA TRADERS",
+   "invoice_no": "KT/1286/26-27",
+   "invoice_no_norm": "KT-1286-26-27",
+   "invoice_date": "2026-09-16",
+   "taxable_value": 127952.0,
+   "igst": 0.0,
+   "cgst": 3198.8,
+   "sgst": 3198.8,
+   "cess": 0.0,
+   "total": 134349.6,
+   "itc_available": true
+  },
+  {
+   "row_id": "09-018",
+   "period": "092026",
+   "supplier_gstin": "29OBXPT2441A1Z0",
+   "supplier_name": "KALLA TRADERS",
+   "invoice_no": "KT/1296/26-27",
+   "invoice_no_norm": "KT-1296-26-27",
+   "invoice_date": "2026-09-22",
+   "taxable_value": 69173.0,
+   "igst": 0.0,
+   "cgst": 1729.33,
+   "sgst": 1729.32,
+   "cess": 0.0,
+   "total": 72632.65,
+   "itc_available": true
+  },
+  {
+   "row_id": "09-019",
+   "period": "092026",
+   "supplier_gstin": "29QLUPA1204D1Z2",
+   "supplier_name": "BEHL TRADERS",
+   "invoice_no": "BT262701266",
+   "invoice_no_norm": "BT262701266",
+   "invoice_date": "2026-09-18",
+   "taxable_value": 31072.0,
+   "igst": 0.0,
+   "cgst": 776.8,
+   "sgst": 776.8,
+   "cess": 0.0,
+   "total": 32625.6,
+   "itc_available": true
+  },
+  {
+   "row_id": "09-020",
+   "period": "092026",
+   "supplier_gstin": "29QLUPA1204D1Z2",
+   "supplier_name": "BEHL TRADERS",
+   "invoice_no": "BT262701270",
+   "invoice_no_norm": "BT262701270",
+   "invoice_date": "2026-09-22",
+   "taxable_value": 29319.0,
+   "igst": 0.0,
+   "cgst": 732.98,
+   "sgst": 732.97,
+   "cess": 0.0,
+   "total": 30784.95,
+   "itc_available": true
+  },
+  {
+   "row_id": "09-021",
+   "period": "092026",
+   "supplier_gstin": "32WZOCD7198W1ZB",
+   "supplier_name": "GANDHI & CO",
+   "invoice_no": "GC-1161",
+   "invoice_no_norm": "GC-1161",
+   "invoice_date": "2026-09-07",
+   "taxable_value": 44090.0,
+   "igst": 7936.2,
+   "cgst": 0.0,
+   "sgst": 0.0,
+   "cess": 0.0,
+   "total": 52026.2,
+   "itc_available": true
+  },
+  {
+   "row_id": "09-022",
+   "period": "092026",
+   "supplier_gstin": "32WZOCD7198W1ZB",
+   "supplier_name": "GANDHI & CO",
+   "invoice_no": "GC-1172",
+   "invoice_no_norm": "GC-1172",
+   "invoice_date": "2026-09-09",
+   "taxable_value": 161872.0,
+   "igst": 29136.96,
+   "cgst": 0.0,
+   "sgst": 0.0,
+   "cess": 0.0,
+   "total": 191008.96,
+   "itc_available": true
+  },
+  {
+   "row_id": "09-023",
+   "period": "092026",
+   "supplier_gstin": "32WZOCD7198W1ZB",
+   "supplier_name": "GANDHI & CO",
+   "invoice_no": "GC-1183",
+   "invoice_no_norm": "GC-1183",
+   "invoice_date": "2026-09-10",
+   "taxable_value": 154726.0,
+   "igst": 27850.68,
+   "cgst": 0.0,
+   "sgst": 0.0,
+   "cess": 0.0,
+   "total": 182576.68,
+   "itc_available": true
+  },
+  {
+   "row_id": "09-024",
+   "period": "092026",
+   "supplier_gstin": "33DBPCQ5908C1ZA",
+   "supplier_name": "GUHA SUPPLIES",
+   "invoice_no": "00481",
+   "invoice_no_norm": "481",
+   "invoice_date": "2026-09-25",
+   "taxable_value": 32985.0,
+   "igst": 1649.25,
+   "cgst": 0.0,
+   "sgst": 0.0,
+   "cess": 0.0,
+   "total": 34634.25,
+   "itc_available": true
+  },
+  {
+   "row_id": "09-025",
+   "period": "092026",
+   "supplier_gstin": "36NVNFB5901D1Z5",
+   "supplier_name": "TRIPATHI DISTRIBUTORS",
+   "invoice_no": "TD262700556",
+   "invoice_no_norm": "TD262700556",
+   "invoice_date": "2026-09-13",
+   "taxable_value": 19152.0,
+   "igst": 3447.36,
+   "cgst": 0.0,
+   "sgst": 0.0,
+   "cess": 0.0,
+   "total": 22599.36,
+   "itc_available": true
+  },
+  {
+   "row_id": "09-026",
+   "period": "092026",
+   "supplier_gstin": "36NVNFB5901D1Z5",
+   "supplier_name": "TRIPATHI DISTRIBUTORS",
+   "invoice_no": "TD262700560",
+   "invoice_no_norm": "TD262700560",
+   "invoice_date": "2026-09-16",
+   "taxable_value": 209590.0,
+   "igst": 37726.2,
+   "cgst": 0.0,
+   "sgst": 0.0,
+   "cess": 0.0,
+   "total": 247316.2,
+   "itc_available": true
+  },
+  {
+   "row_id": "09-027",
+   "period": "092026",
+   "supplier_gstin": "36NVNFB5901D1Z5",
+   "supplier_name": "TRIPATHI DISTRIBUTORS",
+   "invoice_no": "TD262700526",
+   "invoice_no_norm": "TD262700526",
+   "invoice_date": "2026-09-24",
+   "taxable_value": 62650.0,
+   "igst": 11277.0,
+   "cgst": 0.0,
+   "sgst": 0.0,
+   "cess": 0.0,
+   "total": 73927.0,
+   "itc_available": true
+  },
+  {
+   "row_id": "09-028",
+   "period": "092026",
+   "supplier_gstin": "36NVNFB5901D1Z5",
+   "supplier_name": "TRIPATHI DISTRIBUTORS",
+   "invoice_no": "TD262700563",
+   "invoice_no_norm": "TD262700563",
+   "invoice_date": "2026-09-26",
+   "taxable_value": 62650.0,
+   "igst": 11277.0,
+   "cgst": 0.0,
+   "sgst": 0.0,
+   "cess": 0.0,
+   "total": 73927.0,
+   "itc_available": true
+  },
+  {
+   "row_id": "09-029",
+   "period": "092026",
+   "supplier_gstin": "37QLUPA1204D2Z4",
+   "supplier_name": "BEHL TRADERS",
+   "invoice_no": "BT262701262",
+   "invoice_no_norm": "BT262701262",
+   "invoice_date": "2026-09-08",
+   "taxable_value": 111491.37,
+   "igst": 5574.57,
+   "cgst": 0.0,
+   "sgst": 0.0,
+   "cess": 0.0,
+   "total": 117065.94,
+   "itc_available": true
+  }
+ ],
+ "matches": [
+  {
+   "invoice_id": "c1-inv-001",
+   "row_id": "09-007",
+   "pass_no": 1,
+   "confidence": 1.0,
+   "notes": "exact"
+  },
+  {
+   "invoice_id": "c1-inv-002",
+   "row_id": "09-002",
+   "pass_no": 1,
+   "confidence": 1.0,
+   "notes": "exact"
+  },
+  {
+   "invoice_id": "c1-inv-003",
+   "row_id": "09-005",
+   "pass_no": 1,
+   "confidence": 1.0,
+   "notes": "exact"
+  },
+  {
+   "invoice_id": "c1-inv-004",
+   "row_id": "09-015",
+   "pass_no": 1,
+   "confidence": 1.0,
+   "notes": "exact"
+  },
+  {
+   "invoice_id": "c1-inv-006",
+   "row_id": "09-008",
+   "pass_no": 1,
+   "confidence": 1.0,
+   "notes": "exact"
+  },
+  {
+   "invoice_id": "c1-inv-009",
+   "row_id": "09-021",
+   "pass_no": 1,
+   "confidence": 1.0,
+   "notes": "exact"
+  },
+  {
+   "invoice_id": "c1-inv-011",
+   "row_id": "09-013",
+   "pass_no": 1,
+   "confidence": 1.0,
+   "notes": "exact"
+  },
+  {
+   "invoice_id": "c1-inv-012",
+   "row_id": "09-022",
+   "pass_no": 1,
+   "confidence": 1.0,
+   "notes": "exact"
+  },
+  {
+   "invoice_id": "c1-inv-013",
+   "row_id": "09-023",
+   "pass_no": 1,
+   "confidence": 1.0,
+   "notes": "exact"
+  },
+  {
+   "invoice_id": "c1-inv-014",
+   "row_id": "09-014",
+   "pass_no": 1,
+   "confidence": 1.0,
+   "notes": "exact"
+  },
+  {
+   "invoice_id": "c1-inv-015",
+   "row_id": "09-025",
+   "pass_no": 1,
+   "confidence": 1.0,
+   "notes": "exact"
+  },
+  {
+   "invoice_id": "c1-inv-016",
+   "row_id": "09-017",
+   "pass_no": 1,
+   "confidence": 1.0,
+   "notes": "exact"
+  },
+  {
+   "invoice_id": "c1-inv-017",
+   "row_id": "09-016",
+   "pass_no": 1,
+   "confidence": 1.0,
+   "notes": "exact"
+  },
+  {
+   "invoice_id": "c1-inv-018",
+   "row_id": "09-026",
+   "pass_no": 1,
+   "confidence": 1.0,
+   "notes": "exact"
+  },
+  {
+   "invoice_id": "c1-inv-019",
+   "row_id": "09-019",
+   "pass_no": 1,
+   "confidence": 1.0,
+   "notes": "exact"
+  },
+  {
+   "invoice_id": "c1-inv-021",
+   "row_id": "09-003",
+   "pass_no": 1,
+   "confidence": 1.0,
+   "notes": "exact"
+  },
+  {
+   "invoice_id": "c1-inv-022",
+   "row_id": "09-020",
+   "pass_no": 1,
+   "confidence": 1.0,
+   "notes": "exact"
+  },
+  {
+   "invoice_id": "c1-inv-024",
+   "row_id": "09-010",
+   "pass_no": 1,
+   "confidence": 1.0,
+   "notes": "exact"
+  },
+  {
+   "invoice_id": "c1-inv-025",
+   "row_id": "09-006",
+   "pass_no": 1,
+   "confidence": 1.0,
+   "notes": "exact"
+  },
+  {
+   "invoice_id": "c1-inv-029",
+   "row_id": "09-024",
+   "pass_no": 1,
+   "confidence": 1.0,
+   "notes": "exact"
+  },
+  {
+   "invoice_id": "c1-inv-030",
+   "row_id": "09-028",
+   "pass_no": 1,
+   "confidence": 1.0,
+   "notes": "exact"
+  },
+  {
+   "invoice_id": "c1-inv-023",
+   "row_id": "09-018",
+   "pass_no": 2,
+   "confidence": 0.95,
+   "notes": "normalised: amount gap +1.00"
+  },
+  {
+   "invoice_id": "c1-inv-026",
+   "row_id": "09-012",
+   "pass_no": 2,
+   "confidence": 0.95,
+   "notes": "normalised: number 'MI-89' vs 'mi-89'"
+  },
+  {
+   "invoice_id": "c1-inv-020",
+   "row_id": "09-011",
+   "pass_no": 3,
+   "confidence": 0.85,
+   "notes": "date window: number 'MI-77' vs '77', date 2026-09-21 vs 2026-09-19"
+  },
+  {
+   "invoice_id": "c1-inv-027",
+   "row_id": "09-027",
+   "pass_no": 4,
+   "confidence": 0.6,
+   "notes": "fuzzy: 'TD262700562' vs 'TD262700526' (score 91)"
+  }
+ ],
+ "open_items": [
+  {
+   "invoice_id": "c1-inv-005",
+   "kind": "unmatched",
+   "signals": {
+    "parse_status": "ok",
+    "gstin_valid": true,
+    "vendor_has_rows_this_period": false,
+    "rules_fired": [
+     "vendor_not_filed"
+    ]
+   },
+   "suggested_cause": "vendor_not_filed",
+   "candidates": []
+  },
+  {
+   "invoice_id": "c1-inv-007",
+   "kind": "unmatched",
+   "signals": {
+    "parse_status": "ok",
+    "gstin_valid": true,
+    "vendor_has_rows_this_period": true,
+    "same_no_and_amount_other_gstin": [
+     {
+      "row_id": "09-001",
+      "gstin": "07DBPCQ5908C3Z3",
+      "invoice_no": "00473",
+      "date": "2026-09-05",
+      "total": 66522.75
+     }
+    ],
+    "rules_fired": [
+     "wrong_gstin"
+    ],
+    "gstin_checks": {
+     "07DBPCQ5908C3Z3": {
+      "valid": true,
+      "reason": "ok"
+     }
+    }
+   },
+   "suggested_cause": "wrong_gstin",
+   "candidates": [
+    "09-001"
+   ]
+  },
+  {
+   "invoice_id": "c1-inv-008",
+   "kind": "unmatched",
+   "signals": {
+    "parse_status": "unreadable",
+    "parse_notes": "no text layer (image-only scan?)",
+    "rules_fired": [
+     "unreadable"
+    ]
+   },
+   "suggested_cause": "unreadable",
+   "candidates": []
+  },
+  {
+   "invoice_id": "c1-inv-010",
+   "kind": "unmatched",
+   "signals": {
+    "parse_status": "ok",
+    "gstin_valid": true,
+    "vendor_has_rows_this_period": true,
+    "same_no_other_gstin_amount_differs": [
+     {
+      "row_id": "09-029",
+      "gstin": "37QLUPA1204D2Z4",
+      "invoice_no": "BT262701262",
+      "date": "2026-09-08",
+      "total": 117065.94,
+      "gap": -17492.61
+     }
+    ],
+    "rules_fired": [],
+    "gstin_checks": {
+     "37QLUPA1204D2Z4": {
+      "valid": true,
+      "reason": "ok"
+     }
+    }
+   },
+   "suggested_cause": "unclear",
+   "candidates": [
+    "09-029"
+   ]
+  },
+  {
+   "invoice_id": "c1-inv-027",
+   "kind": "fuzzy_match_candidate",
+   "signals": {
+    "parse_status": "ok",
+    "gstin_valid": true,
+    "vendor_has_rows_this_period": true,
+    "fuzzy_candidates": [
+     {
+      "row_id": "09-027",
+      "gstin": "36NVNFB5901D1Z5",
+      "invoice_no": "TD262700526",
+      "date": "2026-09-24",
+      "total": 73927.0,
+      "score": 91
+     }
+    ],
+    "fuzzy_match_candidate": {
+     "row_id": "09-027",
+     "notes": "fuzzy: 'TD262700562' vs 'TD262700526' (score 91)",
+     "confidence": 0.6
+    },
+    "rules_fired": [
+     "fuzzy_match_candidate"
+    ]
+   },
+   "suggested_cause": "unclear",
+   "candidates": [
+    "09-027"
+   ]
+  },
+  {
+   "invoice_id": "c1-inv-028",
+   "kind": "unmatched",
+   "signals": {
+    "parse_status": "ok",
+    "gstin_valid": true,
+    "vendor_has_rows_this_period": true,
+    "same_gstin_and_no_amount_gap": [
+     {
+      "row_id": "09-004",
+      "invoice_total": 82280.1,
+      "row_total": 91730.1,
+      "gap": 9450.0
+     }
+    ],
+    "rules_fired": [
+     "amount_typo"
+    ]
+   },
+   "suggested_cause": "amount_typo",
+   "candidates": [
+    "09-004"
+   ]
+  },
+  {
+   "invoice_id": "c1-inv-031",
+   "kind": "unmatched",
+   "signals": {
+    "parse_status": "ok",
+    "gstin_valid": true,
+    "vendor_has_rows_this_period": true,
+    "found_in_next_period": [
+     {
+      "row_id": "10-003",
+      "gstin": "24DJIPD6280S1ZL",
+      "invoice_no": "INV/2026-27/0043",
+      "date": "2026-09-29",
+      "total": 18490.5,
+      "period": "102026",
+      "amount_matches": true
+     }
+    ],
+    "rules_fired": [
+     "period_mismatch"
+    ]
+   },
+   "suggested_cause": "period_mismatch",
+   "candidates": [
+    "10-003"
+   ]
+  }
+ ],
+ "diagnoses": [
+  {
+   "invoice_id": "c1-inv-005",
+   "cause": "vendor_not_filed",
+   "confidence": 1.0,
+   "explanation": "Evidence: vendor has NO rows in 2B this period"
+  },
+  {
+   "invoice_id": "c1-inv-007",
+   "cause": "wrong_gstin",
+   "confidence": 1.0,
+   "explanation": "Evidence: same no.+amount in 2B under OTHER GSTIN 07DBPCQ5908C3Z3 (row 09-001, Rs 66522.75)"
+  },
+  {
+   "invoice_id": "c1-inv-028",
+   "cause": "amount_typo",
+   "confidence": 1.0,
+   "explanation": "Evidence: same GSTIN+no. in 2B row 09-004 but amount Rs 91730.1 vs invoice Rs 82280.1 (gap +9450.0)"
+  },
+  {
+   "invoice_id": "c1-inv-031",
+   "cause": "period_mismatch",
+   "confidence": 1.0,
+   "explanation": "Evidence: found in NEXT period 2B row 10-003 (amount matches)"
+  },
+  {
+   "invoice_id": "c1-inv-008",
+   "cause": "unreadable",
+   "confidence": 0.999,
+   "explanation": "Evidence: PDF unreadable: no text layer (image-only scan?)"
+  },
+  {
+   "invoice_id": "c1-inv-027",
+   "cause": "unclear",
+   "confidence": 0.923,
+   "explanation": "Evidence: pass-4 fuzzy match to row 09-027: fuzzy: 'TD262700562' vs 'TD262700526' (score 91) - needs human confirmation"
+  },
+  {
+   "invoice_id": "c1-inv-010",
+   "cause": "unclear",
+   "confidence": 0.638,
+   "explanation": "Evidence: same no. under OTHER GSTIN 37QLUPA1204D2Z4 but amount Rs 117065.94 (gap -17492.61) row 09-029"
+  }
+ ],
+ "emails": [
+  {
+   "invoice_id": "c1-inv-005",
+   "to_vendor": "Wason Industries",
+   "to_gstin": "37LRUCO8884R1ZI",
+   "subject": "GSTR-1 for Sep 2026 not reflecting invoice 00728",
+   "body": "Dear Wason Industries team,\n\nWe are writing on behalf of our client Kibe-Padmanabhan LLP (GSTIN 29WWHCL5580O1ZT) about their purchase reconciliation for Sep 2026.\n\nInvoice 00728 dated 03-09-2026 for Rs 1,29,513.26 does not appear in our GSTR-2B for Sep 2026; no invoices from GSTIN 37LRUCO8884R1ZI appear for that period.\n\nEvidence: vendor has NO rows in 2B this period\n\nRequested fix: Please file your GSTR-1 / IFF for Sep 2026 including this invoice against recipient GSTIN 29WWHCL5580O1ZT, and share the filing acknowledgement. We cannot claim input tax credit until it is reported.\n\nInvoice details:\n  Invoice no.: 00728\n  Invoice date: 03-09-2026\n  Your GSTIN: 37LRUCO8884R1ZI\n  Taxable value: Rs 1,09,757.00\n  Invoice total: Rs 1,29,513.26\n\nThank you for your help.\n\nRegards,\nAccounts team (on behalf of the client)\n[DRAFT - review before sending]",
+   "cause": "vendor_not_filed",
+   "highlights": [
+    "00728",
+    "Rs 1,29,513.26",
+    "Please file your GSTR-1 / IFF for Sep 2026 including this invoice against recipient GSTIN 29WWHCL5580O1ZT, and share the filing acknowledgement. We cannot claim input tax credit until it is reported."
+   ]
+  },
+  {
+   "invoice_id": "c1-inv-007",
+   "to_vendor": "Guha Supplies",
+   "to_gstin": "33DBPCQ5908C1ZA",
+   "subject": "GSTIN correction needed: invoice 00473 dated 05-09-2026",
+   "body": "Dear Guha Supplies team,\n\nWe are writing on behalf of our client Kibe-Padmanabhan LLP (GSTIN 29WWHCL5580O1ZT) about their purchase reconciliation for Sep 2026.\n\nIn our GSTR-2B for Sep 2026, invoice 00473 dated 05-09-2026 for Rs 66,522.75 is reported under GSTIN 07DBPCQ5908C3Z3, not under your GSTIN 33DBPCQ5908C1ZA shown on the invoice.\n\nEvidence: same no.+amount in 2B under OTHER GSTIN 07DBPCQ5908C3Z3 (row 09-001, Rs 66522.75)\n\nRequested fix: Please amend this invoice in your GSTR-1 (Table 9A) so that it is reported under GSTIN 33DBPCQ5908C1ZA, with recipient GSTIN 29WWHCL5580O1ZT, or confirm in writing which GSTIN is correct and issue a revised invoice.\n\nInvoice details:\n  Invoice no.: 00473\n  Invoice date: 05-09-2026\n  Your GSTIN: 33DBPCQ5908C1ZA\n  Taxable value: Rs 63,355.00\n  Invoice total: Rs 66,522.75\n\nThank you for your help.\n\nRegards,\nAccounts team (on behalf of the client)\n[DRAFT - review before sending]",
+   "cause": "wrong_gstin",
+   "highlights": [
+    "00473",
+    "Rs 66,522.75",
+    "07DBPCQ5908C3Z3",
+    "33DBPCQ5908C1ZA",
+    "Please amend this invoice in your GSTR-1 (Table 9A) so that it is reported under GSTIN 33DBPCQ5908C1ZA, with recipient GSTIN 29WWHCL5580O1ZT, or confirm in writing which GSTIN is correct and issue a revised invoice."
+   ]
+  },
+  {
+   "invoice_id": "c1-inv-028",
+   "to_vendor": "Banik & Co",
+   "to_gstin": "07XJTCM6618Y1ZU",
+   "subject": "Amount mismatch on invoice BC/1185/26-27 dated 25-09-2026",
+   "body": "Dear Banik & Co team,\n\nWe are writing on behalf of our client Kibe-Padmanabhan LLP (GSTIN 29WWHCL5580O1ZT) about their purchase reconciliation for Sep 2026.\n\nInvoice BC/1185/26-27 dated 25-09-2026 shows a total of Rs 82,280.10 in our books, but your GSTR-1 reports Rs 91,730.10 for the same invoice (difference Rs 9,450.00).\n\nEvidence: same GSTIN+no. in 2B row 09-004 but amount Rs 91730.1 vs invoice Rs 82280.1 (gap +9450.0)\n\nRequested fix: Please confirm which figure is correct. If the GSTR-1 figure is wrong, amend it in Table 9A of your next GSTR-1; if the invoice is wrong, issue a credit/debit note for the difference.\n\nInvoice details:\n  Invoice no.: BC/1185/26-27\n  Invoice date: 25-09-2026\n  Your GSTIN: 07XJTCM6618Y1ZU\n  Taxable value: Rs 78,362.00\n  Invoice total: Rs 82,280.10\n\nThank you for your help.\n\nRegards,\nAccounts team (on behalf of the client)\n[DRAFT - review before sending]",
+   "cause": "amount_typo",
+   "highlights": [
+    "BC/1185/26-27",
+    "Rs 82,280.10",
+    "Rs 91,730.10",
+    "Please confirm which figure is correct. If the GSTR-1 figure is wrong, amend it in Table 9A of your next GSTR-1; if the invoice is wrong, issue a credit/debit note for the difference."
+   ]
+  }
+ ],
+ "flags": [
+  {
+   "invoice_id": "c1-inv-031",
+   "action": "flag_next_return",
+   "note": "Reported by the vendor in the 102026 GSTR-2B (row 10-003). Claim the ITC in the 102026 return; no vendor action needed."
+  }
+ ],
+ "escalations": [
+  {
+   "invoice_id": "c1-inv-008",
+   "reason": "agreed: needs a human",
+   "evidence": {
+    "parse_status": "unreadable",
+    "parse_notes": "no text layer (image-only scan?)",
+    "rules_fired": [
+     "unreadable"
+    ],
+    "suggested_cause": "unreadable"
+   },
+   "agent_note": "Evidence: PDF unreadable: no text layer (image-only scan?)",
+   "llm_cause": "unreadable",
+   "llm_confidence": 0.999
+  },
+  {
+   "invoice_id": "c1-inv-027",
+   "reason": "agreed: needs a human",
+   "evidence": {
+    "parse_status": "ok",
+    "gstin_valid": true,
+    "vendor_has_rows_this_period": true,
+    "fuzzy_candidates": [
+     {
+      "row_id": "09-027",
+      "gstin": "36NVNFB5901D1Z5",
+      "invoice_no": "TD262700526",
+      "date": "2026-09-24",
+      "total": 73927.0,
+      "score": 91
+     }
+    ],
+    "fuzzy_match_candidate": {
+     "row_id": "09-027",
+     "notes": "fuzzy: 'TD262700562' vs 'TD262700526' (score 91)",
+     "confidence": 0.6
+    },
+    "rules_fired": [
+     "fuzzy_match_candidate"
+    ],
+    "suggested_cause": "unclear"
+   },
+   "agent_note": "Evidence: pass-4 fuzzy match to row 09-027: fuzzy: 'TD262700562' vs 'TD262700526' (score 91) - needs human confirmation",
+   "llm_cause": "unclear",
+   "llm_confidence": 0.923
+  },
+  {
+   "invoice_id": "c1-inv-010",
+   "reason": "agreed: needs a human",
+   "evidence": {
+    "parse_status": "ok",
+    "gstin_valid": true,
+    "vendor_has_rows_this_period": true,
+    "same_no_other_gstin_amount_differs": [
+     {
+      "row_id": "09-029",
+      "gstin": "37QLUPA1204D2Z4",
+      "invoice_no": "BT262701262",
+      "date": "2026-09-08",
+      "total": 117065.94,
+      "gap": -17492.61
+     }
+    ],
+    "rules_fired": [],
+    "gstin_checks": {
+     "37QLUPA1204D2Z4": {
+      "valid": true,
+      "reason": "ok"
+     }
+    },
+    "suggested_cause": "unclear"
+   },
+   "agent_note": "Evidence: same no. under OTHER GSTIN 37QLUPA1204D2Z4 but amount Rs 117065.94 (gap -17492.61) row 09-029",
+   "llm_cause": "unclear",
+   "llm_confidence": 0.638
+  }
+ ],
+ "trace": [
+  {
+   "t": 0.01,
+   "kind": "user",
+   "name": "task",
+   "data": "Reconcile client c1 (multi-agent, MCP tools, diagnosis strategies ['zeroshot', 'fewshot']).",
+   "agent": ""
+  },
+  {
+   "t": 0.71,
+   "kind": "tool_call",
+   "name": "start_run",
+   "data": {
+    "client_id": "c1"
+   },
+   "agent": "ingestion"
+  },
+  {
+   "t": 0.71,
+   "kind": "tool_result",
+   "name": "start_run",
+   "data": {
+    "run_id": "c1-194748-cfb2",
+    "client": {
+     "client_id": "c1",
+     "name": "Kibe-Padmanabhan LLP",
+     "gstin": "29WWHCL5580O1ZT",
+     "period": "092026"
+    },
+    "period": "092026",
+    "next_period": "102026"
+   },
+   "agent": "ingestion"
+  },
+  {
+   "t": 0.71,
+   "kind": "tool_call",
+   "name": "fetch_2b_rows",
+   "data": {
+    "run_id": "c1-194748-cfb2",
+    "period": "092026"
+   },
+   "agent": "ingestion"
+  },
+  {
+   "t": 0.71,
+   "kind": "tool_result",
+   "name": "fetch_2b_rows",
+   "data": {
+    "period": "092026",
+    "role": "filing period",
+    "rows": 29,
+    "suppliers": 13
+   },
+   "agent": "ingestion"
+  },
+  {
+   "t": 0.71,
+   "kind": "tool_call",
+   "name": "fetch_2b_rows",
+   "data": {
+    "run_id": "c1-194748-cfb2",
+    "period": "102026"
+   },
+   "agent": "ingestion"
+  },
+  {
+   "t": 0.71,
+   "kind": "tool_result",
+   "name": "fetch_2b_rows",
+   "data": {
+    "period": "102026",
+    "role": "next period",
+    "rows": 19,
+    "suppliers": 11
+   },
+   "agent": "ingestion"
+  },
+  {
+   "t": 0.71,
+   "kind": "tool_call",
+   "name": "parse_invoice",
+   "data": {
+    "run_id": "c1-194748-cfb2",
+    "strategy": "default"
+   },
+   "agent": "ingestion"
+  },
+  {
+   "t": 0.71,
+   "kind": "tool_result",
+   "name": "parse_invoice",
+   "data": {
+    "strategy": "default",
+    "files": 31,
+    "by_status": {
+     "ok": 30,
+     "unreadable": 1
+    },
+    "improved": [],
+    "failed": [
+     "c1-inv-008.pdf"
+    ]
+   },
+   "agent": "ingestion"
+  },
+  {
+   "t": 0.71,
+   "kind": "llm_text",
+   "name": "ingestion",
+   "data": "iteration 1: parsed 31 PDFs with 'default', 1 failed",
+   "agent": "ingestion"
+  },
+  {
+   "t": 0.71,
+   "kind": "tool_call",
+   "name": "parse_invoice",
+   "data": {
+    "run_id": "c1-194748-cfb2",
+    "strategy": "layout",
+    "only_failed": true
+   },
+   "agent": "ingestion"
+  },
+  {
+   "t": 0.71,
+   "kind": "tool_result",
+   "name": "parse_invoice",
+   "data": {
+    "strategy": "layout",
+    "files": 31,
+    "by_status": {
+     "ok": 30,
+     "unreadable": 1
+    },
+    "improved": [],
+    "failed": [
+     "c1-inv-008.pdf"
+    ]
+   },
+   "agent": "ingestion"
+  },
+  {
+   "t": 0.71,
+   "kind": "llm_text",
+   "name": "ingestion",
+   "data": "iteration 2: retried 1 failed file(s) with 'layout': 0 recovered",
+   "agent": "ingestion"
+  },
+  {
+   "t": 0.71,
+   "kind": "tool_call",
+   "name": "parse_invoice",
+   "data": {
+    "run_id": "c1-194748-cfb2",
+    "strategy": "words",
+    "only_failed": true
+   },
+   "agent": "ingestion"
+  },
+  {
+   "t": 0.71,
+   "kind": "tool_result",
+   "name": "parse_invoice",
+   "data": {
+    "strategy": "words",
+    "files": 31,
+    "by_status": {
+     "ok": 30,
+     "unreadable": 1
+    },
+    "improved": [],
+    "failed": [
+     "c1-inv-008.pdf"
+    ]
+   },
+   "agent": "ingestion"
+  },
+  {
+   "t": 0.71,
+   "kind": "llm_text",
+   "name": "ingestion",
+   "data": "iteration 3: retried 1 failed file(s) with 'words': 0 recovered",
+   "agent": "ingestion"
+  },
+  {
+   "t": 0.71,
+   "kind": "llm_text",
+   "name": "ingestion",
+   "data": "stopped at the iteration cap (3)",
+   "agent": "ingestion"
+  },
+  {
+   "t": 0.71,
+   "kind": "llm_text",
+   "name": "ingestion",
+   "data": "1 file(s) still unreadable after 3 strategies (c1-inv-008.pdf): flagged, never guessed",
+   "agent": "ingestion"
+  },
+  {
+   "t": 0.71,
+   "kind": "tool_call",
+   "name": "match_records",
+   "data": {
+    "run_id": "c1-194748-cfb2",
+    "pass_no": 1
+   },
+   "agent": "matching"
+  },
+  {
+   "t": 0.71,
+   "kind": "tool_result",
+   "name": "match_records",
+   "data": {
+    "pass": 1,
+    "new_matches": 21,
+    "examples": [],
+    "matched_total": 21,
+    "unmatched_invoices": 10,
+    "unmatched_2b_rows": 8
+   },
+   "agent": "matching"
+  },
+  {
+   "t": 0.71,
+   "kind": "llm_text",
+   "name": "matching",
+   "data": "pass 1: +21 matches, 10 invoices left",
+   "agent": "matching"
+  },
+  {
+   "t": 0.72,
+   "kind": "tool_call",
+   "name": "match_records",
+   "data": {
+    "run_id": "c1-194748-cfb2",
+    "pass_no": 2
+   },
+   "agent": "matching"
+  },
+  {
+   "t": 0.72,
+   "kind": "tool_result",
+   "name": "match_records",
+   "data": {
+    "pass": 2,
+    "new_matches": 2,
+    "examples": [
+     "c1-inv-023->09-018 (normalised: amount gap +1.00)",
+     "c1-inv-026->09-012 (normalised: number 'MI-89' vs 'mi-89')"
+    ],
+    "matched_total": 23,
+    "unmatched_invoices": 8,
+    "unmatched_2b_rows": 6
+   },
+   "agent": "matching"
+  },
+  {
+   "t": 0.72,
+   "kind": "llm_text",
+   "name": "matching",
+   "data": "pass 2: +2 matches, 8 invoices left",
+   "agent": "matching"
+  },
+  {
+   "t": 0.72,
+   "kind": "tool_call",
+   "name": "match_records",
+   "data": {
+    "run_id": "c1-194748-cfb2",
+    "pass_no": 3
+   },
+   "agent": "matching"
+  },
+  {
+   "t": 0.72,
+   "kind": "tool_result",
+   "name": "match_records",
+   "data": {
+    "pass": 3,
+    "new_matches": 1,
+    "examples": [
+     "c1-inv-020->09-011 (date window: number 'MI-77' vs '77', date 2026-09-21 vs 2026-09-19)"
+    ],
+    "matched_total": 24,
+    "unmatched_invoices": 7,
+    "unmatched_2b_rows": 5
+   },
+   "agent": "matching"
+  },
+  {
+   "t": 0.72,
+   "kind": "llm_text",
+   "name": "matching",
+   "data": "pass 3: +1 matches, 7 invoices left",
+   "agent": "matching"
+  },
+  {
+   "t": 0.72,
+   "kind": "tool_call",
+   "name": "match_records",
+   "data": {
+    "run_id": "c1-194748-cfb2",
+    "pass_no": 4
+   },
+   "agent": "matching"
+  },
+  {
+   "t": 0.72,
+   "kind": "tool_result",
+   "name": "match_records",
+   "data": {
+    "pass": 4,
+    "new_matches": 1,
+    "examples": [
+     "c1-inv-027->09-027 (fuzzy: 'TD262700562' vs 'TD262700526' (score 91))"
+    ],
+    "matched_total": 25,
+    "unmatched_invoices": 6,
+    "unmatched_2b_rows": 4
+   },
+   "agent": "matching"
+  },
+  {
+   "t": 0.72,
+   "kind": "llm_text",
+   "name": "matching",
+   "data": "pass 4: +1 matches, 6 invoices left",
+   "agent": "matching"
+  },
+  {
+   "t": 0.72,
+   "kind": "llm_text",
+   "name": "matching",
+   "data": "stopped at the iteration cap (4)",
+   "agent": "matching"
+  },
+  {
+   "t": 0.72,
+   "kind": "llm_text",
+   "name": "matching",
+   "data": "25 matched; 6 invoices go to evidence",
+   "agent": "matching"
+  },
+  {
+   "t": 0.72,
+   "kind": "tool_call",
+   "name": "build_evidence",
+   "data": {
+    "run_id": "c1-194748-cfb2"
+   },
+   "agent": "evidence"
+  },
+  {
+   "t": 0.72,
+   "kind": "tool_result",
+   "name": "build_evidence",
+   "data": {
+    "open_items": [
+     {
+      "invoice_id": "c1-inv-005",
+      "kind": "unmatched",
+      "supplier": "Wason Industries",
+      "amount": 129513.26,
+      "suggested_cause": "vendor_not_filed",
+      "facts": [
+       "vendor has NO rows in 2B this period"
+      ],
+      "gstins_to_verify": []
+     },
+     {
+      "invoice_id": "c1-inv-007",
+      "kind": "unmatched",
+      "supplier": "Guha Supplies",
+      "amount": 66522.75,
+      "suggested_cause": "wrong_gstin",
+      "facts": [
+       "same no.+amount in 2B under OTHER GSTIN 07DBPCQ5908C3Z3 (row 09-001, Rs 66522.75)"
+      ],
+      "gstins_to_verify": [
+       "07DBPCQ5908C3Z3"
+      ]
+     },
+     {
+      "invoice_id": "c1-inv-008",
+      "kind": "unmatched",
+      "supplier": null,
+      "amount": null,
+      "suggested_cause": "unreadable",
+      "facts": [
+       "PDF unreadable: no text layer (image-only scan?)"
+      ],
+      "gstins_to_verify": []
+     },
+     {
+      "invoice_id": "c1-inv-010",
+      "kind": "unmatched",
+      "supplier": "Behl Traders",
+      "amount": 134558.55,
+      "suggested_cause": "unclear",
+      "facts": [
+       "same no. under OTHER GSTIN 37QLUPA1204D2Z4 but amount Rs 117065.94 (gap -17492.61) row 09-029"
+      ],
+      "gstins_to_verify": [
+       "37QLUPA1204D2Z4"
+      ]
+     },
+     {
+      "invoice_id": "c1-inv-027",
+      "kind": "fuzzy_match_candidate",
+      "supplier": "Tripathi Distributors",
+      "amount": 73927.0,
+      "suggested_cause": "unclear",
+      "facts": [
+       "pass-4 fuzzy match to row 09-027: fuzzy: 'TD262700562' vs 'TD262700526' (score 91) - needs human confirmation"
+      ],
+      "gstins_to_verify": []
+     },
+     {
+      "invoice_id": "c1-inv-028",
+      "kind": "unmatched",
+      "supplier": "Banik & Co",
+      "amount": 82280.1,
+      "suggested_cause": "amount_typo",
+      "facts": [
+       "same GSTIN+no. in 2B row 09-004 but amount Rs 91730.1 vs invoice Rs 82280.1 (gap +9450.0)"
+      ],
+      "gstins_to_verify": []
+     },
+     {
+      "invoice_id": "c1-inv-031",
+      "kind": "unmatched",
+      "supplier": "Gupta Supplies",
+      "amount": 18490.5,
+      "suggested_cause": "period_mismatch",
+      "facts": [
+       "found in NEXT period 2B row 10-003 (amount matches)"
+      ],
+      "gstins_to_verify": []
+     }
+    ]
+   },
+   "agent": "evidence"
+  },
+  {
+   "t": 0.72,
+   "kind": "llm_text",
+   "name": "evidence",
+   "data": "7 open items; 2 GSTIN(s) to verify",
+   "agent": "evidence"
+  },
+  {
+   "t": 0.73,
+   "kind": "tool_call",
+   "name": "validate_gstin",
+   "data": {
+    "gstin": "07DBPCQ5908C3Z3"
+   },
+   "agent": "evidence"
+  },
+  {
+   "t": 0.73,
+   "kind": "tool_result",
+   "name": "validate_gstin",
+   "data": {
+    "gstin": "07DBPCQ5908C3Z3",
+    "valid": true,
+    "state_code": "07",
+    "state": "Delhi",
+    "reason": "ok"
+   },
+   "agent": "evidence"
+  },
+  {
+   "t": 0.73,
+   "kind": "tool_call",
+   "name": "record_gstin_check",
+   "data": {
+    "run_id": "c1-194748-cfb2",
+    "invoice_id": "c1-inv-007",
+    "gstin": "07DBPCQ5908C3Z3",
+    "valid": true,
+    "reason": "ok"
+   },
+   "agent": "evidence"
+  },
+  {
+   "t": 0.73,
+   "kind": "tool_result",
+   "name": "record_gstin_check",
+   "data": {
+    "invoice_id": "c1-inv-007",
+    "recorded": "07DBPCQ5908C3Z3"
+   },
+   "agent": "evidence"
+  },
+  {
+   "t": 0.73,
+   "kind": "tool_call",
+   "name": "validate_gstin",
+   "data": {
+    "gstin": "37QLUPA1204D2Z4"
+   },
+   "agent": "evidence"
+  },
+  {
+   "t": 0.73,
+   "kind": "tool_result",
+   "name": "validate_gstin",
+   "data": {
+    "gstin": "37QLUPA1204D2Z4",
+    "valid": true,
+    "state_code": "37",
+    "state": "Andhra Pradesh",
+    "reason": "ok"
+   },
+   "agent": "evidence"
+  },
+  {
+   "t": 0.73,
+   "kind": "tool_call",
+   "name": "record_gstin_check",
+   "data": {
+    "run_id": "c1-194748-cfb2",
+    "invoice_id": "c1-inv-010",
+    "gstin": "37QLUPA1204D2Z4",
+    "valid": true,
+    "reason": "ok"
+   },
+   "agent": "evidence"
+  },
+  {
+   "t": 0.73,
+   "kind": "tool_result",
+   "name": "record_gstin_check",
+   "data": {
+    "invoice_id": "c1-inv-010",
+    "recorded": "37QLUPA1204D2Z4"
+   },
+   "agent": "evidence"
+  },
+  {
+   "t": 0.73,
+   "kind": "llm_text",
+   "name": "evidence",
+   "data": "verified: 07DBPCQ5908C3Z3 valid; 37QLUPA1204D2Z4 valid",
+   "agent": "evidence"
+  },
+  {
+   "t": 0.73,
+   "kind": "llm_text",
+   "name": "evidence",
+   "data": "evidence ready for 7 open items",
+   "agent": "evidence"
+  },
+  {
+   "t": 0.73,
+   "kind": "llm_text",
+   "name": "evidence",
+   "data": "handing open items to diagnosis",
+   "agent": "evidence"
+  },
+  {
+   "t": 3.03,
+   "kind": "llm_text",
+   "name": "diagnosis",
+   "data": "round 1 · c1-inv-005 [zeroshot]: vendor_not_filed (1.00)",
+   "agent": "diagnosis"
+  },
+  {
+   "t": 3.04,
+   "kind": "llm_text",
+   "name": "diagnosis",
+   "data": "round 1 · c1-inv-007 [zeroshot]: amount_typo (1.00)",
+   "agent": "diagnosis"
+  },
+  {
+   "t": 3.04,
+   "kind": "llm_text",
+   "name": "diagnosis",
+   "data": "round 1 · c1-inv-008 [zeroshot]: unreadable (1.00)",
+   "agent": "diagnosis"
+  },
+  {
+   "t": 3.04,
+   "kind": "llm_text",
+   "name": "diagnosis",
+   "data": "round 1 · c1-inv-010 [zeroshot]: amount_typo (1.00)",
+   "agent": "diagnosis"
+  },
+  {
+   "t": 3.05,
+   "kind": "llm_text",
+   "name": "diagnosis",
+   "data": "round 1 · c1-inv-027 [zeroshot]: unclear (0.92)",
+   "agent": "diagnosis"
+  },
+  {
+   "t": 3.05,
+   "kind": "llm_text",
+   "name": "diagnosis",
+   "data": "round 1 · c1-inv-028 [zeroshot]: wrong_gstin (1.00)",
+   "agent": "diagnosis"
+  },
+  {
+   "t": 3.06,
+   "kind": "llm_text",
+   "name": "diagnosis",
+   "data": "round 1 · c1-inv-031 [zeroshot]: vendor_not_filed (1.00)",
+   "agent": "diagnosis"
+  },
+  {
+   "t": 3.06,
+   "kind": "llm_text",
+   "name": "diagnosis",
+   "data": "round 1: 7 proposal(s) for the critic",
+   "agent": "diagnosis"
+  },
+  {
+   "t": 3.06,
+   "kind": "tool_call",
+   "name": "check_diagnosis",
+   "data": {
+    "run_id": "c1-194748-cfb2",
+    "invoice_id": "c1-inv-005",
+    "cause": "vendor_not_filed",
+    "confidence": 1.0
+   },
+   "agent": "critic"
+  },
+  {
+   "t": 3.06,
+   "kind": "tool_result",
+   "name": "check_diagnosis",
+   "data": {
+    "verdict": "accept_action",
+    "retryable": false,
+    "reason": "cause matches evidence, confidence ok"
+   },
+   "agent": "critic"
+  },
+  {
+   "t": 3.06,
+   "kind": "llm_text",
+   "name": "critic",
+   "data": "c1-inv-005: vendor_not_filed (1.00) accepted → drafting",
+   "agent": "critic"
+  },
+  {
+   "t": 3.06,
+   "kind": "tool_call",
+   "name": "check_diagnosis",
+   "data": {
+    "run_id": "c1-194748-cfb2",
+    "invoice_id": "c1-inv-007",
+    "cause": "amount_typo",
+    "confidence": 0.997
+   },
+   "agent": "critic"
+  },
+  {
+   "t": 3.06,
+   "kind": "tool_result",
+   "name": "check_diagnosis",
+   "data": {
+    "verdict": "reject",
+    "retryable": true,
+    "reason": "'amount_typo' disagrees with the evidence (rules suggest 'wrong_gstin')"
+   },
+   "agent": "critic"
+  },
+  {
+   "t": 3.06,
+   "kind": "llm_text",
+   "name": "critic",
+   "data": "c1-inv-007: amount_typo (1.00) rejected ('amount_typo' disagrees with the evidence (rules suggest 'wrong_gstin')) → retry with fewshot",
+   "agent": "critic"
+  },
+  {
+   "t": 3.06,
+   "kind": "tool_call",
+   "name": "check_diagnosis",
+   "data": {
+    "run_id": "c1-194748-cfb2",
+    "invoice_id": "c1-inv-008",
+    "cause": "unreadable",
+    "confidence": 0.999
+   },
+   "agent": "critic"
+  },
+  {
+   "t": 3.06,
+   "kind": "tool_result",
+   "name": "check_diagnosis",
+   "data": {
+    "verdict": "accept_escalate",
+    "retryable": false,
+    "reason": "unreadable: needs a human"
+   },
+   "agent": "critic"
+  },
+  {
+   "t": 3.06,
+   "kind": "llm_text",
+   "name": "critic",
+   "data": "c1-inv-008: unreadable (1.00) accepted → human review",
+   "agent": "critic"
+  },
+  {
+   "t": 3.06,
+   "kind": "tool_call",
+   "name": "check_diagnosis",
+   "data": {
+    "run_id": "c1-194748-cfb2",
+    "invoice_id": "c1-inv-010",
+    "cause": "amount_typo",
+    "confidence": 0.998
+   },
+   "agent": "critic"
+  },
+  {
+   "t": 3.06,
+   "kind": "tool_result",
+   "name": "check_diagnosis",
+   "data": {
+    "verdict": "reject",
+    "retryable": true,
+    "reason": "'amount_typo' disagrees with the evidence (rules suggest 'unclear')"
+   },
+   "agent": "critic"
+  },
+  {
+   "t": 3.06,
+   "kind": "llm_text",
+   "name": "critic",
+   "data": "c1-inv-010: amount_typo (1.00) rejected ('amount_typo' disagrees with the evidence (rules suggest 'unclear')) → retry with fewshot",
+   "agent": "critic"
+  },
+  {
+   "t": 3.06,
+   "kind": "tool_call",
+   "name": "check_diagnosis",
+   "data": {
+    "run_id": "c1-194748-cfb2",
+    "invoice_id": "c1-inv-027",
+    "cause": "unclear",
+    "confidence": 0.923
+   },
+   "agent": "critic"
+  },
+  {
+   "t": 3.06,
+   "kind": "tool_result",
+   "name": "check_diagnosis",
+   "data": {
+    "verdict": "accept_escalate",
+    "retryable": false,
+    "reason": "unclear: needs a human"
+   },
+   "agent": "critic"
+  },
+  {
+   "t": 3.06,
+   "kind": "llm_text",
+   "name": "critic",
+   "data": "c1-inv-027: unclear (0.92) accepted → human review",
+   "agent": "critic"
+  },
+  {
+   "t": 3.06,
+   "kind": "tool_call",
+   "name": "check_diagnosis",
+   "data": {
+    "run_id": "c1-194748-cfb2",
+    "invoice_id": "c1-inv-028",
+    "cause": "wrong_gstin",
+    "confidence": 1.0
+   },
+   "agent": "critic"
+  },
+  {
+   "t": 3.06,
+   "kind": "tool_result",
+   "name": "check_diagnosis",
+   "data": {
+    "verdict": "reject",
+    "retryable": true,
+    "reason": "'wrong_gstin' disagrees with the evidence (rules suggest 'amount_typo')"
+   },
+   "agent": "critic"
+  },
+  {
+   "t": 3.06,
+   "kind": "llm_text",
+   "name": "critic",
+   "data": "c1-inv-028: wrong_gstin (1.00) rejected ('wrong_gstin' disagrees with the evidence (rules suggest 'amount_typo')) → retry with fewshot",
+   "agent": "critic"
+  },
+  {
+   "t": 3.07,
+   "kind": "tool_call",
+   "name": "check_diagnosis",
+   "data": {
+    "run_id": "c1-194748-cfb2",
+    "invoice_id": "c1-inv-031",
+    "cause": "vendor_not_filed",
+    "confidence": 0.997
+   },
+   "agent": "critic"
+  },
+  {
+   "t": 3.07,
+   "kind": "tool_result",
+   "name": "check_diagnosis",
+   "data": {
+    "verdict": "reject",
+    "retryable": true,
+    "reason": "'vendor_not_filed' disagrees with the evidence (rules suggest 'period_mismatch')"
+   },
+   "agent": "critic"
+  },
+  {
+   "t": 3.07,
+   "kind": "llm_text",
+   "name": "critic",
+   "data": "c1-inv-031: vendor_not_filed (1.00) rejected ('vendor_not_filed' disagrees with the evidence (rules suggest 'period_mismatch')) → retry with fewshot",
+   "agent": "critic"
+  },
+  {
+   "t": 3.07,
+   "kind": "llm_text",
+   "name": "critic",
+   "data": "4 to retry",
+   "agent": "critic"
+  },
+  {
+   "t": 3.11,
+   "kind": "llm_text",
+   "name": "diagnosis",
+   "data": "round 2 · c1-inv-007 [fewshot]: wrong_gstin (1.00)",
+   "agent": "diagnosis"
+  },
+  {
+   "t": 3.11,
+   "kind": "llm_text",
+   "name": "diagnosis",
+   "data": "round 2 · c1-inv-010 [fewshot]: unclear (0.64)",
+   "agent": "diagnosis"
+  },
+  {
+   "t": 3.12,
+   "kind": "llm_text",
+   "name": "diagnosis",
+   "data": "round 2 · c1-inv-028 [fewshot]: amount_typo (1.00)",
+   "agent": "diagnosis"
+  },
+  {
+   "t": 3.12,
+   "kind": "llm_text",
+   "name": "diagnosis",
+   "data": "round 2 · c1-inv-031 [fewshot]: period_mismatch (1.00)",
+   "agent": "diagnosis"
+  },
+  {
+   "t": 3.12,
+   "kind": "llm_text",
+   "name": "diagnosis",
+   "data": "round 2: 4 proposal(s) for the critic",
+   "agent": "diagnosis"
+  },
+  {
+   "t": 3.12,
+   "kind": "tool_call",
+   "name": "check_diagnosis",
+   "data": {
+    "run_id": "c1-194748-cfb2",
+    "invoice_id": "c1-inv-007",
+    "cause": "wrong_gstin",
+    "confidence": 1.0
+   },
+   "agent": "critic"
+  },
+  {
+   "t": 3.12,
+   "kind": "tool_result",
+   "name": "check_diagnosis",
+   "data": {
+    "verdict": "accept_action",
+    "retryable": false,
+    "reason": "cause matches evidence, confidence ok"
+   },
+   "agent": "critic"
+  },
+  {
+   "t": 3.12,
+   "kind": "llm_text",
+   "name": "critic",
+   "data": "c1-inv-007: wrong_gstin (1.00) accepted → drafting",
+   "agent": "critic"
+  },
+  {
+   "t": 3.13,
+   "kind": "tool_call",
+   "name": "check_diagnosis",
+   "data": {
+    "run_id": "c1-194748-cfb2",
+    "invoice_id": "c1-inv-010",
+    "cause": "unclear",
+    "confidence": 0.638
+   },
+   "agent": "critic"
+  },
+  {
+   "t": 3.13,
+   "kind": "tool_result",
+   "name": "check_diagnosis",
+   "data": {
+    "verdict": "accept_escalate",
+    "retryable": false,
+    "reason": "unclear: needs a human"
+   },
+   "agent": "critic"
+  },
+  {
+   "t": 3.13,
+   "kind": "llm_text",
+   "name": "critic",
+   "data": "c1-inv-010: unclear (0.64) accepted → human review",
+   "agent": "critic"
+  },
+  {
+   "t": 3.13,
+   "kind": "tool_call",
+   "name": "check_diagnosis",
+   "data": {
+    "run_id": "c1-194748-cfb2",
+    "invoice_id": "c1-inv-028",
+    "cause": "amount_typo",
+    "confidence": 1.0
+   },
+   "agent": "critic"
+  },
+  {
+   "t": 3.13,
+   "kind": "tool_result",
+   "name": "check_diagnosis",
+   "data": {
+    "verdict": "accept_action",
+    "retryable": false,
+    "reason": "cause matches evidence, confidence ok"
+   },
+   "agent": "critic"
+  },
+  {
+   "t": 3.13,
+   "kind": "llm_text",
+   "name": "critic",
+   "data": "c1-inv-028: amount_typo (1.00) accepted → drafting",
+   "agent": "critic"
+  },
+  {
+   "t": 3.13,
+   "kind": "tool_call",
+   "name": "check_diagnosis",
+   "data": {
+    "run_id": "c1-194748-cfb2",
+    "invoice_id": "c1-inv-031",
+    "cause": "period_mismatch",
+    "confidence": 1.0
+   },
+   "agent": "critic"
+  },
+  {
+   "t": 3.13,
+   "kind": "tool_result",
+   "name": "check_diagnosis",
+   "data": {
+    "verdict": "accept_action",
+    "retryable": false,
+    "reason": "cause matches evidence, confidence ok"
+   },
+   "agent": "critic"
+  },
+  {
+   "t": 3.13,
+   "kind": "llm_text",
+   "name": "critic",
+   "data": "c1-inv-031: period_mismatch (1.00) accepted → drafting",
+   "agent": "critic"
+  },
+  {
+   "t": 3.13,
+   "kind": "llm_text",
+   "name": "critic",
+   "data": "all proposals settled",
+   "agent": "critic"
+  },
+  {
+   "t": 3.13,
+   "kind": "tool_call",
+   "name": "draft_email",
+   "data": {
+    "run_id": "c1-194748-cfb2",
+    "invoice_id": "c1-inv-005",
+    "cause": "vendor_not_filed",
+    "confidence": 1.0,
+    "explanation": "Evidence: vendor has NO rows in 2B this period"
+   },
+   "agent": "drafting"
+  },
+  {
+   "t": 3.13,
+   "kind": "tool_result",
+   "name": "draft_email",
+   "data": {
+    "invoice_id": "c1-inv-005",
+    "status": "drafted",
+    "to": "Wason Industries",
+    "subject": "GSTR-1 for Sep 2026 not reflecting invoice 00728"
+   },
+   "agent": "drafting"
+  },
+  {
+   "t": 3.13,
+   "kind": "tool_call",
+   "name": "draft_email",
+   "data": {
+    "run_id": "c1-194748-cfb2",
+    "invoice_id": "c1-inv-007",
+    "cause": "wrong_gstin",
+    "confidence": 1.0,
+    "explanation": "Evidence: same no.+amount in 2B under OTHER GSTIN 07DBPCQ5908C3Z3 (row 09-001, Rs 66522.75)"
+   },
+   "agent": "drafting"
+  },
+  {
+   "t": 3.13,
+   "kind": "tool_result",
+   "name": "draft_email",
+   "data": {
+    "invoice_id": "c1-inv-007",
+    "status": "drafted",
+    "to": "Guha Supplies",
+    "subject": "GSTIN correction needed: invoice 00473 dated 05-09-2026"
+   },
+   "agent": "drafting"
+  },
+  {
+   "t": 3.13,
+   "kind": "tool_call",
+   "name": "draft_email",
+   "data": {
+    "run_id": "c1-194748-cfb2",
+    "invoice_id": "c1-inv-028",
+    "cause": "amount_typo",
+    "confidence": 1.0,
+    "explanation": "Evidence: same GSTIN+no. in 2B row 09-004 but amount Rs 91730.1 vs invoice Rs 82280.1 (gap +9450.0)"
+   },
+   "agent": "drafting"
+  },
+  {
+   "t": 3.13,
+   "kind": "tool_result",
+   "name": "draft_email",
+   "data": {
+    "invoice_id": "c1-inv-028",
+    "status": "drafted",
+    "to": "Banik & Co",
+    "subject": "Amount mismatch on invoice BC/1185/26-27 dated 25-09-2026"
+   },
+   "agent": "drafting"
+  },
+  {
+   "t": 3.13,
+   "kind": "tool_call",
+   "name": "draft_email",
+   "data": {
+    "run_id": "c1-194748-cfb2",
+    "invoice_id": "c1-inv-031",
+    "cause": "period_mismatch",
+    "confidence": 1.0,
+    "explanation": "Evidence: found in NEXT period 2B row 10-003 (amount matches)"
+   },
+   "agent": "drafting"
+  },
+  {
+   "t": 3.13,
+   "kind": "tool_result",
+   "name": "draft_email",
+   "data": {
+    "invoice_id": "c1-inv-031",
+    "status": "flagged",
+    "action": "flag for next return"
+   },
+   "agent": "drafting"
+  },
+  {
+   "t": 3.13,
+   "kind": "llm_text",
+   "name": "drafting",
+   "data": "queue 4: 4 drafted/flagged, 0 refused",
+   "agent": "drafting"
+  },
+  {
+   "t": 3.14,
+   "kind": "tool_call",
+   "name": "escalate_case",
+   "data": {
+    "run_id": "c1-194748-cfb2",
+    "invoice_id": "c1-inv-008",
+    "reason": "agreed: needs a human",
+    "confidence": 0.999,
+    "explanation": "Evidence: PDF unreadable: no text layer (image-only scan?)",
+    "cause": "unreadable"
+   },
+   "agent": "escalation"
+  },
+  {
+   "t": 3.14,
+   "kind": "tool_result",
+   "name": "escalate_case",
+   "data": {
+    "invoice_id": "c1-inv-008",
+    "status": "escalated"
+   },
+   "agent": "escalation"
+  },
+  {
+   "t": 3.14,
+   "kind": "tool_call",
+   "name": "escalate_case",
+   "data": {
+    "run_id": "c1-194748-cfb2",
+    "invoice_id": "c1-inv-027",
+    "reason": "agreed: needs a human",
+    "confidence": 0.923,
+    "explanation": "Evidence: pass-4 fuzzy match to row 09-027: fuzzy: 'TD262700562' vs 'TD262700526' (score 91) - needs human confirmation",
+    "cause": "unclear"
+   },
+   "agent": "escalation"
+  },
+  {
+   "t": 3.14,
+   "kind": "tool_result",
+   "name": "escalate_case",
+   "data": {
+    "invoice_id": "c1-inv-027",
+    "status": "escalated"
+   },
+   "agent": "escalation"
+  },
+  {
+   "t": 3.14,
+   "kind": "tool_call",
+   "name": "escalate_case",
+   "data": {
+    "run_id": "c1-194748-cfb2",
+    "invoice_id": "c1-inv-010",
+    "reason": "agreed: needs a human",
+    "confidence": 0.638,
+    "explanation": "Evidence: same no. under OTHER GSTIN 37QLUPA1204D2Z4 but amount Rs 117065.94 (gap -17492.61) row 09-029",
+    "cause": "unclear"
+   },
+   "agent": "escalation"
+  },
+  {
+   "t": 3.14,
+   "kind": "tool_result",
+   "name": "escalate_case",
+   "data": {
+    "invoice_id": "c1-inv-010",
+    "status": "escalated"
+   },
+   "agent": "escalation"
+  },
+  {
+   "t": 3.14,
+   "kind": "llm_text",
+   "name": "escalation",
+   "data": "escalated 3 item(s)",
+   "agent": "escalation"
+  },
+  {
+   "t": 3.14,
+   "kind": "tool_call",
+   "name": "get_status",
+   "data": {
+    "run_id": "c1-194748-cfb2"
+   },
+   "agent": "audit"
+  },
+  {
+   "t": 3.14,
+   "kind": "tool_result",
+   "name": "get_status",
+   "data": {
+    "matched": 25,
+    "open_items": 7,
+    "decisions": {
+     "drafted": 3,
+     "flagged": 1,
+     "escalated": 3
+    },
+    "undecided": []
+   },
+   "agent": "audit"
+  },
+  {
+   "t": 3.14,
+   "kind": "llm_text",
+   "name": "audit",
+   "data": "audit 1: complete · 25 matched · decisions {'drafted': 3, 'flagged': 1, 'escalated': 3}",
+   "agent": "audit"
+  },
+  {
+   "t": 3.14,
+   "kind": "llm_text",
+   "name": "reporter",
+   "data": "Matched 25 invoices. 7 open items: 3 vendor emails drafted, 1 flagged for the next return, 3 escalated to the reviewer. Diagnosis took 2 round(s) of propose → critique.",
+   "agent": "reporter"
+  }
+ ],
+ "llm_calls": 11,
+ "summary": "Matched 25 invoices. 7 open items: 3 vendor emails drafted, 1 flagged for the next return, 3 escalated to the reviewer. Diagnosis took 2 round(s) of propose → critique."
+}

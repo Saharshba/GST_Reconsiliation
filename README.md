@@ -16,6 +16,23 @@ GSTR-2B JSON ─┴─ fetch_2b_rows ┴─ pass 3 window ┴─ match_records �
                                   pass 4 fuzzy                 diagnose + conf.   └─ escalate_case
 ```
 
+## Multi-agent version (MCP)
+
+Nine single-responsibility, iterative agents (ADK `Workflow`) share one **MCP server** that owns the data, the
+tools and the safety gate:
+
+```
+ingestion → matching → evidence → diagnosis ⇄ critic → drafting → escalation ⇄ audit → reporter
+```
+
+```bash
+.venv/bin/python -m multiagent.runner --client c1          # run the team (local, no API)
+.venv/bin/python -m mcp_server.server                      # the MCP server alone (stdio), for any MCP client
+.venv/bin/python eval/compare_architectures.py             # single vs multi-agent, strategy orders
+```
+
+Design and justification: [docs/MULTI_AGENT_DESIGN.md](docs/MULTI_AGENT_DESIGN.md).
+
 ## Setup
 
 ```bash

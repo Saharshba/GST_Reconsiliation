@@ -280,7 +280,7 @@ def op_draft_email(run: dict, invoice_id: str, cause: str, confidence: float, ex
 
 
 def op_escalate_case(run: dict, invoice_id: str, reason: str, confidence: float, explanation: str,
-                     auto: bool = False) -> dict:
+                     auto: bool = False, cause: str | None = None) -> dict:
     item = _open_item(run, invoice_id)
     if item is None:
         return {"invoice_id": invoice_id, "status": "refused", "reason": "not an open item"}
@@ -291,9 +291,9 @@ def op_escalate_case(run: dict, invoice_id: str, reason: str, confidence: float,
     except (TypeError, ValueError):
         confidence = 0.0
     llm_cause = next((d["cause"] for d in reversed(run.get("diagnoses", [])) if d["invoice_id"] == invoice_id), None)
-    if not auto and llm_cause is None:  # escalated directly: read the cause the agent named, if any
+    if not auto and llm_cause is None:  # escalated directly: use the cause given, else read it from the text
         m = re.search("|".join(CAUSES), f"{reason} {explanation}")
-        llm_cause = m.group(0) if m else "unclear"
+        llm_cause = cause if cause in CAUSES else (m.group(0) if m else "unclear")
         _record_diagnosis(run, invoice_id, llm_cause, confidence, explanation)
     run.setdefault("escalations", []).append(Escalation(
         invoice_id=invoice_id, reason=reason, evidence=item.signals | {"suggested_cause": item.suggested_cause},
