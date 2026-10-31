@@ -71,3 +71,31 @@ def test_email_numbers_come_from_data_not_llm():
     out = T.op_draft_email(run, typo["invoice_id"], "amount_typo", 0.9, "The vendor billed Rs 99,999.00 instead.")
     assert out["status"] == "drafted" and "note" in out
     assert "99,999" not in run["emails"][0]["body"]
+
+
+def test_llm_only_scoring_catches_failures():
+    """Offline check of the experiment's scoring path with a hand-written (fake) model answer."""
+    from eval.evaluate import load_key, score
+    from experiments.llm_only_matching import build_prompt, parse_json, to_prediction
+    prompt, run = build_prompt("c1")
+    key = load_key("c1")
+    unclear = next(i for i, k in key.items() if k["case"] == "unclear")
+    good = next(i for i, k in key.items() if k["case"] == "exact")
+    fake = "```json\n" + json.dumps({
+        "matches": [{"invoice_id": good, "row_id": key[good]["expected_2b_row_id"]},
+                    {"invoice_id": "c1-inv-002", "row_id": "09-999"}],
+        "issues": [{"invoice_id": unclear, "cause": "wrong_gstin", "invoice_total": 1.0, "row_total": 2.0}],
+    }) + "\n```"
+    pred, failures = to_prediction(parse_json(fake), run)
+    s = score(key, pred)
+    assert s["unsafe_auto_clears"] == 1
+    assert {f["type"] for f in failures} == {"hallucinated_row", "copied_amount_wrong"}
+    assert s["match"]["precision"] == 1.0 and s["match"]["tp"] == 1
+
+
+def test_driven_fallback_decides_everything():
+    r = run_client("c2", "offline/scripted", save=False, agent_mode="driven")
+    decided = {e.invoice_id for e in r.emails} | {f.invoice_id for f in r.flags} | {e.invoice_id for e in r.escalations}
+    assert decided == {o.invoice_id for o in r.open_items}
+    assert not any(e.reason == "agent_did_not_decide" for e in r.escalations)
+    assert r.llm_calls == len(r.open_items)

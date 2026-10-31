@@ -80,6 +80,12 @@ class ScriptedLlm(BaseLlm):
 
     def _next(self, contents: list[types.Content]) -> LlmResponse:
         user_text = " ".join(p.text or "" for c in contents if c.role == "user" for p in (c.parts or []) if p.text)
+        if user_text.startswith("Evidence for one open item"):  # driven mode: answer with a JSON diagnosis
+            item = json.loads(user_text.split("\n", 1)[1])
+            cause = item["suggested_cause"]
+            conf = 0.9 if cause not in ("unclear", "unreadable") else 0.4
+            return self._reply(json.dumps({"invoice_id": item["invoice_id"], "cause": cause, "confidence": conf,
+                                           "explanation": "Evidence: " + "; ".join(item.get("facts", []))[:180]}))
         m = re.search(r"client (\S+) .*?period (\d{6}).*?next period is (\d{6})", user_text, re.S)
         if not m:
             return self._reply("I need a client id and period to start.")
