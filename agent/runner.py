@@ -134,7 +134,8 @@ async def run_client_async(client_id: str, mid: str | None = None,
     finished = time.time()
     result = RunResult(
         run_id=f"{client_id}_{datetime.now().strftime('%Y%m%d-%H%M%S')}_{uuid.uuid4().hex[:4]}",
-        client_id=client_id, mode="offline" if mid.startswith("offline/") else "live", model=mid,
+        client_id=client_id,
+        mode="offline" if mid.startswith("offline/") else "local" if mid.startswith("local/") else "live", model=mid,
         started_at=datetime.fromtimestamp(t0).isoformat(timespec="seconds"),
         finished_at=datetime.fromtimestamp(finished).isoformat(timespec="seconds"),
         duration_s=round(finished - t0, 2),
@@ -157,8 +158,10 @@ def run_client(client_id: str, mid: str | None = None, on_event=None, save: bool
 def latest_run(client_id: str, mode: str | None = None) -> RunResult | None:
     """Latest saved run; replay files (runs/replay_<client>.json) win when present."""
     pinned = RUNS_DIR / f"replay_{client_id}.json"
-    if pinned.exists() and mode in (None, "live"):
-        return RunResult.model_validate_json(pinned.read_text())
+    if pinned.exists():
+        r = RunResult.model_validate_json(pinned.read_text())
+        if mode is None or r.mode == mode:
+            return r
     files = sorted(RUNS_DIR.glob(f"{client_id}_*.json"), key=lambda p: p.stat().st_mtime, reverse=True)
     for f in files:
         r = RunResult.model_validate_json(f.read_text())

@@ -99,3 +99,33 @@ def test_driven_fallback_decides_everything():
     assert decided == {o.invoice_id for o in r.open_items}
     assert not any(e.reason == "agent_did_not_decide" for e in r.escalations)
     assert r.llm_calls == len(r.open_items)
+
+
+@pytest.fixture(scope="module")
+def minilm_available():
+    import os
+    os.environ.setdefault("HF_HUB_OFFLINE", "1")  # tests must not hit the network; model must be cached
+    try:
+        from agent.minilm import _model
+        _model()
+    except Exception as e:  # noqa: BLE001
+        pytest.skip(f"MiniLM not cached locally: {e}")
+
+
+def test_minilm_agent_run_is_safe(minilm_available):
+    from eval.evaluate import load_key, prediction_from_run, score
+    r = run_client("c1", "local/minilm", save=False)
+    s = score(load_key("c1"), prediction_from_run(r))
+    assert s["unsafe_auto_clears"] == 0 and s["match"]["recall"] == 1.0
+    decided = {e.invoice_id for e in r.emails} | {f.invoice_id for f in r.flags} | {e.invoice_id for e in r.escalations}
+    assert decided == {o.invoice_id for o in r.open_items}
+
+
+def test_minilm_zeroshot_mistakes_are_escalated(minilm_available, monkeypatch):
+    """Even when the embedding classifier is wrong, the gate prevents unsafe auto-clears."""
+    from agent import minilm
+    from eval.evaluate import load_key, prediction_from_run, score
+    monkeypatch.setattr(minilm, "MODE", "zeroshot")
+    for c in ("c1", "c2", "c3"):
+        r = run_client(c, "local/minilm", save=False)
+        assert score(load_key(c), prediction_from_run(r))["unsafe_auto_clears"] == 0

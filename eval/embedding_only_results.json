@@ -1,0 +1,430 @@
+{
+ "model": "sentence-transformers/all-MiniLM-L6-v2",
+ "threshold": 0.8,
+ "aggregate": {
+  "match": {
+   "precision": 0.871,
+   "recall": 1.0,
+   "tp": 81,
+   "predicted": 93,
+   "expected": 81
+  },
+  "diagnosis": {
+   "accuracy": 0.0,
+   "per_type": {
+    "amount_typo": {
+     "correct": 0,
+     "total": 3,
+     "accuracy": 0.0
+    },
+    "period_mismatch": {
+     "correct": 0,
+     "total": 3,
+     "accuracy": 0.0
+    },
+    "unclear": {
+     "correct": 0,
+     "total": 3,
+     "accuracy": 0.0
+    },
+    "unreadable": {
+     "correct": 0,
+     "total": 3,
+     "accuracy": 0.0
+    },
+    "vendor_not_filed": {
+     "correct": 0,
+     "total": 3,
+     "accuracy": 0.0
+    },
+    "wrong_gstin": {
+     "correct": 0,
+     "total": 3,
+     "accuracy": 0.0
+    }
+   },
+   "confusion": {
+    "amount_typo": {
+     "none": 3
+    },
+    "period_mismatch": {
+     "none": 3
+    },
+    "unclear": {
+     "none": 3
+    },
+    "unreadable": {
+     "none": 3
+    },
+    "vendor_not_filed": {
+     "none": 3
+    },
+    "wrong_gstin": {
+     "none": 3
+    }
+   }
+  },
+  "actions_accuracy": 0.8485,
+  "unsafe_auto_clears": 0,
+  "wrong_auto_matches": 12,
+  "escalation_rate": 1.0,
+  "agent_did_not_decide": 0,
+  "minutes_per_client": 0.03,
+  "llm_calls_per_client": 0.0
+ },
+ "per_client": {
+  "c1": {
+   "match": {
+    "precision": 0.8621,
+    "recall": 1.0,
+    "tp": 25,
+    "predicted": 29,
+    "expected": 25,
+    "pass_correct": 0,
+    "pass_expected": 25
+   },
+   "diagnosis": {
+    "accuracy": 0.0,
+    "per_type": {
+     "amount_typo": {
+      "correct": 0,
+      "total": 1,
+      "accuracy": 0.0
+     },
+     "period_mismatch": {
+      "correct": 0,
+      "total": 1,
+      "accuracy": 0.0
+     },
+     "unclear": {
+      "correct": 0,
+      "total": 1,
+      "accuracy": 0.0
+     },
+     "unreadable": {
+      "correct": 0,
+      "total": 1,
+      "accuracy": 0.0
+     },
+     "vendor_not_filed": {
+      "correct": 0,
+      "total": 1,
+      "accuracy": 0.0
+     },
+     "wrong_gstin": {
+      "correct": 0,
+      "total": 1,
+      "accuracy": 0.0
+     }
+    },
+    "confusion": {
+     "amount_typo": {
+      "none": 1
+     },
+     "period_mismatch": {
+      "none": 1
+     },
+     "unclear": {
+      "none": 1
+     },
+     "unreadable": {
+      "none": 1
+     },
+     "vendor_not_filed": {
+      "none": 1
+     },
+     "wrong_gstin": {
+      "none": 1
+     }
+    }
+   },
+   "actions": {
+    "correct": 26,
+    "total": 31,
+    "accuracy": 0.8387
+   },
+   "unsafe_auto_clears": 0,
+   "unsafe_items": [],
+   "wrong_auto_matches": [
+    "c1-inv-028",
+    "c1-inv-007",
+    "c1-inv-010",
+    "c1-inv-031"
+   ],
+   "escalation_rate": 1.0,
+   "agent_did_not_decide": 0,
+   "minutes": 0.09,
+   "llm_calls": 0
+  },
+  "c2": {
+   "match": {
+    "precision": 0.871,
+    "recall": 1.0,
+    "tp": 27,
+    "predicted": 31,
+    "expected": 27,
+    "pass_correct": 0,
+    "pass_expected": 27
+   },
+   "diagnosis": {
+    "accuracy": 0.0,
+    "per_type": {
+     "amount_typo": {
+      "correct": 0,
+      "total": 1,
+      "accuracy": 0.0
+     },
+     "period_mismatch": {
+      "correct": 0,
+      "total": 1,
+      "accuracy": 0.0
+     },
+     "unclear": {
+      "correct": 0,
+      "total": 1,
+      "accuracy": 0.0
+     },
+     "unreadable": {
+      "correct": 0,
+      "total": 1,
+      "accuracy": 0.0
+     },
+     "vendor_not_filed": {
+      "correct": 0,
+      "total": 1,
+      "accuracy": 0.0
+     },
+     "wrong_gstin": {
+      "correct": 0,
+      "total": 1,
+      "accuracy": 0.0
+     }
+    },
+    "confusion": {
+     "amount_typo": {
+      "none": 1
+     },
+     "period_mismatch": {
+      "none": 1
+     },
+     "unclear": {
+      "none": 1
+     },
+     "unreadable": {
+      "none": 1
+     },
+     "vendor_not_filed": {
+      "none": 1
+     },
+     "wrong_gstin": {
+      "none": 1
+     }
+    }
+   },
+   "actions": {
+    "correct": 28,
+    "total": 33,
+    "accuracy": 0.8485
+   },
+   "unsafe_auto_clears": 0,
+   "unsafe_items": [],
+   "wrong_auto_matches": [
+    "c2-inv-019",
+    "c2-inv-018",
+    "c2-inv-025",
+    "c2-inv-033"
+   ],
+   "escalation_rate": 1.0,
+   "agent_did_not_decide": 0,
+   "minutes": 0.0,
+   "llm_calls": 0
+  },
+  "c3": {
+   "match": {
+    "precision": 0.8788,
+    "recall": 1.0,
+    "tp": 29,
+    "predicted": 33,
+    "expected": 29,
+    "pass_correct": 0,
+    "pass_expected": 29
+   },
+   "diagnosis": {
+    "accuracy": 0.0,
+    "per_type": {
+     "amount_typo": {
+      "correct": 0,
+      "total": 1,
+      "accuracy": 0.0
+     },
+     "period_mismatch": {
+      "correct": 0,
+      "total": 1,
+      "accuracy": 0.0
+     },
+     "unclear": {
+      "correct": 0,
+      "total": 1,
+      "accuracy": 0.0
+     },
+     "unreadable": {
+      "correct": 0,
+      "total": 1,
+      "accuracy": 0.0
+     },
+     "vendor_not_filed": {
+      "correct": 0,
+      "total": 1,
+      "accuracy": 0.0
+     },
+     "wrong_gstin": {
+      "correct": 0,
+      "total": 1,
+      "accuracy": 0.0
+     }
+    },
+    "confusion": {
+     "amount_typo": {
+      "none": 1
+     },
+     "period_mismatch": {
+      "none": 1
+     },
+     "unclear": {
+      "none": 1
+     },
+     "unreadable": {
+      "none": 1
+     },
+     "vendor_not_filed": {
+      "none": 1
+     },
+     "wrong_gstin": {
+      "none": 1
+     }
+    }
+   },
+   "actions": {
+    "correct": 30,
+    "total": 35,
+    "accuracy": 0.8571
+   },
+   "unsafe_auto_clears": 0,
+   "unsafe_items": [],
+   "wrong_auto_matches": [
+    "c3-inv-033",
+    "c3-inv-026",
+    "c3-inv-018",
+    "c3-inv-035"
+   ],
+   "escalation_rate": 1.0,
+   "agent_did_not_decide": 0,
+   "minutes": 0.0,
+   "llm_calls": 0
+  }
+ },
+ "failure_examples": {
+  "c1": [
+   {
+    "invoice_id": "c1-inv-028",
+    "case": "amount_typo",
+    "similarity": 0.992,
+    "invoice": "07XJTCM6618Y1ZU BC/1185/26-27 Rs 82280.1",
+    "matched_2b_row": "09-004: 07XJTCM6618Y1ZU BC/1185/26-27 Rs 91730.1",
+    "expected_row": null
+   },
+   {
+    "invoice_id": "c1-inv-007",
+    "case": "wrong_gstin",
+    "similarity": 0.971,
+    "invoice": "33DBPCQ5908C1ZA 00473 Rs 66522.75",
+    "matched_2b_row": "09-001: 07DBPCQ5908C3Z3 00473 Rs 66522.75",
+    "expected_row": null
+   },
+   {
+    "invoice_id": "c1-inv-010",
+    "case": "unclear",
+    "similarity": 0.958,
+    "invoice": "29QLUPA1204D1Z2 BT262701262 Rs 134558.55",
+    "matched_2b_row": "09-029: 37QLUPA1204D2Z4 BT262701262 Rs 117065.94",
+    "expected_row": null
+   },
+   {
+    "invoice_id": "c1-inv-031",
+    "case": "period_mismatch",
+    "similarity": 0.864,
+    "invoice": "24DJIPD6280S1ZL INV/2026-27/0043 Rs 18490.5",
+    "matched_2b_row": "09-009: 27ZIKFY3791P1ZX CD-1282 Rs 173294.8",
+    "expected_row": null
+   }
+  ],
+  "c2": [
+   {
+    "invoice_id": "c2-inv-019",
+    "case": "amount_typo",
+    "similarity": 0.997,
+    "invoice": "07FDNFJ4935A1Z5 SS262700225 Rs 318064.28",
+    "matched_2b_row": "09-003: 07FDNFJ4935A1Z5 SS262700225 Rs 349924.28",
+    "expected_row": null
+   },
+   {
+    "invoice_id": "c2-inv-018",
+    "case": "wrong_gstin",
+    "similarity": 0.967,
+    "invoice": "29RJIFW7752C1ZT 01089 Rs 231681.2",
+    "matched_2b_row": "09-006: 07RJIFW7752C3ZX 01089 Rs 231681.2",
+    "expected_row": null
+   },
+   {
+    "invoice_id": "c2-inv-025",
+    "case": "unclear",
+    "similarity": 0.963,
+    "invoice": "29FSEPK9208W1ZI SI262700114 Rs 228588.42",
+    "matched_2b_row": "09-028: 33FSEPK9208W2ZS SI262700114 Rs 228588.42",
+    "expected_row": null
+   },
+   {
+    "invoice_id": "c2-inv-033",
+    "case": "period_mismatch",
+    "similarity": 0.932,
+    "invoice": "29UZPPH3328H1ZJ ZA/1247/26-27 Rs 211483.14",
+    "matched_2b_row": "09-019: 29ZNWPF6187X1ZL INV/2026-27/0579 Rs 20788.06",
+    "expected_row": null
+   }
+  ],
+  "c3": [
+   {
+    "invoice_id": "c3-inv-033",
+    "case": "amount_typo",
+    "similarity": 0.997,
+    "invoice": "29PHXPG7274A1ZJ INV/2026-27/1149 Rs 210828.24",
+    "matched_2b_row": "09-015: 29PHXPG7274A1ZJ INV/2026-27/1149 Rs 221448.24",
+    "expected_row": null
+   },
+   {
+    "invoice_id": "c3-inv-026",
+    "case": "wrong_gstin",
+    "similarity": 0.985,
+    "invoice": "27JMECY5796R1Z4 DT/1007/26-27 Rs 142220.68",
+    "matched_2b_row": "09-024: 33JMECY5796R3Z9 DT/1007/26-27 Rs 142220.68",
+    "expected_row": null
+   },
+   {
+    "invoice_id": "c3-inv-018",
+    "case": "unclear",
+    "similarity": 0.984,
+    "invoice": "29PQOCU3801U1Z0 KE/0862/26-27 Rs 31410.42",
+    "matched_2b_row": "09-017: 29PQOCU3801U1Z0 KE/0862/26-27 Rs 30879.42",
+    "expected_row": null
+   },
+   {
+    "invoice_id": "c3-inv-035",
+    "case": "period_mismatch",
+    "similarity": 0.912,
+    "invoice": "29JUFCJ3462O1ZL 01190 Rs 13380.02",
+    "matched_2b_row": "09-002: 07NNBFN9185V1Z1 INV/2026-27/0153 Rs 90166.16",
+    "expected_row": null
+   }
+  ]
+ }
+}

@@ -1,0 +1,324 @@
+{
+ "train_seeds": [
+  1,
+  2,
+  3
+ ],
+ "examples": [
+  {
+   "text": "same GSTIN+no. in 2B row 09-016 but amount Rs 9086.0 vs invoice Rs 8342.6 (gap +743.4)",
+   "cause": "amount_typo",
+   "source": "seed1/c1-inv-002"
+  },
+  {
+   "text": "vendor has NO rows in 2B this period",
+   "cause": "vendor_not_filed",
+   "source": "seed1/c1-inv-005"
+  },
+  {
+   "text": "same no.+amount in 2B under OTHER GSTIN 33WZGFK8175C2ZD (row 09-025, Rs 171888.24)",
+   "cause": "wrong_gstin",
+   "source": "seed1/c1-inv-010"
+  },
+  {
+   "text": "pass-4 fuzzy match to row 09-023: fuzzy: '01088' vs '00188' (score 86) - needs human confirmation",
+   "cause": "unclear",
+   "source": "seed1/c1-inv-013"
+  },
+  {
+   "text": "PDF unreadable: no text layer (image-only scan?)",
+   "cause": "unreadable",
+   "source": "seed1/c1-inv-017"
+  },
+  {
+   "text": "same no. under OTHER GSTIN 24BRRCW6740O2ZG but amount Rs 63217.85 (gap -9446.35) row 09-003",
+   "cause": "unclear",
+   "source": "seed1/c1-inv-029"
+  },
+  {
+   "text": "found in NEXT period 2B row 10-006 (amount matches)",
+   "cause": "period_mismatch",
+   "source": "seed1/c1-inv-030"
+  },
+  {
+   "text": "same no.+amount in 2B under OTHER GSTIN 24JNEPR8218V3ZR (row 09-009, Rs 89387.36); found in NEXT period 2B row 10-004 (amount matches)",
+   "cause": "unclear",
+   "source": "seed1/c2-inv-010"
+  },
+  {
+   "text": "vendor has NO rows in 2B this period",
+   "cause": "vendor_not_filed",
+   "source": "seed1/c2-inv-014"
+  },
+  {
+   "text": "pass-4 fuzzy match to row 09-003: fuzzy: 'MI262700668' vs 'MI262706068' (score 91) - needs human confirmation",
+   "cause": "unclear",
+   "source": "seed1/c2-inv-015"
+  },
+  {
+   "text": "same GSTIN+no. in 2B row 09-031 but amount Rs 213813.6 vs invoice Rs 242163.6 (gap -28350.0)",
+   "cause": "amount_typo",
+   "source": "seed1/c2-inv-018"
+  },
+  {
+   "text": "PDF unreadable: text is unreadable / garbled",
+   "cause": "unreadable",
+   "source": "seed1/c2-inv-027"
+  },
+  {
+   "text": "same no.+amount in 2B under OTHER GSTIN 27ZMOPH9357E2ZX (row 09-011, Rs 104446.65)",
+   "cause": "wrong_gstin",
+   "source": "seed1/c2-inv-029"
+  },
+  {
+   "text": "found in NEXT period 2B row 10-018 (amount matches)",
+   "cause": "period_mismatch",
+   "source": "seed1/c2-inv-035"
+  },
+  {
+   "text": "vendor has NO rows in 2B this period",
+   "cause": "vendor_not_filed",
+   "source": "seed1/c3-inv-004"
+  },
+  {
+   "text": "same GSTIN+no. in 2B row 09-021 but amount Rs 93694.36 vs invoice Rs 88384.36 (gap +5310.0); found in NEXT period 2B row 10-011 (amount matches)",
+   "cause": "unclear",
+   "source": "seed1/c3-inv-008"
+  },
+  {
+   "text": "PDF unreadable: no text layer (image-only scan?)",
+   "cause": "unreadable",
+   "source": "seed1/c3-inv-016"
+  },
+  {
+   "text": "same no.+amount in 2B under OTHER GSTIN 33QJBPP3384E2ZX (row 09-031, Rs 288357.78)",
+   "cause": "wrong_gstin",
+   "source": "seed1/c3-inv-021"
+  },
+  {
+   "text": "same GSTIN+no. in 2B row 09-014 but amount Rs 191959.95 vs invoice Rs 197629.95 (gap -5670.0)",
+   "cause": "amount_typo",
+   "source": "seed1/c3-inv-031"
+  },
+  {
+   "text": "pass-4 fuzzy match to row 09-003: fuzzy: 'INV/2026-27/0176' vs 'INV/2026-27/0167' (score 93) - needs human confirmation",
+   "cause": "unclear",
+   "source": "seed1/c3-inv-035"
+  },
+  {
+   "text": "found in NEXT period 2B row 10-014 (amount matches)",
+   "cause": "period_mismatch",
+   "source": "seed1/c3-inv-036"
+  },
+  {
+   "text": "same no.+amount in 2B under OTHER GSTIN 33YPVPW1498S3ZP (row 09-030, Rs 113706.6)",
+   "cause": "wrong_gstin",
+   "source": "seed2/c1-inv-007"
+  },
+  {
+   "text": "pass-4 fuzzy match to row 09-012: fuzzy: 'APL-160' vs 'APL-106' (score 86) - needs human confirmation",
+   "cause": "unclear",
+   "source": "seed2/c1-inv-014"
+  },
+  {
+   "text": "same no. under OTHER GSTIN 36FOACD4498K3Z9 but amount Rs 25330.44 (gap -3785.01) row 09-031",
+   "cause": "unclear",
+   "source": "seed2/c1-inv-016"
+  },
+  {
+   "text": "same GSTIN+no. in 2B row 09-006 but amount Rs 427930.54 vs invoice Rs 385450.54 (gap +42480.0)",
+   "cause": "amount_typo",
+   "source": "seed2/c1-inv-019"
+  },
+  {
+   "text": "PDF unreadable: no text layer (image-only scan?)",
+   "cause": "unreadable",
+   "source": "seed2/c1-inv-020"
+  },
+  {
+   "text": "vendor has NO rows in 2B this period",
+   "cause": "vendor_not_filed",
+   "source": "seed2/c1-inv-023"
+  },
+  {
+   "text": "found in NEXT period 2B row 10-001 (amount matches)",
+   "cause": "period_mismatch",
+   "source": "seed2/c1-inv-035"
+  },
+  {
+   "text": "vendor has NO rows in 2B this period",
+   "cause": "vendor_not_filed",
+   "source": "seed2/c2-inv-001"
+  },
+  {
+   "text": "same no.+amount in 2B under OTHER GSTIN 36MQYFS6671L3ZS (row 09-028, Rs 86848.0)",
+   "cause": "wrong_gstin",
+   "source": "seed2/c2-inv-009"
+  },
+  {
+   "text": "PDF unreadable: text is unreadable / garbled",
+   "cause": "unreadable",
+   "source": "seed2/c2-inv-013"
+  },
+  {
+   "text": "same no.+amount in 2B under OTHER GSTIN 09LXUCO8632X3Z5 (row 09-004, Rs 140449.5); found in NEXT period 2B row 10-014 (amount matches)",
+   "cause": "unclear",
+   "source": "seed2/c2-inv-018"
+  },
+  {
+   "text": "pass-4 fuzzy match to row 09-007: fuzzy: '01292' vs '10292' (score 89) - needs human confirmation",
+   "cause": "unclear",
+   "source": "seed2/c2-inv-021"
+  },
+  {
+   "text": "same GSTIN+no. in 2B row 09-021 but amount Rs 13598.55 vs invoice Rs 13220.55 (gap +378.0)",
+   "cause": "amount_typo",
+   "source": "seed2/c2-inv-023"
+  },
+  {
+   "text": "found in NEXT period 2B row 10-002 (amount matches)",
+   "cause": "period_mismatch",
+   "source": "seed2/c2-inv-030"
+  },
+  {
+   "text": "same GSTIN+no. in 2B row 09-001 but amount Rs 117565.35 vs invoice Rs 125125.35 (gap -7560.0)",
+   "cause": "amount_typo",
+   "source": "seed2/c3-inv-001"
+  },
+  {
+   "text": "pass-4 fuzzy match to row 09-031: fuzzy: 'MPL262700424' vs 'MPL262700244' (score 92) - needs human confirmation",
+   "cause": "unclear",
+   "source": "seed2/c3-inv-026"
+  },
+  {
+   "text": "same GSTIN+no. in 2B row 09-035 but amount Rs 74600.4 vs invoice Rs 73655.4 (gap +945.0); found in NEXT period 2B row 10-016 (amount matches)",
+   "cause": "unclear",
+   "source": "seed2/c3-inv-027"
+  },
+  {
+   "text": "PDF unreadable: no text layer (image-only scan?)",
+   "cause": "unreadable",
+   "source": "seed2/c3-inv-030"
+  },
+  {
+   "text": "same no.+amount in 2B under OTHER GSTIN 32COTFO5246T2ZF (row 09-027, Rs 129983.7)",
+   "cause": "wrong_gstin",
+   "source": "seed2/c3-inv-032"
+  },
+  {
+   "text": "vendor has NO rows in 2B this period",
+   "cause": "vendor_not_filed",
+   "source": "seed2/c3-inv-036"
+  },
+  {
+   "text": "found in NEXT period 2B row 10-005 (amount matches)",
+   "cause": "period_mismatch",
+   "source": "seed2/c3-inv-037"
+  },
+  {
+   "text": "PDF unreadable: no text layer (image-only scan?)",
+   "cause": "unreadable",
+   "source": "seed3/c1-inv-001"
+  },
+  {
+   "text": "same no.+amount in 2B under OTHER GSTIN 37LFMCC1561O2ZK (row 09-029, Rs 219226.3)",
+   "cause": "wrong_gstin",
+   "source": "seed3/c1-inv-004"
+  },
+  {
+   "text": "same GSTIN+no. in 2B row 09-007 but amount Rs 53603.86 vs invoice Rs 64223.86 (gap -10620.0)",
+   "cause": "amount_typo",
+   "source": "seed3/c1-inv-005"
+  },
+  {
+   "text": "pass-4 fuzzy match to row 09-025: fuzzy: 'KS262700867' vs 'KS262700876' (score 91) - needs human confirmation",
+   "cause": "unclear",
+   "source": "seed3/c1-inv-008"
+  },
+  {
+   "text": "vendor has NO rows in 2B this period",
+   "cause": "vendor_not_filed",
+   "source": "seed3/c1-inv-030"
+  },
+  {
+   "text": "same no. under OTHER GSTIN 37VAWCZ2768J3ZL but amount Rs 60577.61 (gap -9051.83) row 09-030",
+   "cause": "unclear",
+   "source": "seed3/c1-inv-031"
+  },
+  {
+   "text": "found in NEXT period 2B row 10-001 (amount matches)",
+   "cause": "period_mismatch",
+   "source": "seed3/c1-inv-032"
+  },
+  {
+   "text": "same no.+amount in 2B under OTHER GSTIN 37WOMPY5743X2ZN (row 09-033, Rs 55083.0)",
+   "cause": "wrong_gstin",
+   "source": "seed3/c2-inv-005"
+  },
+  {
+   "text": "pass-4 fuzzy match to row 09-001: fuzzy: 'TT262701301' vs 'TT262701031' (score 91) - needs human confirmation",
+   "cause": "unclear",
+   "source": "seed3/c2-inv-009"
+  },
+  {
+   "text": "PDF unreadable: text is unreadable / garbled",
+   "cause": "unreadable",
+   "source": "seed3/c2-inv-020"
+  },
+  {
+   "text": "vendor has NO rows in 2B this period",
+   "cause": "vendor_not_filed",
+   "source": "seed3/c2-inv-021"
+  },
+  {
+   "text": "same GSTIN+no. in 2B row 09-009 but amount Rs 368038.65 vs invoice Rs 320788.65 (gap +47250.0)",
+   "cause": "amount_typo",
+   "source": "seed3/c2-inv-022"
+  },
+  {
+   "text": "same no.+amount in 2B under OTHER GSTIN 09AHACA8752M3ZS (row 09-004, Rs 237689.55); found in NEXT period 2B row 10-005 (amount matches)",
+   "cause": "unclear",
+   "source": "seed3/c2-inv-033"
+  },
+  {
+   "text": "found in NEXT period 2B row 10-017 (amount matches)",
+   "cause": "period_mismatch",
+   "source": "seed3/c2-inv-035"
+  },
+  {
+   "text": "vendor has NO rows in 2B this period",
+   "cause": "vendor_not_filed",
+   "source": "seed3/c3-inv-002"
+  },
+  {
+   "text": "pass-4 fuzzy match to row 09-002: fuzzy: 'INV/2026-27/0302' vs 'INV/2026-27/0032' (score 97) - needs human confirmation",
+   "cause": "unclear",
+   "source": "seed3/c3-inv-008"
+  },
+  {
+   "text": "PDF unreadable: no text layer (image-only scan?)",
+   "cause": "unreadable",
+   "source": "seed3/c3-inv-015"
+  },
+  {
+   "text": "same GSTIN+no. in 2B row 09-034 but amount Rs 299216.4 vs invoice Rs 261416.4 (gap +37800.0); found in NEXT period 2B row 10-017 (amount matches)",
+   "cause": "unclear",
+   "source": "seed3/c3-inv-025"
+  },
+  {
+   "text": "same GSTIN+no. in 2B row 09-030 but amount Rs 171035.1 vs invoice Rs 170504.1 (gap +531.0)",
+   "cause": "amount_typo",
+   "source": "seed3/c3-inv-032"
+  },
+  {
+   "text": "same no.+amount in 2B under OTHER GSTIN 24PZSFC5203Q2Z7 (row 09-008, Rs 70084.92)",
+   "cause": "wrong_gstin",
+   "source": "seed3/c3-inv-034"
+  },
+  {
+   "text": "found in NEXT period 2B row 10-008 (amount matches)",
+   "cause": "period_mismatch",
+   "source": "seed3/c3-inv-036"
+  }
+ ]
+}

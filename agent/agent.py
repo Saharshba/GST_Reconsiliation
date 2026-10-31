@@ -11,7 +11,7 @@ from .prompts import SYSTEM_PROMPT
 from .tools import TOOLS
 
 load_dotenv(Path(__file__).resolve().parents[1] / ".env")
-DEFAULT_MODEL = "nvidia_nim/google/gemma-4-31b-it"
+DEFAULT_MODEL = "local/minilm"
 
 
 def model_id() -> str:
@@ -22,6 +22,9 @@ def build_model(mid: str | None = None):
     mid = mid or model_id()
     if mid.startswith("offline/"):
         return ScriptedLlm(model=mid)
+    if mid.startswith("local/minilm"):
+        from .minilm import MiniLmLlm
+        return MiniLmLlm(model=mid)
     return RetryingLiteLlm(model=mid, temperature=0.1)
 
 

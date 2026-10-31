@@ -170,7 +170,7 @@ def main():
     ap.add_argument("--clients", default="all")
     ap.add_argument("--source", choices=["saved", "run"], default="saved")
     ap.add_argument("--model", default=None)
-    ap.add_argument("--mode", default=None, help="with --source saved: only runs of this mode (live/offline)")
+    ap.add_argument("--mode", default=None, help="with --source saved: only runs of this mode (live/local/offline)")
     args = ap.parse_args()
     clients = ["c1", "c2", "c3"] if args.clients == "all" else args.clients.split(",")
 
@@ -184,7 +184,7 @@ def main():
         per_client[c] = score(load_key(c), prediction_from_run(r))
     agg = aggregate(per_client)
     modes = {r.mode for r in runs.values()}
-    label = "live" if modes == {"live"} else "offline" if modes == {"offline"} else "mixed"
+    label = modes.pop() if len(modes) == 1 else "mixed"
     results = {"label": label, "models": sorted({r.model for r in runs.values()}),
                "runs": {c: r.run_id for c, r in runs.items()}, "aggregate": agg, "per_client": per_client}
     OUT.write_text(json.dumps(results, indent=1))
@@ -192,9 +192,19 @@ def main():
         title, note = ("Agent pipeline, offline scripted model (rules-only baseline, NOT an LLM result)",
                        "The scripted stand-in always follows the rule-based suggested_cause. These numbers check "
                        "the pipeline and the gate; they are not model numbers.")
+    elif label == "local":
+        import os
+        title = f"Agent with local MiniLM (all-MiniLM-L6-v2, {os.environ.get('MINILM_MODE', 'fewshot')})"
+        note = ("Diagnosis by sentence-embedding nearest neighbours over a labelled bank built from seeds 1-3; "
+                "the demo data (seed 42) is held out. Caveat: synthetic evidence lines share templates across seeds, "
+                "so this is an easy test. Model calls = deterministic policy steps, not LLM calls.")
     else:
         title, note = f"Agent with {', '.join(results['models'])} ({label} runs)", ""
-    write_notes_section(f"EVAL-{label.upper()}", markdown(title, per_client, agg, note))
+    marker = f"EVAL-{label.upper()}"
+    if label == "local":
+        import os
+        marker += "-" + os.environ.get("MINILM_MODE", "fewshot").upper()
+    write_notes_section(marker, markdown(title, per_client, agg, note))
     print(markdown(title, per_client, agg, note))
     if agg["unsafe_auto_clears"]:
         print("UNSAFE:", [x["unsafe_items"] for x in per_client.values() if x["unsafe_items"]])

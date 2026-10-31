@@ -1,0 +1,2058 @@
+{
+ "run_id": "c2_20261031-175949_e3d3",
+ "client_id": "c2",
+ "mode": "local",
+ "model": "local/minilm",
+ "started_at": "2026-10-31T17:59:43",
+ "finished_at": "2026-10-31T17:59:49",
+ "duration_s": 5.76,
+ "invoices": [
+  {
+   "invoice_id": "c2-inv-001",
+   "client_id": "c2",
+   "source_file": "c2-inv-001.pdf",
+   "supplier_gstin": "27BKRPW4129D1ZQ",
+   "supplier_name": "Narasimhan Agencies",
+   "invoice_no": "00180",
+   "invoice_no_norm": "180",
+   "invoice_date": "2026-09-01",
+   "taxable_value": 26305.0,
+   "igst": 4734.9,
+   "cgst": 0.0,
+   "sgst": 0.0,
+   "cess": 0.0,
+   "total": 31039.9,
+   "parse_status": "ok",
+   "parse_notes": ""
+  },
+  {
+   "invoice_id": "c2-inv-002",
+   "client_id": "c2",
+   "source_file": "c2-inv-002.pdf",
+   "supplier_gstin": "29TJOPX8631A1Z7",
+   "supplier_name": "Raghavan Pvt Ltd",
+   "invoice_no": "RPL-948",
+   "invoice_no_norm": "RPL-948",
+   "invoice_date": "2026-09-02",
+   "taxable_value": 158720.0,
+   "igst": 0.0,
+   "cgst": 14284.8,
+   "sgst": 14284.8,
+   "cess": 0.0,
+   "total": 187289.6,
+   "parse_status": "ok",
+   "parse_notes": ""
+  },
+  {
+   "invoice_id": "c2-inv-003",
+   "client_id": "c2",
+   "source_file": "c2-inv-003.pdf",
+   "supplier_gstin": null,
+   "supplier_name": null,
+   "invoice_no": null,
+   "invoice_no_norm": null,
+   "invoice_date": null,
+   "taxable_value": null,
+   "igst": 0.0,
+   "cgst": 0.0,
+   "sgst": 0.0,
+   "cess": 0.0,
+   "total": null,
+   "parse_status": "unreadable",
+   "parse_notes": "text is unreadable / garbled"
+  },
+  {
+   "invoice_id": "c2-inv-004",
+   "client_id": "c2",
+   "source_file": "c2-inv-004.pdf",
+   "supplier_gstin": "36XWIPU7218W1ZL",
+   "supplier_name": "Menon Distributors",
+   "invoice_no": "INV/2026-27/0201",
+   "invoice_no_norm": "INV-2026-27-201",
+   "invoice_date": "2026-09-03",
+   "taxable_value": 115862.0,
+   "igst": 20855.16,
+   "cgst": 0.0,
+   "sgst": 0.0,
+   "cess": 0.0,
+   "total": 136717.16,
+   "parse_status": "ok",
+   "parse_notes": ""
+  },
+  {
+   "invoice_id": "c2-inv-005",
+   "client_id": "c2",
+   "source_file": "c2-inv-005.pdf",
+   "supplier_gstin": "36XWIPU7218W1ZL",
+   "supplier_name": "Menon Distributors",
+   "invoice_no": "INV/2026-27/0208",
+   "invoice_no_norm": "INV-2026-27-208",
+   "invoice_date": "2026-09-04",
+   "taxable_value": 50543.0,
+   "igst": 9097.74,
+   "cgst": 0.0,
+   "sgst": 0.0,
+   "cess": 0.0,
+   "total": 59640.74,
+   "parse_status": "ok",
+   "parse_notes": ""
+  },
+  {
+   "invoice_id": "c2-inv-006",
+   "client_id": "c2",
+   "source_file": "c2-inv-006.pdf",
+   "supplier_gstin": "29FSEPK9208W1ZI",
+   "supplier_name": "Shere Industries",
+   "invoice_no": "SI262700103",
+   "invoice_no_norm": "SI262700103",
+   "invoice_date": "2026-09-04",
+   "taxable_value": 53160.0,
+   "igst": 0.0,
+   "cgst": 4784.4,
+   "sgst": 4784.4,
+   "cess": 0.0,
+   "total": 62728.8,
+   "parse_status": "ok",
+   "parse_notes": ""
+  },
+  {
+   "invoice_id": "c2-inv-007",
+   "client_id": "c2",
+   "source_file": "c2-inv-007.pdf",
+   "supplier_gstin": "07FDNFJ4935A1Z5",
+   "supplier_name": "SUNDARAM SUPPLIES",
+   "invoice_no": "SS262700210",
+   "invoice_no_norm": "SS262700210",
+   "invoice_date": "2026-09-04",
+   "taxable_value": 269229.0,
+   "igst": 48461.22,
+   "cgst": 0.0,
+   "sgst": 0.0,
+   "cess": 0.0,
+   "total": 317690.22,
+   "parse_status": "ok",
+   "parse_notes": ""
+  },
+  {
+   "invoice_id": "c2-inv-008",
+   "client_id": "c2",
+   "source_file": "c2-inv-008.pdf",
+   "supplier_gstin": "24GLAPU5446G1ZW",
+   "supplier_name": "Parikh Pvt Ltd",
+   "invoice_no": "PPL-486",
+   "invoice_no_norm": "PPL-486",
+   "invoice_date": "2026-09-05",
+   "taxable_value": 210992.0,
+   "igst": 37978.56,
+   "cgst": 0.0,
+   "sgst": 0.0,
+   "cess": 0.0,
+   "total": 248970.56,
+   "parse_status": "ok",
+   "parse_notes": ""
+  },
+  {
+   "invoice_id": "c2-inv-009",
+   "client_id": "c2",
+   "source_file": "c2-inv-009.pdf",
+   "supplier_gstin": "07FDNFJ4935A1Z5",
+   "supplier_name": "SUNDARAM SUPPLIES",
+   "invoice_no": "SS262700220",
+   "invoice_no_norm": "SS262700220",
+   "invoice_date": "2026-09-06",
+   "taxable_value": 123751.0,
+   "igst": 22275.18,
+   "cgst": 0.0,
+   "sgst": 0.0,
+   "cess": 0.0,
+   "total": 146026.18,
+   "parse_status": "ok",
+   "parse_notes": ""
+  },
+  {
+   "invoice_id": "c2-inv-010",
+   "client_id": "c2",
+   "source_file": "c2-inv-010.pdf",
+   "supplier_gstin": "24GLAPU5446G1ZW",
+   "supplier_name": "Parikh Pvt Ltd",
+   "invoice_no": "PPL-489",
+   "invoice_no_norm": "PPL-489",
+   "invoice_date": "2026-09-10",
+   "taxable_value": 72576.0,
+   "igst": 13063.68,
+   "cgst": 0.0,
+   "sgst": 0.0,
+   "cess": 0.0,
+   "total": 85639.68,
+   "parse_status": "ok",
+   "parse_notes": ""
+  },
+  {
+   "invoice_id": "c2-inv-011",
+   "client_id": "c2",
+   "source_file": "c2-inv-011.pdf",
+   "supplier_gstin": "29ZNWPF6187X1ZL",
+   "supplier_name": "JAGGI & CO",
+   "invoice_no": "INV/2026-27/0589",
+   "invoice_no_norm": "INV-2026-27-589",
+   "invoice_date": "2026-09-12",
+   "taxable_value": 113308.0,
+   "igst": 0.0,
+   "cgst": 10197.72,
+   "sgst": 10197.72,
+   "cess": 0.0,
+   "total": 133703.44,
+   "parse_status": "ok",
+   "parse_notes": ""
+  },
+  {
+   "invoice_id": "c2-inv-012",
+   "client_id": "c2",
+   "source_file": "c2-inv-012.pdf",
+   "supplier_gstin": "24GLAPU5446G1ZW",
+   "supplier_name": "Parikh Pvt Ltd",
+   "invoice_no": "PPL-498",
+   "invoice_no_norm": "PPL-498",
+   "invoice_date": "2026-09-12",
+   "taxable_value": 72576.0,
+   "igst": 13063.68,
+   "cgst": 0.0,
+   "sgst": 0.0,
+   "cess": 0.0,
+   "total": 85639.68,
+   "parse_status": "ok",
+   "parse_notes": ""
+  },
+  {
+   "invoice_id": "c2-inv-013",
+   "client_id": "c2",
+   "source_file": "c2-inv-013.pdf",
+   "supplier_gstin": "29TJOPX8631A1Z7",
+   "supplier_name": "Raghavan Pvt Ltd",
+   "invoice_no": "RPL-954",
+   "invoice_no_norm": "RPL-954",
+   "invoice_date": "2026-09-13",
+   "taxable_value": 1304.0,
+   "igst": 0.0,
+   "cgst": 117.36,
+   "sgst": 117.36,
+   "cess": 0.0,
+   "total": 1538.72,
+   "parse_status": "ok",
+   "parse_notes": ""
+  },
+  {
+   "invoice_id": "c2-inv-014",
+   "client_id": "c2",
+   "source_file": "c2-inv-014.pdf",
+   "supplier_gstin": "32RHLFZ5636K1ZT",
+   "supplier_name": "Raj Enterprises",
+   "invoice_no": "00446",
+   "invoice_no_norm": "446",
+   "invoice_date": "2026-09-13",
+   "taxable_value": 183055.0,
+   "igst": 32949.9,
+   "cgst": 0.0,
+   "sgst": 0.0,
+   "cess": 0.0,
+   "total": 216004.9,
+   "parse_status": "ok",
+   "parse_notes": ""
+  },
+  {
+   "invoice_id": "c2-inv-015",
+   "client_id": "c2",
+   "source_file": "c2-inv-015.pdf",
+   "supplier_gstin": "32RHLFZ5636K1ZT",
+   "supplier_name": "Raj Enterprises",
+   "invoice_no": "00450",
+   "invoice_no_norm": "450",
+   "invoice_date": "2026-09-14",
+   "taxable_value": 297334.0,
+   "igst": 53520.12,
+   "cgst": 0.0,
+   "sgst": 0.0,
+   "cess": 0.0,
+   "total": 350854.12,
+   "parse_status": "ok",
+   "parse_notes": ""
+  },
+  {
+   "invoice_id": "c2-inv-016",
+   "client_id": "c2",
+   "source_file": "c2-inv-016.pdf",
+   "supplier_gstin": "33BGDPS9170R1ZK",
+   "supplier_name": "Sandhu & Co",
+   "invoice_no": "SC/0205/26-27",
+   "invoice_no_norm": "SC-205-26-27",
+   "invoice_date": "2026-09-15",
+   "taxable_value": 63428.0,
+   "igst": 3171.4,
+   "cgst": 0.0,
+   "sgst": 0.0,
+   "cess": 0.0,
+   "total": 66599.4,
+   "parse_status": "ok",
+   "parse_notes": ""
+  },
+  {
+   "invoice_id": "c2-inv-017",
+   "client_id": "c2",
+   "source_file": "c2-inv-017.pdf",
+   "supplier_gstin": "33BGDPS9170R1ZK",
+   "supplier_name": "Sandhu & Co",
+   "invoice_no": "SC/0213/26-27",
+   "invoice_no_norm": "SC-213-26-27",
+   "invoice_date": "2026-09-18",
+   "taxable_value": 274350.0,
+   "igst": 13717.5,
+   "cgst": 0.0,
+   "sgst": 0.0,
+   "cess": 0.0,
+   "total": 288067.5,
+   "parse_status": "ok",
+   "parse_notes": ""
+  },
+  {
+   "invoice_id": "c2-inv-018",
+   "client_id": "c2",
+   "source_file": "c2-inv-018.pdf",
+   "supplier_gstin": "29RJIFW7752C1ZT",
+   "supplier_name": "Verma & Co",
+   "invoice_no": "01089",
+   "invoice_no_norm": "1089",
+   "invoice_date": "2026-09-18",
+   "taxable_value": 196340.0,
+   "igst": 0.0,
+   "cgst": 17670.6,
+   "sgst": 17670.6,
+   "cess": 0.0,
+   "total": 231681.2,
+   "parse_status": "ok",
+   "parse_notes": ""
+  },
+  {
+   "invoice_id": "c2-inv-019",
+   "client_id": "c2",
+   "source_file": "c2-inv-019.pdf",
+   "supplier_gstin": "07FDNFJ4935A1Z5",
+   "supplier_name": "SUNDARAM SUPPLIES",
+   "invoice_no": "SS262700225",
+   "invoice_no_norm": "SS262700225",
+   "invoice_date": "2026-09-19",
+   "taxable_value": 269546.0,
+   "igst": 48518.28,
+   "cgst": 0.0,
+   "sgst": 0.0,
+   "cess": 0.0,
+   "total": 318064.28,
+   "parse_status": "ok",
+   "parse_notes": ""
+  },
+  {
+   "invoice_id": "c2-inv-020",
+   "client_id": "c2",
+   "source_file": "c2-inv-020.pdf",
+   "supplier_gstin": "37EOXCH4421H1ZB",
+   "supplier_name": "DASGUPTA & CO",
+   "invoice_no": "DC/0700/26-27",
+   "invoice_no_norm": "DC-700-26-27",
+   "invoice_date": "2026-09-20",
+   "taxable_value": 83465.0,
+   "igst": 15023.7,
+   "cgst": 0.0,
+   "sgst": 0.0,
+   "cess": 0.0,
+   "total": 98488.7,
+   "parse_status": "ok",
+   "parse_notes": ""
+  },
+  {
+   "invoice_id": "c2-inv-021",
+   "client_id": "c2",
+   "source_file": "c2-inv-021.pdf",
+   "supplier_gstin": "24GLAPU5446G1ZW",
+   "supplier_name": "Parikh Pvt Ltd",
+   "invoice_no": "PPL-497",
+   "invoice_no_norm": "PPL-497",
+   "invoice_date": "2026-09-20",
+   "taxable_value": 257726.0,
+   "igst": 46390.68,
+   "cgst": 0.0,
+   "sgst": 0.0,
+   "cess": 0.0,
+   "total": 304116.68,
+   "parse_status": "ok",
+   "parse_notes": ""
+  },
+  {
+   "invoice_id": "c2-inv-022",
+   "client_id": "c2",
+   "source_file": "c2-inv-022.pdf",
+   "supplier_gstin": "36XWIPU7218W1ZL",
+   "supplier_name": "Menon Distributors",
+   "invoice_no": "INV/2026-27/0220",
+   "invoice_no_norm": "INV-2026-27-220",
+   "invoice_date": "2026-09-21",
+   "taxable_value": 25047.0,
+   "igst": 4508.46,
+   "cgst": 0.0,
+   "sgst": 0.0,
+   "cess": 0.0,
+   "total": 29555.46,
+   "parse_status": "ok",
+   "parse_notes": ""
+  },
+  {
+   "invoice_id": "c2-inv-023",
+   "client_id": "c2",
+   "source_file": "c2-inv-023.pdf",
+   "supplier_gstin": "07FDNFJ4935A1Z5",
+   "supplier_name": "SUNDARAM SUPPLIES",
+   "invoice_no": "SS262700235",
+   "invoice_no_norm": "SS262700235",
+   "invoice_date": "2026-09-21",
+   "taxable_value": 38320.0,
+   "igst": 6897.6,
+   "cgst": 0.0,
+   "sgst": 0.0,
+   "cess": 0.0,
+   "total": 45217.6,
+   "parse_status": "ok",
+   "parse_notes": ""
+  },
+  {
+   "invoice_id": "c2-inv-024",
+   "client_id": "c2",
+   "source_file": "c2-inv-024.pdf",
+   "supplier_gstin": "33BGDPS9170R1ZK",
+   "supplier_name": "Sandhu & Co",
+   "invoice_no": "SC/0224/26-27",
+   "invoice_no_norm": "SC-224-26-27",
+   "invoice_date": "2026-09-22",
+   "taxable_value": 4986.0,
+   "igst": 249.3,
+   "cgst": 0.0,
+   "sgst": 0.0,
+   "cess": 0.0,
+   "total": 5235.3,
+   "parse_status": "ok",
+   "parse_notes": ""
+  },
+  {
+   "invoice_id": "c2-inv-025",
+   "client_id": "c2",
+   "source_file": "c2-inv-025.pdf",
+   "supplier_gstin": "29FSEPK9208W1ZI",
+   "supplier_name": "Shere Industries",
+   "invoice_no": "SI262700114",
+   "invoice_no_norm": "SI262700114",
+   "invoice_date": "2026-09-22",
+   "taxable_value": 193719.0,
+   "igst": 0.0,
+   "cgst": 17434.71,
+   "sgst": 17434.71,
+   "cess": 0.0,
+   "total": 228588.42,
+   "parse_status": "ok",
+   "parse_notes": ""
+  },
+  {
+   "invoice_id": "c2-inv-026",
+   "client_id": "c2",
+   "source_file": "c2-inv-026.pdf",
+   "supplier_gstin": "29UZPPH3328H1ZJ",
+   "supplier_name": "Zachariah Agencies",
+   "invoice_no": "ZA/1256/26-27",
+   "invoice_no_norm": "ZA-1256-26-27",
+   "invoice_date": "2026-09-22",
+   "taxable_value": 68991.0,
+   "igst": 0.0,
+   "cgst": 6209.19,
+   "sgst": 6209.19,
+   "cess": 0.0,
+   "total": 81409.38,
+   "parse_status": "ok",
+   "parse_notes": ""
+  },
+  {
+   "invoice_id": "c2-inv-027",
+   "client_id": "c2",
+   "source_file": "c2-inv-027.pdf",
+   "supplier_gstin": "29TJOPX8631A1Z7",
+   "supplier_name": "Raghavan Pvt Ltd",
+   "invoice_no": "RPL-965",
+   "invoice_no_norm": "RPL-965",
+   "invoice_date": "2026-09-23",
+   "taxable_value": 20680.0,
+   "igst": 0.0,
+   "cgst": 1861.2,
+   "sgst": 1861.2,
+   "cess": 0.0,
+   "total": 24402.4,
+   "parse_status": "ok",
+   "parse_notes": ""
+  },
+  {
+   "invoice_id": "c2-inv-028",
+   "client_id": "c2",
+   "source_file": "c2-inv-028.pdf",
+   "supplier_gstin": "32RHLFZ5636K1ZT",
+   "supplier_name": "Raj Enterprises",
+   "invoice_no": "00452",
+   "invoice_no_norm": "452",
+   "invoice_date": "2026-09-23",
+   "taxable_value": 73094.0,
+   "igst": 13156.92,
+   "cgst": 0.0,
+   "sgst": 0.0,
+   "cess": 0.0,
+   "total": 86250.92,
+   "parse_status": "ok",
+   "parse_notes": ""
+  },
+  {
+   "invoice_id": "c2-inv-029",
+   "client_id": "c2",
+   "source_file": "c2-inv-029.pdf",
+   "supplier_gstin": "07FDNFJ4935A1Z5",
+   "supplier_name": "SUNDARAM SUPPLIES",
+   "invoice_no": "SS262700242",
+   "invoice_no_norm": "SS262700242",
+   "invoice_date": "2026-09-23",
+   "taxable_value": 127565.0,
+   "igst": 22961.7,
+   "cgst": 0.0,
+   "sgst": 0.0,
+   "cess": 0.0,
+   "total": 150526.7,
+   "parse_status": "ok",
+   "parse_notes": ""
+  },
+  {
+   "invoice_id": "c2-inv-030",
+   "client_id": "c2",
+   "source_file": "c2-inv-030.pdf",
+   "supplier_gstin": "29ZNWPF6187X1ZL",
+   "supplier_name": "JAGGI & CO",
+   "invoice_no": "INV/2026-27/0596",
+   "invoice_no_norm": "INV-2026-27-596",
+   "invoice_date": "2026-09-25",
+   "taxable_value": 129210.0,
+   "igst": 0.0,
+   "cgst": 11628.9,
+   "sgst": 11628.9,
+   "cess": 0.0,
+   "total": 152467.8,
+   "parse_status": "ok",
+   "parse_notes": ""
+  },
+  {
+   "invoice_id": "c2-inv-031",
+   "client_id": "c2",
+   "source_file": "c2-inv-031.pdf",
+   "supplier_gstin": "27BKRPW4129D1ZQ",
+   "supplier_name": "Narasimhan Agencies",
+   "invoice_no": "00190",
+   "invoice_no_norm": "190",
+   "invoice_date": "2026-09-25",
+   "taxable_value": 78775.0,
+   "igst": 14179.5,
+   "cgst": 0.0,
+   "sgst": 0.0,
+   "cess": 0.0,
+   "total": 92954.5,
+   "parse_status": "ok",
+   "parse_notes": ""
+  },
+  {
+   "invoice_id": "c2-inv-032",
+   "client_id": "c2",
+   "source_file": "c2-inv-032.pdf",
+   "supplier_gstin": "29RJIFW7752C1ZT",
+   "supplier_name": "Verma & Co",
+   "invoice_no": "01093",
+   "invoice_no_norm": "1093",
+   "invoice_date": "2026-09-25",
+   "taxable_value": 343900.0,
+   "igst": 0.0,
+   "cgst": 30951.0,
+   "sgst": 30951.0,
+   "cess": 0.0,
+   "total": 405802.0,
+   "parse_status": "ok",
+   "parse_notes": ""
+  },
+  {
+   "invoice_id": "c2-inv-033",
+   "client_id": "c2",
+   "source_file": "c2-inv-033.pdf",
+   "supplier_gstin": "29UZPPH3328H1ZJ",
+   "supplier_name": "Zachariah Agencies",
+   "invoice_no": "ZA/1247/26-27",
+   "invoice_no_norm": "ZA-1247-26-27",
+   "invoice_date": "2026-09-28",
+   "taxable_value": 179223.0,
+   "igst": 0.0,
+   "cgst": 16130.07,
+   "sgst": 16130.07,
+   "cess": 0.0,
+   "total": 211483.14,
+   "parse_status": "ok",
+   "parse_notes": ""
+  }
+ ],
+ "rows": [
+  {
+   "row_id": "09-001",
+   "period": "092026",
+   "supplier_gstin": "07FDNFJ4935A1Z5",
+   "supplier_name": "SUNDARAM SUPPLIES",
+   "invoice_no": "SS262700210",
+   "invoice_no_norm": "SS262700210",
+   "invoice_date": "2026-09-04",
+   "taxable_value": 269229.0,
+   "igst": 48461.22,
+   "cgst": 0.0,
+   "sgst": 0.0,
+   "cess": 0.0,
+   "total": 317690.22,
+   "itc_available": true
+  },
+  {
+   "row_id": "09-002",
+   "period": "092026",
+   "supplier_gstin": "07FDNFJ4935A1Z5",
+   "supplier_name": "SUNDARAM SUPPLIES",
+   "invoice_no": "SS262700220",
+   "invoice_no_norm": "SS262700220",
+   "invoice_date": "2026-09-06",
+   "taxable_value": 123751.0,
+   "igst": 22275.18,
+   "cgst": 0.0,
+   "sgst": 0.0,
+   "cess": 0.0,
+   "total": 146026.18,
+   "itc_available": true
+  },
+  {
+   "row_id": "09-003",
+   "period": "092026",
+   "supplier_gstin": "07FDNFJ4935A1Z5",
+   "supplier_name": "SUNDARAM SUPPLIES",
+   "invoice_no": "SS262700225",
+   "invoice_no_norm": "SS262700225",
+   "invoice_date": "2026-09-19",
+   "taxable_value": 296546.0,
+   "igst": 53378.28,
+   "cgst": 0.0,
+   "sgst": 0.0,
+   "cess": 0.0,
+   "total": 349924.28,
+   "itc_available": true
+  },
+  {
+   "row_id": "09-004",
+   "period": "092026",
+   "supplier_gstin": "07FDNFJ4935A1Z5",
+   "supplier_name": "SUNDARAM SUPPLIES",
+   "invoice_no": "SS262700235",
+   "invoice_no_norm": "SS262700235",
+   "invoice_date": "2026-09-21",
+   "taxable_value": 38320.0,
+   "igst": 6897.6,
+   "cgst": 0.0,
+   "sgst": 0.0,
+   "cess": 0.0,
+   "total": 45217.6,
+   "itc_available": true
+  },
+  {
+   "row_id": "09-005",
+   "period": "092026",
+   "supplier_gstin": "07FDNFJ4935A1Z5",
+   "supplier_name": "SUNDARAM SUPPLIES",
+   "invoice_no": "SS262700242",
+   "invoice_no_norm": "SS262700242",
+   "invoice_date": "2026-09-23",
+   "taxable_value": 127565.0,
+   "igst": 22961.7,
+   "cgst": 0.0,
+   "sgst": 0.0,
+   "cess": 0.0,
+   "total": 150526.7,
+   "itc_available": true
+  },
+  {
+   "row_id": "09-006",
+   "period": "092026",
+   "supplier_gstin": "07RJIFW7752C3ZX",
+   "supplier_name": "VERMA & CO",
+   "invoice_no": "01089",
+   "invoice_no_norm": "1089",
+   "invoice_date": "2026-09-18",
+   "taxable_value": 196340.0,
+   "igst": 35341.2,
+   "cgst": 0.0,
+   "sgst": 0.0,
+   "cess": 0.0,
+   "total": 231681.2,
+   "itc_available": true
+  },
+  {
+   "row_id": "09-007",
+   "period": "092026",
+   "supplier_gstin": "24GLAPU5446G1ZW",
+   "supplier_name": "PARIKH PVT LTD",
+   "invoice_no": "PPL-486",
+   "invoice_no_norm": "PPL-486",
+   "invoice_date": "2026-09-05",
+   "taxable_value": 210992.0,
+   "igst": 37978.56,
+   "cgst": 0.0,
+   "sgst": 0.0,
+   "cess": 0.0,
+   "total": 248970.56,
+   "itc_available": true
+  },
+  {
+   "row_id": "09-008",
+   "period": "092026",
+   "supplier_gstin": "24GLAPU5446G1ZW",
+   "supplier_name": "PARIKH PVT LTD",
+   "invoice_no": "PPL-849",
+   "invoice_no_norm": "PPL-849",
+   "invoice_date": "2026-09-10",
+   "taxable_value": 72576.0,
+   "igst": 13063.68,
+   "cgst": 0.0,
+   "sgst": 0.0,
+   "cess": 0.0,
+   "total": 85639.68,
+   "itc_available": true
+  },
+  {
+   "row_id": "09-009",
+   "period": "092026",
+   "supplier_gstin": "24GLAPU5446G1ZW",
+   "supplier_name": "PARIKH PVT LTD",
+   "invoice_no": "PPL-498",
+   "invoice_no_norm": "PPL-498",
+   "invoice_date": "2026-09-12",
+   "taxable_value": 72576.0,
+   "igst": 13063.68,
+   "cgst": 0.0,
+   "sgst": 0.0,
+   "cess": 0.0,
+   "total": 85639.68,
+   "itc_available": true
+  },
+  {
+   "row_id": "09-010",
+   "period": "092026",
+   "supplier_gstin": "24GLAPU5446G1ZW",
+   "supplier_name": "PARIKH PVT LTD",
+   "invoice_no": "PPL-497",
+   "invoice_no_norm": "PPL-497",
+   "invoice_date": "2026-09-20",
+   "taxable_value": 257726.0,
+   "igst": 46390.68,
+   "cgst": 0.0,
+   "sgst": 0.0,
+   "cess": 0.0,
+   "total": 304116.68,
+   "itc_available": true
+  },
+  {
+   "row_id": "09-011",
+   "period": "092026",
+   "supplier_gstin": "27BKRPW4129D1ZQ",
+   "supplier_name": "NARASIMHAN AGENCIES",
+   "invoice_no": "FY2627/NA180",
+   "invoice_no_norm": "FY2627-NA180",
+   "invoice_date": "2026-09-04",
+   "taxable_value": 26305.0,
+   "igst": 4734.9,
+   "cgst": 0.0,
+   "sgst": 0.0,
+   "cess": 0.0,
+   "total": 31039.9,
+   "itc_available": true
+  },
+  {
+   "row_id": "09-012",
+   "period": "092026",
+   "supplier_gstin": "27BKRPW4129D1ZQ",
+   "supplier_name": "NARASIMHAN AGENCIES",
+   "invoice_no": "00190",
+   "invoice_no_norm": "190",
+   "invoice_date": "2026-09-25",
+   "taxable_value": 78775.0,
+   "igst": 14179.5,
+   "cgst": 0.0,
+   "sgst": 0.0,
+   "cess": 0.0,
+   "total": 92954.5,
+   "itc_available": true
+  },
+  {
+   "row_id": "09-013",
+   "period": "092026",
+   "supplier_gstin": "29FSEPK9208W1ZI",
+   "supplier_name": "SHERE INDUSTRIES",
+   "invoice_no": "si262700103",
+   "invoice_no_norm": "SI262700103",
+   "invoice_date": "2026-09-04",
+   "taxable_value": 53160.0,
+   "igst": 0.0,
+   "cgst": 4784.4,
+   "sgst": 4784.4,
+   "cess": 0.0,
+   "total": 62728.8,
+   "itc_available": true
+  },
+  {
+   "row_id": "09-014",
+   "period": "092026",
+   "supplier_gstin": "29RJIFW7752C1ZT",
+   "supplier_name": "VERMA & CO",
+   "invoice_no": "01093",
+   "invoice_no_norm": "1093",
+   "invoice_date": "2026-09-25",
+   "taxable_value": 343900.0,
+   "igst": 0.0,
+   "cgst": 30951.0,
+   "sgst": 30951.0,
+   "cess": 0.0,
+   "total": 405802.0,
+   "itc_available": true
+  },
+  {
+   "row_id": "09-015",
+   "period": "092026",
+   "supplier_gstin": "29TJOPX8631A1Z7",
+   "supplier_name": "RAGHAVAN PVT LTD",
+   "invoice_no": "RPL-948",
+   "invoice_no_norm": "RPL-948",
+   "invoice_date": "2026-09-02",
+   "taxable_value": 158720.0,
+   "igst": 0.0,
+   "cgst": 14284.8,
+   "sgst": 14284.8,
+   "cess": 0.0,
+   "total": 187289.6,
+   "itc_available": true
+  },
+  {
+   "row_id": "09-016",
+   "period": "092026",
+   "supplier_gstin": "29TJOPX8631A1Z7",
+   "supplier_name": "RAGHAVAN PVT LTD",
+   "invoice_no": "RPL-954",
+   "invoice_no_norm": "RPL-954",
+   "invoice_date": "2026-09-13",
+   "taxable_value": 1304.0,
+   "igst": 0.0,
+   "cgst": 117.36,
+   "sgst": 117.36,
+   "cess": 0.0,
+   "total": 1538.72,
+   "itc_available": true
+  },
+  {
+   "row_id": "09-017",
+   "period": "092026",
+   "supplier_gstin": "29TJOPX8631A1Z7",
+   "supplier_name": "RAGHAVAN PVT LTD",
+   "invoice_no": "RPL-965",
+   "invoice_no_norm": "RPL-965",
+   "invoice_date": "2026-09-23",
+   "taxable_value": 20680.0,
+   "igst": 0.0,
+   "cgst": 1861.2,
+   "sgst": 1861.2,
+   "cess": 0.0,
+   "total": 24402.4,
+   "itc_available": true
+  },
+  {
+   "row_id": "09-018",
+   "period": "092026",
+   "supplier_gstin": "29UZPPH3328H1ZJ",
+   "supplier_name": "ZACHARIAH AGENCIES",
+   "invoice_no": "ZA/1256/26-27",
+   "invoice_no_norm": "ZA-1256-26-27",
+   "invoice_date": "2026-09-22",
+   "taxable_value": 68991.0,
+   "igst": 0.0,
+   "cgst": 6209.19,
+   "sgst": 6209.19,
+   "cess": 0.0,
+   "total": 81408.98,
+   "itc_available": true
+  },
+  {
+   "row_id": "09-019",
+   "period": "092026",
+   "supplier_gstin": "29ZNWPF6187X1ZL",
+   "supplier_name": "JAGGI & CO",
+   "invoice_no": "INV/2026-27/0579",
+   "invoice_no_norm": "INV-2026-27-579",
+   "invoice_date": "2026-09-03",
+   "taxable_value": 17617.0,
+   "igst": 0.0,
+   "cgst": 1585.53,
+   "sgst": 1585.53,
+   "cess": 0.0,
+   "total": 20788.06,
+   "itc_available": true
+  },
+  {
+   "row_id": "09-020",
+   "period": "092026",
+   "supplier_gstin": "29ZNWPF6187X1ZL",
+   "supplier_name": "JAGGI & CO",
+   "invoice_no": "INV/2026-27/0589",
+   "invoice_no_norm": "INV-2026-27-589",
+   "invoice_date": "2026-09-12",
+   "taxable_value": 113308.0,
+   "igst": 0.0,
+   "cgst": 10197.72,
+   "sgst": 10197.72,
+   "cess": 0.0,
+   "total": 133703.44,
+   "itc_available": true
+  },
+  {
+   "row_id": "09-021",
+   "period": "092026",
+   "supplier_gstin": "29ZNWPF6187X1ZL",
+   "supplier_name": "JAGGI & CO",
+   "invoice_no": "INV/2026-27/0596",
+   "invoice_no_norm": "INV-2026-27-596",
+   "invoice_date": "2026-09-25",
+   "taxable_value": 129210.0,
+   "igst": 0.0,
+   "cgst": 11628.9,
+   "sgst": 11628.9,
+   "cess": 0.0,
+   "total": 152467.8,
+   "itc_available": true
+  },
+  {
+   "row_id": "09-022",
+   "period": "092026",
+   "supplier_gstin": "32RHLFZ5636K1ZT",
+   "supplier_name": "RAJ ENTERPRISES",
+   "invoice_no": "00446",
+   "invoice_no_norm": "446",
+   "invoice_date": "2026-09-13",
+   "taxable_value": 183055.0,
+   "igst": 32949.9,
+   "cgst": 0.0,
+   "sgst": 0.0,
+   "cess": 0.0,
+   "total": 216004.9,
+   "itc_available": true
+  },
+  {
+   "row_id": "09-023",
+   "period": "092026",
+   "supplier_gstin": "32RHLFZ5636K1ZT",
+   "supplier_name": "RAJ ENTERPRISES",
+   "invoice_no": "FY2627/RE450",
+   "invoice_no_norm": "FY2627-RE450",
+   "invoice_date": "2026-09-12",
+   "taxable_value": 297334.0,
+   "igst": 53520.12,
+   "cgst": 0.0,
+   "sgst": 0.0,
+   "cess": 0.0,
+   "total": 350854.12,
+   "itc_available": true
+  },
+  {
+   "row_id": "09-024",
+   "period": "092026",
+   "supplier_gstin": "32RHLFZ5636K1ZT",
+   "supplier_name": "RAJ ENTERPRISES",
+   "invoice_no": "00452",
+   "invoice_no_norm": "452",
+   "invoice_date": "2026-09-23",
+   "taxable_value": 73094.0,
+   "igst": 13156.92,
+   "cgst": 0.0,
+   "sgst": 0.0,
+   "cess": 0.0,
+   "total": 86250.92,
+   "itc_available": true
+  },
+  {
+   "row_id": "09-025",
+   "period": "092026",
+   "supplier_gstin": "33BGDPS9170R1ZK",
+   "supplier_name": "SANDHU & CO",
+   "invoice_no": "SC/0205/26-27",
+   "invoice_no_norm": "SC-205-26-27",
+   "invoice_date": "2026-09-15",
+   "taxable_value": 63428.0,
+   "igst": 3171.4,
+   "cgst": 0.0,
+   "sgst": 0.0,
+   "cess": 0.0,
+   "total": 66599.4,
+   "itc_available": true
+  },
+  {
+   "row_id": "09-026",
+   "period": "092026",
+   "supplier_gstin": "33BGDPS9170R1ZK",
+   "supplier_name": "SANDHU & CO",
+   "invoice_no": "SC/0213/26-27",
+   "invoice_no_norm": "SC-213-26-27",
+   "invoice_date": "2026-09-18",
+   "taxable_value": 274350.0,
+   "igst": 13717.5,
+   "cgst": 0.0,
+   "sgst": 0.0,
+   "cess": 0.0,
+   "total": 288067.5,
+   "itc_available": true
+  },
+  {
+   "row_id": "09-027",
+   "period": "092026",
+   "supplier_gstin": "33BGDPS9170R1ZK",
+   "supplier_name": "SANDHU & CO",
+   "invoice_no": "SC/0224/26-27",
+   "invoice_no_norm": "SC-224-26-27",
+   "invoice_date": "2026-09-22",
+   "taxable_value": 4986.0,
+   "igst": 249.3,
+   "cgst": 0.0,
+   "sgst": 0.0,
+   "cess": 0.0,
+   "total": 5235.3,
+   "itc_available": true
+  },
+  {
+   "row_id": "09-028",
+   "period": "092026",
+   "supplier_gstin": "33FSEPK9208W2ZS",
+   "supplier_name": "SHERE INDUSTRIES",
+   "invoice_no": "SI262700114",
+   "invoice_no_norm": "SI262700114",
+   "invoice_date": "2026-09-22",
+   "taxable_value": 193719.0,
+   "igst": 34869.42,
+   "cgst": 0.0,
+   "sgst": 0.0,
+   "cess": 0.0,
+   "total": 228588.42,
+   "itc_available": true
+  },
+  {
+   "row_id": "09-029",
+   "period": "092026",
+   "supplier_gstin": "36XWIPU7218W1ZL",
+   "supplier_name": "MENON DISTRIBUTORS",
+   "invoice_no": "INV/2026-27/0201",
+   "invoice_no_norm": "INV-2026-27-201",
+   "invoice_date": "2026-09-03",
+   "taxable_value": 115862.0,
+   "igst": 20855.16,
+   "cgst": 0.0,
+   "sgst": 0.0,
+   "cess": 0.0,
+   "total": 136717.16,
+   "itc_available": true
+  },
+  {
+   "row_id": "09-030",
+   "period": "092026",
+   "supplier_gstin": "36XWIPU7218W1ZL",
+   "supplier_name": "MENON DISTRIBUTORS",
+   "invoice_no": "INV/2026-27/0208",
+   "invoice_no_norm": "INV-2026-27-208",
+   "invoice_date": "2026-09-04",
+   "taxable_value": 50543.0,
+   "igst": 9097.74,
+   "cgst": 0.0,
+   "sgst": 0.0,
+   "cess": 0.0,
+   "total": 59640.74,
+   "itc_available": true
+  },
+  {
+   "row_id": "09-031",
+   "period": "092026",
+   "supplier_gstin": "36XWIPU7218W1ZL",
+   "supplier_name": "MENON DISTRIBUTORS",
+   "invoice_no": "INV/2026-27/0220",
+   "invoice_no_norm": "INV-2026-27-220",
+   "invoice_date": "2026-09-21",
+   "taxable_value": 25047.0,
+   "igst": 4508.46,
+   "cgst": 0.0,
+   "sgst": 0.0,
+   "cess": 0.0,
+   "total": 29555.46,
+   "itc_available": true
+  }
+ ],
+ "matches": [
+  {
+   "invoice_id": "c2-inv-002",
+   "row_id": "09-015",
+   "pass_no": 1,
+   "confidence": 1.0,
+   "notes": "exact"
+  },
+  {
+   "invoice_id": "c2-inv-004",
+   "row_id": "09-029",
+   "pass_no": 1,
+   "confidence": 1.0,
+   "notes": "exact"
+  },
+  {
+   "invoice_id": "c2-inv-005",
+   "row_id": "09-030",
+   "pass_no": 1,
+   "confidence": 1.0,
+   "notes": "exact"
+  },
+  {
+   "invoice_id": "c2-inv-007",
+   "row_id": "09-001",
+   "pass_no": 1,
+   "confidence": 1.0,
+   "notes": "exact"
+  },
+  {
+   "invoice_id": "c2-inv-008",
+   "row_id": "09-007",
+   "pass_no": 1,
+   "confidence": 1.0,
+   "notes": "exact"
+  },
+  {
+   "invoice_id": "c2-inv-009",
+   "row_id": "09-002",
+   "pass_no": 1,
+   "confidence": 1.0,
+   "notes": "exact"
+  },
+  {
+   "invoice_id": "c2-inv-011",
+   "row_id": "09-020",
+   "pass_no": 1,
+   "confidence": 1.0,
+   "notes": "exact"
+  },
+  {
+   "invoice_id": "c2-inv-012",
+   "row_id": "09-009",
+   "pass_no": 1,
+   "confidence": 1.0,
+   "notes": "exact"
+  },
+  {
+   "invoice_id": "c2-inv-013",
+   "row_id": "09-016",
+   "pass_no": 1,
+   "confidence": 1.0,
+   "notes": "exact"
+  },
+  {
+   "invoice_id": "c2-inv-014",
+   "row_id": "09-022",
+   "pass_no": 1,
+   "confidence": 1.0,
+   "notes": "exact"
+  },
+  {
+   "invoice_id": "c2-inv-016",
+   "row_id": "09-025",
+   "pass_no": 1,
+   "confidence": 1.0,
+   "notes": "exact"
+  },
+  {
+   "invoice_id": "c2-inv-017",
+   "row_id": "09-026",
+   "pass_no": 1,
+   "confidence": 1.0,
+   "notes": "exact"
+  },
+  {
+   "invoice_id": "c2-inv-021",
+   "row_id": "09-010",
+   "pass_no": 1,
+   "confidence": 1.0,
+   "notes": "exact"
+  },
+  {
+   "invoice_id": "c2-inv-022",
+   "row_id": "09-031",
+   "pass_no": 1,
+   "confidence": 1.0,
+   "notes": "exact"
+  },
+  {
+   "invoice_id": "c2-inv-023",
+   "row_id": "09-004",
+   "pass_no": 1,
+   "confidence": 1.0,
+   "notes": "exact"
+  },
+  {
+   "invoice_id": "c2-inv-024",
+   "row_id": "09-027",
+   "pass_no": 1,
+   "confidence": 1.0,
+   "notes": "exact"
+  },
+  {
+   "invoice_id": "c2-inv-027",
+   "row_id": "09-017",
+   "pass_no": 1,
+   "confidence": 1.0,
+   "notes": "exact"
+  },
+  {
+   "invoice_id": "c2-inv-028",
+   "row_id": "09-024",
+   "pass_no": 1,
+   "confidence": 1.0,
+   "notes": "exact"
+  },
+  {
+   "invoice_id": "c2-inv-029",
+   "row_id": "09-005",
+   "pass_no": 1,
+   "confidence": 1.0,
+   "notes": "exact"
+  },
+  {
+   "invoice_id": "c2-inv-030",
+   "row_id": "09-021",
+   "pass_no": 1,
+   "confidence": 1.0,
+   "notes": "exact"
+  },
+  {
+   "invoice_id": "c2-inv-031",
+   "row_id": "09-012",
+   "pass_no": 1,
+   "confidence": 1.0,
+   "notes": "exact"
+  },
+  {
+   "invoice_id": "c2-inv-032",
+   "row_id": "09-014",
+   "pass_no": 1,
+   "confidence": 1.0,
+   "notes": "exact"
+  },
+  {
+   "invoice_id": "c2-inv-006",
+   "row_id": "09-013",
+   "pass_no": 2,
+   "confidence": 0.95,
+   "notes": "normalised: number 'SI262700103' vs 'si262700103'"
+  },
+  {
+   "invoice_id": "c2-inv-026",
+   "row_id": "09-018",
+   "pass_no": 2,
+   "confidence": 0.95,
+   "notes": "normalised: amount gap -0.40"
+  },
+  {
+   "invoice_id": "c2-inv-001",
+   "row_id": "09-011",
+   "pass_no": 3,
+   "confidence": 0.85,
+   "notes": "date window: number '00180' vs 'FY2627/NA180', date 2026-09-01 vs 2026-09-04"
+  },
+  {
+   "invoice_id": "c2-inv-015",
+   "row_id": "09-023",
+   "pass_no": 3,
+   "confidence": 0.85,
+   "notes": "date window: number '00450' vs 'FY2627/RE450', date 2026-09-14 vs 2026-09-12"
+  },
+  {
+   "invoice_id": "c2-inv-010",
+   "row_id": "09-008",
+   "pass_no": 4,
+   "confidence": 0.6,
+   "notes": "fuzzy: 'PPL-489' vs 'PPL-849' (score 86)"
+  }
+ ],
+ "open_items": [
+  {
+   "invoice_id": "c2-inv-003",
+   "kind": "unmatched",
+   "signals": {
+    "parse_status": "unreadable",
+    "parse_notes": "text is unreadable / garbled",
+    "rules_fired": [
+     "unreadable"
+    ]
+   },
+   "suggested_cause": "unreadable",
+   "candidates": []
+  },
+  {
+   "invoice_id": "c2-inv-010",
+   "kind": "fuzzy_match_candidate",
+   "signals": {
+    "parse_status": "ok",
+    "gstin_valid": true,
+    "vendor_has_rows_this_period": true,
+    "fuzzy_candidates": [
+     {
+      "row_id": "09-008",
+      "gstin": "24GLAPU5446G1ZW",
+      "invoice_no": "PPL-849",
+      "date": "2026-09-10",
+      "total": 85639.68,
+      "score": 86
+     }
+    ],
+    "fuzzy_match_candidate": {
+     "row_id": "09-008",
+     "notes": "fuzzy: 'PPL-489' vs 'PPL-849' (score 86)",
+     "confidence": 0.6
+    },
+    "rules_fired": [
+     "fuzzy_match_candidate"
+    ]
+   },
+   "suggested_cause": "unclear",
+   "candidates": [
+    "09-008"
+   ]
+  },
+  {
+   "invoice_id": "c2-inv-018",
+   "kind": "unmatched",
+   "signals": {
+    "parse_status": "ok",
+    "gstin_valid": true,
+    "vendor_has_rows_this_period": true,
+    "same_no_and_amount_other_gstin": [
+     {
+      "row_id": "09-006",
+      "gstin": "07RJIFW7752C3ZX",
+      "invoice_no": "01089",
+      "date": "2026-09-18",
+      "total": 231681.2
+     }
+    ],
+    "rules_fired": [
+     "wrong_gstin"
+    ]
+   },
+   "suggested_cause": "wrong_gstin",
+   "candidates": [
+    "09-006"
+   ]
+  },
+  {
+   "invoice_id": "c2-inv-019",
+   "kind": "unmatched",
+   "signals": {
+    "parse_status": "ok",
+    "gstin_valid": true,
+    "vendor_has_rows_this_period": true,
+    "same_gstin_and_no_amount_gap": [
+     {
+      "row_id": "09-003",
+      "invoice_total": 318064.28,
+      "row_total": 349924.28,
+      "gap": 31860.0
+     }
+    ],
+    "rules_fired": [
+     "amount_typo"
+    ]
+   },
+   "suggested_cause": "amount_typo",
+   "candidates": [
+    "09-003"
+   ]
+  },
+  {
+   "invoice_id": "c2-inv-020",
+   "kind": "unmatched",
+   "signals": {
+    "parse_status": "ok",
+    "gstin_valid": true,
+    "vendor_has_rows_this_period": false,
+    "rules_fired": [
+     "vendor_not_filed"
+    ]
+   },
+   "suggested_cause": "vendor_not_filed",
+   "candidates": []
+  },
+  {
+   "invoice_id": "c2-inv-025",
+   "kind": "unmatched",
+   "signals": {
+    "parse_status": "ok",
+    "gstin_valid": true,
+    "vendor_has_rows_this_period": true,
+    "same_no_and_amount_other_gstin": [
+     {
+      "row_id": "09-028",
+      "gstin": "33FSEPK9208W2ZS",
+      "invoice_no": "SI262700114",
+      "date": "2026-09-22",
+      "total": 228588.42
+     }
+    ],
+    "found_in_next_period": [
+     {
+      "row_id": "10-005",
+      "gstin": "29FSEPK9208W1ZI",
+      "invoice_no": "SI262700114",
+      "date": "2026-09-22",
+      "total": 228588.42,
+      "period": "102026",
+      "amount_matches": true
+     }
+    ],
+    "rules_fired": [
+     "wrong_gstin",
+     "period_mismatch"
+    ]
+   },
+   "suggested_cause": "unclear",
+   "candidates": [
+    "09-028",
+    "10-005"
+   ]
+  },
+  {
+   "invoice_id": "c2-inv-033",
+   "kind": "unmatched",
+   "signals": {
+    "parse_status": "ok",
+    "gstin_valid": true,
+    "vendor_has_rows_this_period": true,
+    "found_in_next_period": [
+     {
+      "row_id": "10-010",
+      "gstin": "29UZPPH3328H1ZJ",
+      "invoice_no": "ZA/1247/26-27",
+      "date": "2026-09-28",
+      "total": 211483.14,
+      "period": "102026",
+      "amount_matches": true
+     }
+    ],
+    "rules_fired": [
+     "period_mismatch"
+    ]
+   },
+   "suggested_cause": "period_mismatch",
+   "candidates": [
+    "10-010"
+   ]
+  }
+ ],
+ "diagnoses": [
+  {
+   "invoice_id": "c2-inv-003",
+   "cause": "unreadable",
+   "confidence": 1.0,
+   "explanation": "Evidence: PDF unreadable: text is unreadable / garbled (nearest past cases: unreadable, similarity 1.00)"
+  },
+  {
+   "invoice_id": "c2-inv-010",
+   "cause": "unclear",
+   "confidence": 1.0,
+   "explanation": "Evidence: pass-4 fuzzy match to row 09-008: fuzzy: 'PPL-489' vs 'PPL-849' (score 86) - needs human confirmation (nearest past cases: unclear, similarity 0.89)"
+  },
+  {
+   "invoice_id": "c2-inv-018",
+   "cause": "wrong_gstin",
+   "confidence": 1.0,
+   "explanation": "Evidence: same no.+amount in 2B under OTHER GSTIN 07RJIFW7752C3ZX (row 09-006, Rs 231681.2) (nearest past cases: wrong_gstin, similarity 0.97)"
+  },
+  {
+   "invoice_id": "c2-inv-019",
+   "cause": "amount_typo",
+   "confidence": 1.0,
+   "explanation": "Evidence: same GSTIN+no. in 2B row 09-003 but amount Rs 349924.28 vs invoice Rs 318064.28 (gap +31860.0) (nearest past cases: amount_typo, similarity 0.98)"
+  },
+  {
+   "invoice_id": "c2-inv-020",
+   "cause": "vendor_not_filed",
+   "confidence": 1.0,
+   "explanation": "Evidence: vendor has NO rows in 2B this period (nearest past cases: vendor_not_filed, similarity 1.00)"
+  },
+  {
+   "invoice_id": "c2-inv-025",
+   "cause": "unclear",
+   "confidence": 0.62,
+   "explanation": "Evidence: same no.+amount in 2B under OTHER GSTIN 33FSEPK9208W2ZS (row 09-028, Rs 228588.42); found in NEXT period 2B row 10-005 (amount matches) (nearest past cases: unclear, similarity 0.97)"
+  },
+  {
+   "invoice_id": "c2-inv-033",
+   "cause": "period_mismatch",
+   "confidence": 1.0,
+   "explanation": "Evidence: found in NEXT period 2B row 10-010 (amount matches) (nearest past cases: period_mismatch, similarity 1.00)"
+  }
+ ],
+ "emails": [
+  {
+   "invoice_id": "c2-inv-018",
+   "to_vendor": "Verma & Co",
+   "to_gstin": "29RJIFW7752C1ZT",
+   "subject": "GSTIN correction needed: invoice 01089 dated 18-09-2026",
+   "body": "Dear Verma & Co team,\n\nWe are writing on behalf of our client Doshi, Ramaswamy and Palan Pvt Ltd (GSTIN 29MUUCV6688X1ZR) about their purchase reconciliation for Sep 2026.\n\nIn our GSTR-2B for Sep 2026, invoice 01089 dated 18-09-2026 for Rs 2,31,681.20 is reported under GSTIN 07RJIFW7752C3ZX, not under your GSTIN 29RJIFW7752C1ZT shown on the invoice.\n\nEvidence: same no.+amount in 2B under OTHER GSTIN 07RJIFW7752C3ZX (row 09-006, Rs 231681.2) (nearest past cases: wrong_gstin, similarity 0.97)\n\nRequested fix: Please amend this invoice in your GSTR-1 (Table 9A) so that it is reported under GSTIN 29RJIFW7752C1ZT, with recipient GSTIN 29MUUCV6688X1ZR, or confirm in writing which GSTIN is correct and issue a revised invoice.\n\nInvoice details:\n  Invoice no.: 01089\n  Invoice date: 18-09-2026\n  Your GSTIN: 29RJIFW7752C1ZT\n  Taxable value: Rs 1,96,340.00\n  Invoice total: Rs 2,31,681.20\n\nThank you for your help.\n\nRegards,\nAccounts team (on behalf of the client)\n[DRAFT - review before sending]",
+   "cause": "wrong_gstin",
+   "highlights": [
+    "01089",
+    "Rs 2,31,681.20",
+    "07RJIFW7752C3ZX",
+    "29RJIFW7752C1ZT",
+    "Please amend this invoice in your GSTR-1 (Table 9A) so that it is reported under GSTIN 29RJIFW7752C1ZT, with recipient GSTIN 29MUUCV6688X1ZR, or confirm in writing which GSTIN is correct and issue a revised invoice."
+   ]
+  },
+  {
+   "invoice_id": "c2-inv-019",
+   "to_vendor": "Sundaram Supplies",
+   "to_gstin": "07FDNFJ4935A1Z5",
+   "subject": "Amount mismatch on invoice SS262700225 dated 19-09-2026",
+   "body": "Dear Sundaram Supplies team,\n\nWe are writing on behalf of our client Doshi, Ramaswamy and Palan Pvt Ltd (GSTIN 29MUUCV6688X1ZR) about their purchase reconciliation for Sep 2026.\n\nInvoice SS262700225 dated 19-09-2026 shows a total of Rs 3,18,064.28 in our books, but your GSTR-1 reports Rs 3,49,924.28 for the same invoice (difference Rs 31,860.00).\n\nEvidence: same GSTIN+no. in 2B row 09-003 but amount Rs 349924.28 vs invoice Rs 318064.28 (gap +31860.0) (nearest past cases: amount_typo, similarity 0.98)\n\nRequested fix: Please confirm which figure is correct. If the GSTR-1 figure is wrong, amend it in Table 9A of your next GSTR-1; if the invoice is wrong, issue a credit/debit note for the difference.\n\nInvoice details:\n  Invoice no.: SS262700225\n  Invoice date: 19-09-2026\n  Your GSTIN: 07FDNFJ4935A1Z5\n  Taxable value: Rs 2,69,546.00\n  Invoice total: Rs 3,18,064.28\n\nThank you for your help.\n\nRegards,\nAccounts team (on behalf of the client)\n[DRAFT - review before sending]",
+   "cause": "amount_typo",
+   "highlights": [
+    "SS262700225",
+    "Rs 3,18,064.28",
+    "Rs 3,49,924.28",
+    "Please confirm which figure is correct. If the GSTR-1 figure is wrong, amend it in Table 9A of your next GSTR-1; if the invoice is wrong, issue a credit/debit note for the difference."
+   ]
+  },
+  {
+   "invoice_id": "c2-inv-020",
+   "to_vendor": "Dasgupta & Co",
+   "to_gstin": "37EOXCH4421H1ZB",
+   "subject": "GSTR-1 for Sep 2026 not reflecting invoice DC/0700/26-27",
+   "body": "Dear Dasgupta & Co team,\n\nWe are writing on behalf of our client Doshi, Ramaswamy and Palan Pvt Ltd (GSTIN 29MUUCV6688X1ZR) about their purchase reconciliation for Sep 2026.\n\nInvoice DC/0700/26-27 dated 20-09-2026 for Rs 98,488.70 does not appear in our GSTR-2B for Sep 2026; no invoices from GSTIN 37EOXCH4421H1ZB appear for that period.\n\nRequested fix: Please file your GSTR-1 / IFF for Sep 2026 including this invoice against recipient GSTIN 29MUUCV6688X1ZR, and share the filing acknowledgement. We cannot claim input tax credit until it is reported.\n\nInvoice details:\n  Invoice no.: DC/0700/26-27\n  Invoice date: 20-09-2026\n  Your GSTIN: 37EOXCH4421H1ZB\n  Taxable value: Rs 83,465.00\n  Invoice total: Rs 98,488.70\n\nThank you for your help.\n\nRegards,\nAccounts team (on behalf of the client)\n[DRAFT - review before sending]",
+   "cause": "vendor_not_filed",
+   "highlights": [
+    "DC/0700/26-27",
+    "Rs 98,488.70",
+    "Please file your GSTR-1 / IFF for Sep 2026 including this invoice against recipient GSTIN 29MUUCV6688X1ZR, and share the filing acknowledgement. We cannot claim input tax credit until it is reported."
+   ]
+  }
+ ],
+ "flags": [
+  {
+   "invoice_id": "c2-inv-033",
+   "action": "flag_next_return",
+   "note": "Reported by the vendor in the 102026 GSTR-2B (row 10-010). Claim the ITC in the 102026 return; no vendor action needed."
+  }
+ ],
+ "escalations": [
+  {
+   "invoice_id": "c2-inv-003",
+   "reason": "unreadable: needs a human",
+   "evidence": {
+    "parse_status": "unreadable",
+    "parse_notes": "text is unreadable / garbled",
+    "rules_fired": [
+     "unreadable"
+    ],
+    "suggested_cause": "unreadable"
+   },
+   "agent_note": "Evidence: PDF unreadable: text is unreadable / garbled (nearest past cases: unreadable, similarity 1.00)",
+   "llm_cause": "unreadable",
+   "llm_confidence": 1.0
+  },
+  {
+   "invoice_id": "c2-inv-010",
+   "reason": "unclear: needs a human",
+   "evidence": {
+    "parse_status": "ok",
+    "gstin_valid": true,
+    "vendor_has_rows_this_period": true,
+    "fuzzy_candidates": [
+     {
+      "row_id": "09-008",
+      "gstin": "24GLAPU5446G1ZW",
+      "invoice_no": "PPL-849",
+      "date": "2026-09-10",
+      "total": 85639.68,
+      "score": 86
+     }
+    ],
+    "fuzzy_match_candidate": {
+     "row_id": "09-008",
+     "notes": "fuzzy: 'PPL-489' vs 'PPL-849' (score 86)",
+     "confidence": 0.6
+    },
+    "rules_fired": [
+     "fuzzy_match_candidate"
+    ],
+    "suggested_cause": "unclear"
+   },
+   "agent_note": "Evidence: pass-4 fuzzy match to row 09-008: fuzzy: 'PPL-489' vs 'PPL-849' (score 86) - needs human confirmation (nearest past cases: unclear, similarity 0.89)",
+   "llm_cause": "unclear",
+   "llm_confidence": 1.0
+  },
+  {
+   "invoice_id": "c2-inv-025",
+   "reason": "unclear: needs a human",
+   "evidence": {
+    "parse_status": "ok",
+    "gstin_valid": true,
+    "vendor_has_rows_this_period": true,
+    "same_no_and_amount_other_gstin": [
+     {
+      "row_id": "09-028",
+      "gstin": "33FSEPK9208W2ZS",
+      "invoice_no": "SI262700114",
+      "date": "2026-09-22",
+      "total": 228588.42
+     }
+    ],
+    "found_in_next_period": [
+     {
+      "row_id": "10-005",
+      "gstin": "29FSEPK9208W1ZI",
+      "invoice_no": "SI262700114",
+      "date": "2026-09-22",
+      "total": 228588.42,
+      "period": "102026",
+      "amount_matches": true
+     }
+    ],
+    "rules_fired": [
+     "wrong_gstin",
+     "period_mismatch"
+    ],
+    "suggested_cause": "unclear"
+   },
+   "agent_note": "Evidence: same no.+amount in 2B under OTHER GSTIN 33FSEPK9208W2ZS (row 09-028, Rs 228588.42); found in NEXT period 2B row 10-005 (amount matches) (nearest past cases: unclear, similarity 0.97)",
+   "llm_cause": "unclear",
+   "llm_confidence": 0.62
+  }
+ ],
+ "trace": [
+  {
+   "t": 0.0,
+   "kind": "user",
+   "name": "task",
+   "data": "Reconcile client c2 (Doshi, Ramaswamy and Palan Pvt Ltd, GSTIN 29MUUCV6688X1ZR) for filing period 092026. The next period is 102026."
+  },
+  {
+   "t": 0.2,
+   "kind": "info",
+   "name": "config",
+   "data": {
+    "model": "local/minilm",
+    "agent_mode": "tools",
+    "max_llm_calls": 20,
+    "threshold": 0.75
+   }
+  },
+  {
+   "t": 0.34,
+   "kind": "llm_text",
+   "name": "",
+   "data": "Plan: load 2B for 092026 and 102026, parse invoices, match, then decide each open item."
+  },
+  {
+   "t": 0.34,
+   "kind": "tool_call",
+   "name": "fetch_2b_rows",
+   "data": {
+    "client_id": "c2",
+    "period": "092026"
+   }
+  },
+  {
+   "t": 0.34,
+   "kind": "tool_result",
+   "name": "fetch_2b_rows",
+   "data": {
+    "period": "092026",
+    "role": "filing period",
+    "rows": 31,
+    "suppliers": 13
+   }
+  },
+  {
+   "t": 0.34,
+   "kind": "tool_call",
+   "name": "fetch_2b_rows",
+   "data": {
+    "client_id": "c2",
+    "period": "102026"
+   }
+  },
+  {
+   "t": 0.34,
+   "kind": "tool_result",
+   "name": "fetch_2b_rows",
+   "data": {
+    "period": "102026",
+    "role": "next period",
+    "rows": 18,
+    "suppliers": 11
+   }
+  },
+  {
+   "t": 0.34,
+   "kind": "tool_call",
+   "name": "parse_invoice",
+   "data": {
+    "client_id": "c2"
+   }
+  },
+  {
+   "t": 0.5,
+   "kind": "tool_result",
+   "name": "parse_invoice",
+   "data": {
+    "files": 33,
+    "by_status": {
+     "ok": 32,
+     "unreadable": 1
+    },
+    "unreadable": [
+     "c2-inv-003.pdf"
+    ],
+    "partial": []
+   }
+  },
+  {
+   "t": 0.5,
+   "kind": "tool_call",
+   "name": "match_records",
+   "data": {
+    "client_id": "c2"
+   }
+  },
+  {
+   "t": 0.51,
+   "kind": "tool_result",
+   "name": "match_records",
+   "data": {
+    "matched_by_pass": {
+     "pass1": 22,
+     "pass2": 2,
+     "pass3": 2,
+     "pass4": 1
+    },
+    "invoices": 33,
+    "open_items": [
+     {
+      "invoice_id": "c2-inv-003",
+      "supplier": null,
+      "gstin": null,
+      "invoice_no": null,
+      "amount": null,
+      "suggested_cause": "unreadable",
+      "facts": [
+       "PDF unreadable: text is unreadable / garbled"
+      ]
+     },
+     {
+      "invoice_id": "c2-inv-010",
+      "supplier": "Parikh Pvt Ltd",
+      "gstin": "24GLAPU5446G1ZW",
+      "invoice_no": "PPL-489",
+      "amount": 85639.68,
+      "suggested_cause": "unclear",
+      "facts": [
+       "pass-4 fuzzy match to row 09-008: fuzzy: 'PPL-489' vs 'PPL-849' (score 86) - needs human confirmation"
+      ]
+     },
+     {
+      "invoice_id": "c2-inv-018",
+      "supplier": "Verma & Co",
+      "gstin": "29RJIFW7752C1ZT",
+      "invoice_no": "01089",
+      "amount": 231681.2,
+      "suggested_cause": "wrong_gstin",
+      "facts": [
+       "same no.+amount in 2B under OTHER GSTIN 07RJIFW7752C3ZX (row 09-006, Rs 231681.2)"
+      ]
+     },
+     {
+      "invoice_id": "c2-inv-019",
+      "supplier": "Sundaram Supplies",
+      "gstin": "07FDNFJ4935A1Z5",
+      "invoice_no": "SS262700225",
+      "amount": 318064.28,
+      "suggested_cause": "amount_typo",
+      "facts": [
+       "same GSTIN+no. in 2B row 09-003 but amount Rs 349924.28 vs invoice Rs 318064.28 (gap +31860.0)"
+      ]
+     },
+     {
+      "invoice_id": "c2-inv-020",
+      "supplier": "Dasgupta & Co",
+      "gstin": "37EOXCH4421H1ZB",
+      "invoice_no": "DC/0700/26-27",
+      "amount": 98488.7,
+      "suggested_cause": "vendor_not_filed",
+      "facts": [
+       "vendor has NO rows in 2B this period"
+      ]
+     },
+     {
+      "invoice_id": "c2-inv-025",
+      "supplier": "Shere Industries",
+      "gstin": "29FSEPK9208W1ZI",
+      "invoice_no": "SI262700114",
+      "amount": 228588.42,
+      "suggested_cause": "unclear",
+      "facts": [
+       "same no.+amount in 2B under OTHER GSTIN 33FSEPK9208W2ZS (row 09-028, Rs 228588.42)",
+       "found in NEXT period 2B row 10-005 (amount matches)"
+      ]
+     },
+     {
+      "invoice_id": "c2-inv-033",
+      "supplier": "Zachariah Agencies",
+      "gstin": "29UZPPH3328H1ZJ",
+      "invoice_no": "ZA/1247/26-27",
+      "amount": 211483.14,
+      "suggested_cause": "period_mismatch",
+      "facts": [
+       "found in NEXT period 2B row 10-010 (amount matches)"
+      ]
+     }
+    ],
+    "unmatched_2b_rows": 4
+   }
+  },
+  {
+   "t": 5.71,
+   "kind": "llm_text",
+   "name": "",
+   "data": "c2-inv-003: diagnosed unreadable (confidence 1.00)."
+  },
+  {
+   "t": 5.71,
+   "kind": "tool_call",
+   "name": "escalate_case",
+   "data": {
+    "invoice_id": "c2-inv-003",
+    "reason": "unreadable: needs a human",
+    "confidence": 1.0,
+    "explanation": "Evidence: PDF unreadable: text is unreadable / garbled (nearest past cases: unreadable, similarity 1.00)"
+   }
+  },
+  {
+   "t": 5.71,
+   "kind": "tool_result",
+   "name": "escalate_case",
+   "data": {
+    "invoice_id": "c2-inv-003",
+    "status": "escalated"
+   }
+  },
+  {
+   "t": 5.72,
+   "kind": "llm_text",
+   "name": "",
+   "data": "c2-inv-010: diagnosed unclear (confidence 1.00)."
+  },
+  {
+   "t": 5.72,
+   "kind": "tool_call",
+   "name": "escalate_case",
+   "data": {
+    "invoice_id": "c2-inv-010",
+    "reason": "unclear: needs a human",
+    "confidence": 1.0,
+    "explanation": "Evidence: pass-4 fuzzy match to row 09-008: fuzzy: 'PPL-489' vs 'PPL-849' (score 86) - needs human confirmation (nearest past cases: unclear, similarity 0.89)"
+   }
+  },
+  {
+   "t": 5.72,
+   "kind": "tool_result",
+   "name": "escalate_case",
+   "data": {
+    "invoice_id": "c2-inv-010",
+    "status": "escalated"
+   }
+  },
+  {
+   "t": 5.73,
+   "kind": "tool_call",
+   "name": "validate_gstin",
+   "data": {
+    "gstin": "07RJIFW7752C3ZX"
+   }
+  },
+  {
+   "t": 5.73,
+   "kind": "tool_result",
+   "name": "validate_gstin",
+   "data": {
+    "gstin": "07RJIFW7752C3ZX",
+    "valid": true,
+    "state_code": "07",
+    "state": "Delhi",
+    "reason": "ok"
+   }
+  },
+  {
+   "t": 5.73,
+   "kind": "llm_text",
+   "name": "",
+   "data": "c2-inv-018: diagnosed wrong_gstin (confidence 1.00)."
+  },
+  {
+   "t": 5.73,
+   "kind": "tool_call",
+   "name": "draft_email",
+   "data": {
+    "invoice_id": "c2-inv-018",
+    "cause": "wrong_gstin",
+    "confidence": 1.0,
+    "explanation": "Evidence: same no.+amount in 2B under OTHER GSTIN 07RJIFW7752C3ZX (row 09-006, Rs 231681.2) (nearest past cases: wrong_gstin, similarity 0.97)"
+   }
+  },
+  {
+   "t": 5.73,
+   "kind": "tool_result",
+   "name": "draft_email",
+   "data": {
+    "invoice_id": "c2-inv-018",
+    "status": "drafted",
+    "to": "Verma & Co",
+    "subject": "GSTIN correction needed: invoice 01089 dated 18-09-2026"
+   }
+  },
+  {
+   "t": 5.74,
+   "kind": "llm_text",
+   "name": "",
+   "data": "c2-inv-019: diagnosed amount_typo (confidence 1.00)."
+  },
+  {
+   "t": 5.74,
+   "kind": "tool_call",
+   "name": "draft_email",
+   "data": {
+    "invoice_id": "c2-inv-019",
+    "cause": "amount_typo",
+    "confidence": 1.0,
+    "explanation": "Evidence: same GSTIN+no. in 2B row 09-003 but amount Rs 349924.28 vs invoice Rs 318064.28 (gap +31860.0) (nearest past cases: amount_typo, similarity 0.98)"
+   }
+  },
+  {
+   "t": 5.74,
+   "kind": "tool_result",
+   "name": "draft_email",
+   "data": {
+    "invoice_id": "c2-inv-019",
+    "status": "drafted",
+    "to": "Sundaram Supplies",
+    "subject": "Amount mismatch on invoice SS262700225 dated 19-09-2026"
+   }
+  },
+  {
+   "t": 5.74,
+   "kind": "llm_text",
+   "name": "",
+   "data": "c2-inv-020: diagnosed vendor_not_filed (confidence 1.00)."
+  },
+  {
+   "t": 5.74,
+   "kind": "tool_call",
+   "name": "draft_email",
+   "data": {
+    "invoice_id": "c2-inv-020",
+    "cause": "vendor_not_filed",
+    "confidence": 1.0,
+    "explanation": "Evidence: vendor has NO rows in 2B this period (nearest past cases: vendor_not_filed, similarity 1.00)"
+   }
+  },
+  {
+   "t": 5.74,
+   "kind": "tool_result",
+   "name": "draft_email",
+   "data": {
+    "invoice_id": "c2-inv-020",
+    "status": "drafted",
+    "to": "Dasgupta & Co",
+    "subject": "GSTR-1 for Sep 2026 not reflecting invoice DC/0700/26-27",
+    "note": "your explanation cited a figure not in the evidence, so it was left out of the email"
+   }
+  },
+  {
+   "t": 5.75,
+   "kind": "llm_text",
+   "name": "",
+   "data": "c2-inv-025: diagnosed unclear (confidence 0.62)."
+  },
+  {
+   "t": 5.75,
+   "kind": "tool_call",
+   "name": "escalate_case",
+   "data": {
+    "invoice_id": "c2-inv-025",
+    "reason": "unclear: needs a human",
+    "confidence": 0.62,
+    "explanation": "Evidence: same no.+amount in 2B under OTHER GSTIN 33FSEPK9208W2ZS (row 09-028, Rs 228588.42); found in NEXT period 2B row 10-005 (amount matches) (nearest past cases: unclear, similarity 0.97)"
+   }
+  },
+  {
+   "t": 5.75,
+   "kind": "tool_result",
+   "name": "escalate_case",
+   "data": {
+    "invoice_id": "c2-inv-025",
+    "status": "escalated"
+   }
+  },
+  {
+   "t": 5.76,
+   "kind": "llm_text",
+   "name": "",
+   "data": "c2-inv-033: diagnosed period_mismatch (confidence 1.00)."
+  },
+  {
+   "t": 5.76,
+   "kind": "tool_call",
+   "name": "draft_email",
+   "data": {
+    "invoice_id": "c2-inv-033",
+    "cause": "period_mismatch",
+    "confidence": 1.0,
+    "explanation": "Evidence: found in NEXT period 2B row 10-010 (amount matches) (nearest past cases: period_mismatch, similarity 1.00)"
+   }
+  },
+  {
+   "t": 5.76,
+   "kind": "tool_result",
+   "name": "draft_email",
+   "data": {
+    "invoice_id": "c2-inv-033",
+    "status": "flagged",
+    "action": "flag for next return"
+   }
+  },
+  {
+   "t": 5.76,
+   "kind": "llm_text",
+   "name": "",
+   "data": "[local MiniLM] Matched 27 invoices; drafted 3 emails, flagged 1 for the next return and escalated 3 to the reviewer."
+  }
+ ],
+ "llm_calls": 13,
+ "summary": "[local MiniLM] Matched 27 invoices; drafted 3 emails, flagged 1 for the next return and escalated 3 to the reviewer."
+}

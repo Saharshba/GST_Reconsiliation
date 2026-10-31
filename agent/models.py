@@ -11,7 +11,7 @@ import asyncio
 import contextvars
 import json
 import re
-from typing import AsyncGenerator, Callable, Optional
+from typing import AsyncGenerator, Callable, ClassVar, Optional
 
 from google.adk.models.base_llm import BaseLlm, LlmCapabilities
 from google.adk.models.lite_llm import LiteLlm
@@ -62,9 +62,19 @@ class ScriptedLlm(BaseLlm):
     def supported_models(cls) -> list[str]:
         return [r"offline/.*"]
 
+    LABEL: ClassVar[str] = "offline scripted"
+
     async def generate_content_async(self, llm_request: LlmRequest, stream: bool = False
                                      ) -> AsyncGenerator[LlmResponse, None]:
         yield self._next(llm_request.contents or [])
+
+    def diagnose(self, item: dict) -> tuple[str, float, str]:
+        """(cause, confidence, explanation) for one open item. The scripted stand-in copies the rule suggestion."""
+        cause = item["suggested_cause"]
+        conf = 0.9 if cause not in ("unclear", "unreadable") else 0.4
+        facts = item.get("facts", [])
+        return cause, conf, "Evidence: " + ("; ".join(facts) if cause in ("unclear", "unreadable")
+                                            else (facts[0] if facts else ""))[:200]
 
     # -- policy ---------------------------------------------------------------------------------
     @staticmethod
@@ -82,10 +92,9 @@ class ScriptedLlm(BaseLlm):
         user_text = " ".join(p.text or "" for c in contents if c.role == "user" for p in (c.parts or []) if p.text)
         if user_text.startswith("Evidence for one open item"):  # driven mode: answer with a JSON diagnosis
             item = json.loads(user_text.split("\n", 1)[1])
-            cause = item["suggested_cause"]
-            conf = 0.9 if cause not in ("unclear", "unreadable") else 0.4
-            return self._reply(json.dumps({"invoice_id": item["invoice_id"], "cause": cause, "confidence": conf,
-                                           "explanation": "Evidence: " + "; ".join(item.get("facts", []))[:180]}))
+            cause, conf, expl = self.diagnose(item)
+            return self._reply(json.dumps({"invoice_id": item["invoice_id"], "cause": cause,
+                                           "confidence": round(conf, 3), "explanation": expl}))
         m = re.search(r"client (\S+) .*?period (\d{6}).*?next period is (\d{6})", user_text, re.S)
         if not m:
             return self._reply("I need a client id and period to start.")
@@ -129,24 +138,23 @@ class ScriptedLlm(BaseLlm):
                 return self._reply(None, ("escalate_case", {
                     "invoice_id": iid, "reason": f"draft refused: {refused[iid]}", "confidence": 0.5,
                     "explanation": "; ".join(facts)[:200]}))
-            cause = it["suggested_cause"]
+            cause, conf, expl = self.diagnose(it)
             if cause == "wrong_gstin":
                 other = next((g for f in facts for g in re.findall(r"OTHER GSTIN (\w{15})", f)), None)
                 if other and other not in validated:
                     return self._reply(None, ("validate_gstin", {"gstin": other}))
+            note = f"{iid}: diagnosed {cause} (confidence {conf:.2f})."
             if cause in ("unclear", "unreadable"):
-                return self._reply(None, ("escalate_case", {
-                    "invoice_id": iid, "reason": f"{cause}: needs a human", "confidence": 0.4,
-                    "explanation": "; ".join(facts)[:200]}))
-            key_fact = facts[0] if facts else ""
-            return self._reply(None, ("draft_email", {
-                "invoice_id": iid, "cause": cause, "confidence": 0.9,
-                "explanation": f"Evidence: {key_fact}."}))
+                return self._reply(note, ("escalate_case", {
+                    "invoice_id": iid, "reason": f"{cause}: needs a human", "confidence": round(conf, 3),
+                    "explanation": expl}))
+            return self._reply(note, ("draft_email", {
+                "invoice_id": iid, "cause": cause, "confidence": round(conf, 3), "explanation": expl}))
         n_email = sum(1 for n, _, r in responses if n == "draft_email" and r.get("status") == "drafted")
         n_flag = sum(1 for n, _, r in responses if n == "draft_email" and r.get("status") == "flagged")
         n_esc = sum(1 for n, _, r in responses if n == "escalate_case" and r.get("status") == "escalated")
         matched = sum(match.get("matched_by_pass", {}).values())
-        return self._reply(f"[offline scripted run] Matched {matched} invoices; drafted {n_email} emails, "
+        return self._reply(f"[{self.LABEL}] Matched {matched} invoices; drafted {n_email} emails, "
                            f"flagged {n_flag} for the next return and escalated {n_esc} to the reviewer.")
 
 

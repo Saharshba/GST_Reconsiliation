@@ -24,6 +24,33 @@ Environment verified:
   `InMemorySessionService.create_session` (async), `ToolContext` imports all match the CLAUDE.md sketch.
 - litellm 1.106.6 lists `nvidia_nim` as a provider.
 
+## Model switch: Gemma 4 → MiniLM (2026-10-31, team decision)
+
+The Gemma 4 endpoint never answered (see M0), so the team switched to
+**sentence-transformers/all-MiniLM-L6-v2**: local, free, works offline (`HF_HUB_OFFLINE=1` after the one-time
+download). `MODEL_ID=local/minilm` is the default; Gemma remains selectable.
+
+What changes, honestly:
+- MiniLM is an **embedding model, not an LLM**. It cannot call tools or write text. The ADK tool sequence is
+  driven by the deterministic policy in `ScriptedLlm`; MiniLM makes the **diagnosis decision** (cause +
+  confidence) for each open item (`agent/minilm.py`, `MiniLmLlm`). Emails come from templates; the explanation
+  is the strongest evidence line (extractive), so it never adds numbers.
+- **Few-shot (default):** k-NN (k=5) over a labelled bank of 63 past open items from seeds 1–3
+  (`agent/build_minilm_bank.py`); demo data is seed 42, held out. Result: 21/21 diagnoses correct. Caveat: the
+  synthetic evidence lines use the same templates across seeds, so this is an easy test; real data would be
+  harder.
+- **Zero-shot:** cosine similarity of each evidence line to cause descriptions (the deck's slide-8 "Signal"
+  column + paraphrases). Result: 13/21 standalone; through the full agent 55.6% diagnosis accuracy. It confuses
+  amount typos with wrong GSTIN and period mismatches with vendor-not-filed. **Unsafe auto-clears still 0**:
+  the gate escalates every disagreement with the rule evidence (escalation rate 76% vs 43%). This is a good
+  slide for "the safety gate works even when the model is wrong".
+- "What didn't work" is now **embedding-only matching** (match invoices to 2B rows by MiniLM similarity):
+  87.1% precision, 12 wrong pairs that would clear silently (e.g. ₹82,280 matched to ₹91,730 at
+  similarity 0.992). The LLM-only experiment for Gemma is kept but not run.
+- Deck edits needed: slide 5 LLM → "all-MiniLM-L6-v2 (sentence-transformers, local)"; slides 2/4 "agentic AI"
+  wording should say the model diagnoses and the agent loop is ADK with a deterministic tool policy; slide 10
+  "what didn't work" → embedding-only matching (numbers below).
+
 ## Decisions / corrections to CLAUDE.md
 
 - **Pass 3 ambiguity rule.** A date-window match on (GSTIN, amount) is only accepted when that vendor billed that
@@ -96,3 +123,67 @@ Diagnosis accuracy per mismatch type:
 
 Confusion (expected → predicted): amount_typo: amount_typo×3; period_mismatch: period_mismatch×3; unclear: unclear×3; unreadable: unreadable×3; vendor_not_filed: vendor_not_filed×3; wrong_gstin: wrong_gstin×3
 <!-- EVAL-OFFLINE:END -->
+
+<!-- EVAL-LOCAL-ZEROSHOT:START -->
+### Agent with local MiniLM (all-MiniLM-L6-v2, zeroshot)
+
+Diagnosis by sentence-embedding nearest neighbours over a labelled bank built from seeds 1-3; the demo data (seed 42) is held out. Caveat: synthetic evidence lines share templates across seeds, so this is an easy test. Model calls = deterministic policy steps, not LLM calls.
+
+| Client | Match P | Match R | Diagnosis acc. | Action acc. | Unsafe auto-clears | Escalation rate | Min/client | LLM calls |
+|---|---|---|---|---|---|---|---|---|
+| c1 | 100.0% | 100.0% | 33.3% | 90.3% | 0 | 86% | 0.09 | 16 |
+| c2 | 100.0% | 100.0% | 66.7% | 93.9% | 0 | 71% | 0.01 | 15 |
+| c3 | 100.0% | 100.0% | 66.7% | 94.3% | 0 | 71% | 0.01 | 15 |
+| **all** | **100.0%** | **100.0%** | **55.6%** | **92.9%** | **0** | **76%** | **0.04** | **15.3** |
+
+Diagnosis accuracy per mismatch type:
+
+| Cause | Correct | Total |
+|---|---|---|
+| amount_typo | 0 | 3 |
+| period_mismatch | 0 | 3 |
+| unclear | 2 | 3 |
+| unreadable | 3 | 3 |
+| vendor_not_filed | 3 | 3 |
+| wrong_gstin | 2 | 3 |
+
+Confusion (expected → predicted): amount_typo: wrong_gstin×3; period_mismatch: vendor_not_filed×3; unclear: amount_typo×1, unclear×2; unreadable: unreadable×3; vendor_not_filed: vendor_not_filed×3; wrong_gstin: amount_typo×1, wrong_gstin×2
+<!-- EVAL-LOCAL-ZEROSHOT:END -->
+
+<!-- EVAL-LOCAL-FEWSHOT:START -->
+### Agent with local MiniLM (all-MiniLM-L6-v2, fewshot)
+
+Diagnosis by sentence-embedding nearest neighbours over a labelled bank built from seeds 1-3; the demo data (seed 42) is held out. Caveat: synthetic evidence lines share templates across seeds, so this is an easy test. Model calls = deterministic policy steps, not LLM calls.
+
+| Client | Match P | Match R | Diagnosis acc. | Action acc. | Unsafe auto-clears | Escalation rate | Min/client | LLM calls |
+|---|---|---|---|---|---|---|---|---|
+| c1 | 100.0% | 100.0% | 100.0% | 100.0% | 0 | 43% | 0.1 | 13 |
+| c2 | 100.0% | 100.0% | 100.0% | 100.0% | 0 | 43% | 0.1 | 13 |
+| c3 | 100.0% | 100.0% | 100.0% | 100.0% | 0 | 43% | 0.1 | 13 |
+| **all** | **100.0%** | **100.0%** | **100.0%** | **100.0%** | **0** | **43%** | **0.1** | **13.0** |
+
+Diagnosis accuracy per mismatch type:
+
+| Cause | Correct | Total |
+|---|---|---|
+| amount_typo | 3 | 3 |
+| period_mismatch | 3 | 3 |
+| unclear | 3 | 3 |
+| unreadable | 3 | 3 |
+| vendor_not_filed | 3 | 3 |
+| wrong_gstin | 3 | 3 |
+
+Confusion (expected → predicted): amount_typo: amount_typo×3; period_mismatch: period_mismatch×3; unclear: unclear×3; unreadable: unreadable×3; vendor_not_filed: vendor_not_filed×3; wrong_gstin: wrong_gstin×3
+<!-- EVAL-LOCAL-FEWSHOT:END -->
+
+<!-- EMBEDDING-ONLY:START -->
+### Embedding-only matching baseline (all-MiniLM-L6-v2, cosine ≥ 0.8, greedy one-to-one)
+
+Match precision 87.1%, recall 100.0% (81/81 correct pairs, 12 wrong pairs that would have cleared silently). Deterministic passes on the same data: 100% / 100%.
+
+Failure examples:
+- c1-inv-028 (amount_typo): invoice `07XJTCM6618Y1ZU BC/1185/26-27 Rs 82280.1` matched to `09-004: 07XJTCM6618Y1ZU BC/1185/26-27 Rs 91730.1` (sim 0.992); expected None
+- c1-inv-007 (wrong_gstin): invoice `33DBPCQ5908C1ZA 00473 Rs 66522.75` matched to `09-001: 07DBPCQ5908C3Z3 00473 Rs 66522.75` (sim 0.971); expected None
+- c1-inv-010 (unclear): invoice `29QLUPA1204D1Z2 BT262701262 Rs 134558.55` matched to `09-029: 37QLUPA1204D2Z4 BT262701262 Rs 117065.94` (sim 0.958); expected None
+- c1-inv-031 (period_mismatch): invoice `24DJIPD6280S1ZL INV/2026-27/0043 Rs 18490.5` matched to `09-009: 27ZIKFY3791P1ZX CD-1282 Rs 173294.8` (sim 0.864); expected None
+<!-- EMBEDDING-ONLY:END -->

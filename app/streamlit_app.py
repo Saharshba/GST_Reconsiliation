@@ -51,11 +51,12 @@ TOOL_ICON = {"fetch_2b_rows": "📥", "parse_invoice": "📄", "match_records": 
 # ----------------------------------------------------------------------------- sidebar
 with st.sidebar:
     st.title("🧾 Zero Balance")
-    st.caption("GSTR-2B reconciliation agent · Google ADK + Gemma 4")
+    st.caption("GSTR-2B reconciliation agent · Google ADK + MiniLM (local)")
     cid = st.selectbox("Client", list(CLIENTS), format_func=lambda c: f"{c} · {CLIENTS[c]['name']}")
     has_key = bool(os.environ.get("NVIDIA_NIM_API_KEY"))
-    modes = ["Replay saved run", "Live (Gemma 4 via NVIDIA NIM)", "Offline scripted (no LLM)"]
-    default = 0 if os.environ.get("LLM_MODE", "replay") == "replay" or not has_key else 1
+    modes = ["Run with MiniLM (local)", "Replay saved run", "Live (Gemma 4 via NVIDIA NIM)",
+             "Offline scripted (no model)"]
+    default = 1 if os.environ.get("LLM_MODE") == "replay" else 0
     mode = st.radio("Mode", modes, index=default)
     if mode.startswith("Live") and not has_key:
         st.warning("NVIDIA_NIM_API_KEY is not set in .env, so live mode is unavailable.")
@@ -159,7 +160,9 @@ with tab2:
     go = run_col.button("▶ Run agent", type="primary", width="stretch",
                         disabled=mode.startswith("Live") and not has_key)
     info_col.caption({"Replay saved run": "Replays the latest recorded run with realistic delays (demo insurance).",
-                      "Offline scripted (no LLM)": "Runs the real ADK pipeline with a scripted stand-in for the "
+                      "Run with MiniLM (local)": "Runs the ADK pipeline; all-MiniLM-L6-v2 diagnoses each open item "
+                                                 "locally (no API, no credits).",
+                      "Offline scripted (no model)": "Runs the real ADK pipeline with a scripted stand-in for the "
                                                    "model. No network, no credits.",
                       }.get(mode, "Calls Gemma 4 on NVIDIA NIM. Free tier: expect rate-limit pauses."))
     left, right = st.columns([5, 6])
@@ -198,7 +201,8 @@ with tab2:
                     render_trace(events)
                 results[cid] = saved
         else:
-            mid = "offline/scripted" if mode.startswith("Offline") else None
+            mid = ("offline/scripted" if mode.startswith("Offline") else "local/minilm" if mode.startswith("Run with")
+                   else "nvidia_nim/google/gemma-4-31b-it")
             q: queue.Queue = queue.Queue()
             box: dict = {}
 
@@ -300,6 +304,9 @@ with tab5:
     else:
         res = json.loads(res_path.read_text())
         agg = res["aggregate"]
+        if res["label"] == "local":
+            st.info("Diagnosis by all-MiniLM-L6-v2 nearest neighbours over labelled past cases (seeds 1-3); demo data "
+                    "held out. Synthetic evidence lines share templates, so this is an easy test.")
         if res["label"] == "offline":
             st.warning("These numbers come from the offline scripted stand-in (rules only, no LLM). "
                        "They check the pipeline, not the model.")
@@ -327,6 +334,17 @@ with tab5:
             st.markdown("**Confusion matrix** (rows = expected, columns = predicted)")
             st.dataframe(pd.DataFrame(agg["diagnosis"]["confusion"]).T.fillna(0).astype(int),
                          width="stretch")
+        emb = ROOT / "eval" / "embedding_only_results.json"
+        if emb.exists():
+            eb = json.loads(emb.read_text())
+            st.markdown("**What didn't work: matching by embedding similarity alone (MiniLM)**")
+            e1, e2, e3 = st.columns(3)
+            e1.metric("Match precision", f"{eb['aggregate']['match']['precision']:.1%}")
+            e2.metric("Match recall", f"{eb['aggregate']['match']['recall']:.1%}")
+            e3.metric("Wrong pairs cleared silently", sum(len(v) for v in eb["failure_examples"].values()))
+            st.caption("The deterministic passes score 100% precision and 100% recall on the same data.")
+            st.dataframe(pd.DataFrame([e for v in eb["failure_examples"].values() for e in v]),
+                         hide_index=True, width="stretch")
         base = ROOT / "eval" / "llm_only_results.json"
         if base.exists():
             bl = json.loads(base.read_text())
