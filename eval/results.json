@@ -1,0 +1,318 @@
+{
+ "label": "offline",
+ "models": [
+  "offline/scripted"
+ ],
+ "runs": {
+  "c1": "c1_20261031-165437_2c30",
+  "c2": "c2_20261031-165437_a36b",
+  "c3": "c3_20261031-165437_3d64"
+ },
+ "aggregate": {
+  "match": {
+   "precision": 1.0,
+   "recall": 1.0,
+   "tp": 81,
+   "predicted": 81,
+   "expected": 81
+  },
+  "diagnosis": {
+   "accuracy": 1.0,
+   "per_type": {
+    "amount_typo": {
+     "correct": 3,
+     "total": 3,
+     "accuracy": 1.0
+    },
+    "period_mismatch": {
+     "correct": 3,
+     "total": 3,
+     "accuracy": 1.0
+    },
+    "unclear": {
+     "correct": 3,
+     "total": 3,
+     "accuracy": 1.0
+    },
+    "unreadable": {
+     "correct": 3,
+     "total": 3,
+     "accuracy": 1.0
+    },
+    "vendor_not_filed": {
+     "correct": 3,
+     "total": 3,
+     "accuracy": 1.0
+    },
+    "wrong_gstin": {
+     "correct": 3,
+     "total": 3,
+     "accuracy": 1.0
+    }
+   },
+   "confusion": {
+    "amount_typo": {
+     "amount_typo": 3
+    },
+    "period_mismatch": {
+     "period_mismatch": 3
+    },
+    "unclear": {
+     "unclear": 3
+    },
+    "unreadable": {
+     "unreadable": 3
+    },
+    "vendor_not_filed": {
+     "vendor_not_filed": 3
+    },
+    "wrong_gstin": {
+     "wrong_gstin": 3
+    }
+   }
+  },
+  "actions_accuracy": 1.0,
+  "unsafe_auto_clears": 0,
+  "wrong_auto_matches": 0,
+  "escalation_rate": 0.429,
+  "agent_did_not_decide": 0,
+  "minutes_per_client": 0.01,
+  "llm_calls_per_client": 13.0
+ },
+ "per_client": {
+  "c1": {
+   "match": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "tp": 25,
+    "predicted": 25,
+    "expected": 25,
+    "pass_correct": 25,
+    "pass_expected": 25
+   },
+   "diagnosis": {
+    "accuracy": 1.0,
+    "per_type": {
+     "amount_typo": {
+      "correct": 1,
+      "total": 1,
+      "accuracy": 1.0
+     },
+     "period_mismatch": {
+      "correct": 1,
+      "total": 1,
+      "accuracy": 1.0
+     },
+     "unclear": {
+      "correct": 1,
+      "total": 1,
+      "accuracy": 1.0
+     },
+     "unreadable": {
+      "correct": 1,
+      "total": 1,
+      "accuracy": 1.0
+     },
+     "vendor_not_filed": {
+      "correct": 1,
+      "total": 1,
+      "accuracy": 1.0
+     },
+     "wrong_gstin": {
+      "correct": 1,
+      "total": 1,
+      "accuracy": 1.0
+     }
+    },
+    "confusion": {
+     "amount_typo": {
+      "amount_typo": 1
+     },
+     "period_mismatch": {
+      "period_mismatch": 1
+     },
+     "unclear": {
+      "unclear": 1
+     },
+     "unreadable": {
+      "unreadable": 1
+     },
+     "vendor_not_filed": {
+      "vendor_not_filed": 1
+     },
+     "wrong_gstin": {
+      "wrong_gstin": 1
+     }
+    }
+   },
+   "actions": {
+    "correct": 31,
+    "total": 31,
+    "accuracy": 1.0
+   },
+   "unsafe_auto_clears": 0,
+   "unsafe_items": [],
+   "wrong_auto_matches": [],
+   "escalation_rate": 0.429,
+   "agent_did_not_decide": 0,
+   "minutes": 0.01,
+   "llm_calls": 13
+  },
+  "c2": {
+   "match": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "tp": 27,
+    "predicted": 27,
+    "expected": 27,
+    "pass_correct": 27,
+    "pass_expected": 27
+   },
+   "diagnosis": {
+    "accuracy": 1.0,
+    "per_type": {
+     "amount_typo": {
+      "correct": 1,
+      "total": 1,
+      "accuracy": 1.0
+     },
+     "period_mismatch": {
+      "correct": 1,
+      "total": 1,
+      "accuracy": 1.0
+     },
+     "unclear": {
+      "correct": 1,
+      "total": 1,
+      "accuracy": 1.0
+     },
+     "unreadable": {
+      "correct": 1,
+      "total": 1,
+      "accuracy": 1.0
+     },
+     "vendor_not_filed": {
+      "correct": 1,
+      "total": 1,
+      "accuracy": 1.0
+     },
+     "wrong_gstin": {
+      "correct": 1,
+      "total": 1,
+      "accuracy": 1.0
+     }
+    },
+    "confusion": {
+     "amount_typo": {
+      "amount_typo": 1
+     },
+     "period_mismatch": {
+      "period_mismatch": 1
+     },
+     "unclear": {
+      "unclear": 1
+     },
+     "unreadable": {
+      "unreadable": 1
+     },
+     "vendor_not_filed": {
+      "vendor_not_filed": 1
+     },
+     "wrong_gstin": {
+      "wrong_gstin": 1
+     }
+    }
+   },
+   "actions": {
+    "correct": 33,
+    "total": 33,
+    "accuracy": 1.0
+   },
+   "unsafe_auto_clears": 0,
+   "unsafe_items": [],
+   "wrong_auto_matches": [],
+   "escalation_rate": 0.429,
+   "agent_did_not_decide": 0,
+   "minutes": 0.01,
+   "llm_calls": 13
+  },
+  "c3": {
+   "match": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "tp": 29,
+    "predicted": 29,
+    "expected": 29,
+    "pass_correct": 29,
+    "pass_expected": 29
+   },
+   "diagnosis": {
+    "accuracy": 1.0,
+    "per_type": {
+     "amount_typo": {
+      "correct": 1,
+      "total": 1,
+      "accuracy": 1.0
+     },
+     "period_mismatch": {
+      "correct": 1,
+      "total": 1,
+      "accuracy": 1.0
+     },
+     "unclear": {
+      "correct": 1,
+      "total": 1,
+      "accuracy": 1.0
+     },
+     "unreadable": {
+      "correct": 1,
+      "total": 1,
+      "accuracy": 1.0
+     },
+     "vendor_not_filed": {
+      "correct": 1,
+      "total": 1,
+      "accuracy": 1.0
+     },
+     "wrong_gstin": {
+      "correct": 1,
+      "total": 1,
+      "accuracy": 1.0
+     }
+    },
+    "confusion": {
+     "amount_typo": {
+      "amount_typo": 1
+     },
+     "period_mismatch": {
+      "period_mismatch": 1
+     },
+     "unclear": {
+      "unclear": 1
+     },
+     "unreadable": {
+      "unreadable": 1
+     },
+     "vendor_not_filed": {
+      "vendor_not_filed": 1
+     },
+     "wrong_gstin": {
+      "wrong_gstin": 1
+     }
+    }
+   },
+   "actions": {
+    "correct": 35,
+    "total": 35,
+    "accuracy": 1.0
+   },
+   "unsafe_auto_clears": 0,
+   "unsafe_items": [],
+   "wrong_auto_matches": [],
+   "escalation_rate": 0.429,
+   "agent_did_not_decide": 0,
+   "minutes": 0.01,
+   "llm_calls": 13
+  }
+ }
+}

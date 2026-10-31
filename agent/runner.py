@@ -32,7 +32,7 @@ RUNS_DIR = ROOT / "runs"
 APP = "zero_balance"
 
 
-def _short(obj, limit: int = 600):
+def _short(obj, limit: int = 2500):
     s = json.dumps(obj, ensure_ascii=False, default=str)
     return obj if len(s) <= limit else s[:limit] + " …"
 

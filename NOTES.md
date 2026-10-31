@@ -35,3 +35,29 @@ Environment verified:
 - Matching: every planted exact / rounding / date-drift / near-miss case found by its expected pass and row;
   open items equal the planted mismatches; rule-based `suggested_cause` is right for all 21 open items.
   Checked on seeds 42 (sample), 7, 2027 (in pytest) and 1, 2, 3, 4, 5, 11, 99, 123 (manual sweep).
+
+<!-- EVAL-OFFLINE:START -->
+### Agent pipeline, offline scripted model (rules-only baseline, NOT an LLM result)
+
+The scripted stand-in always follows the rule-based suggested_cause. These numbers check the pipeline and the gate; they are not model numbers.
+
+| Client | Match P | Match R | Diagnosis acc. | Action acc. | Unsafe auto-clears | Escalation rate | Min/client | LLM calls |
+|---|---|---|---|---|---|---|---|---|
+| c1 | 100.0% | 100.0% | 100.0% | 100.0% | 0 | 43% | 0.01 | 13 |
+| c2 | 100.0% | 100.0% | 100.0% | 100.0% | 0 | 43% | 0.01 | 13 |
+| c3 | 100.0% | 100.0% | 100.0% | 100.0% | 0 | 43% | 0.01 | 13 |
+| **all** | **100.0%** | **100.0%** | **100.0%** | **100.0%** | **0** | **43%** | **0.01** | **13.0** |
+
+Diagnosis accuracy per mismatch type:
+
+| Cause | Correct | Total |
+|---|---|---|
+| amount_typo | 3 | 3 |
+| period_mismatch | 3 | 3 |
+| unclear | 3 | 3 |
+| unreadable | 3 | 3 |
+| vendor_not_filed | 3 | 3 |
+| wrong_gstin | 3 | 3 |
+
+Confusion (expected → predicted): amount_typo: amount_typo×3; period_mismatch: period_mismatch×3; unclear: unclear×3; unreadable: unreadable×3; vendor_not_filed: vendor_not_filed×3; wrong_gstin: wrong_gstin×3
+<!-- EVAL-OFFLINE:END -->
