@@ -4,9 +4,9 @@
   "local/minilm"
  ],
  "runs": {
-  "c1": "c1_20261031-175942_cbf1",
-  "c2": "c2_20261031-175949_e3d3",
-  "c3": "c3_20261031-175956_f9a6"
+  "c1": "c1_20261031-193302_639f",
+  "c2": "c2_20261031-193306_f46b",
+  "c3": "c3_20261031-193309_c167"
  },
  "aggregate": {
   "match": {
@@ -76,7 +76,7 @@
   "wrong_auto_matches": 0,
   "escalation_rate": 0.429,
   "agent_did_not_decide": 0,
-  "minutes_per_client": 0.1,
+  "minutes_per_client": 0.05,
   "llm_calls_per_client": 13.0
  },
  "per_client": {
@@ -155,7 +155,7 @@
    "wrong_auto_matches": [],
    "escalation_rate": 0.429,
    "agent_did_not_decide": 0,
-   "minutes": 0.1,
+   "minutes": 0.05,
    "llm_calls": 13
   },
   "c2": {
@@ -233,7 +233,7 @@
    "wrong_auto_matches": [],
    "escalation_rate": 0.429,
    "agent_did_not_decide": 0,
-   "minutes": 0.1,
+   "minutes": 0.05,
    "llm_calls": 13
   },
   "c3": {
@@ -311,7 +311,7 @@
    "wrong_auto_matches": [],
    "escalation_rate": 0.429,
    "agent_did_not_decide": 0,
-   "minutes": 0.1,
+   "minutes": 0.05,
    "llm_calls": 13
   }
  }

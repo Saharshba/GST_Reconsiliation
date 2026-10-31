@@ -110,7 +110,7 @@ def diagnose_fewshot(item: dict) -> tuple[str, float, str]:
     cause = max(votes, key=votes.get)
     conf = votes[cause] / sum(votes.values())
     fact = "; ".join(facts) if cause in ("unclear", "unreadable") else facts[0]
-    return cause, conf, f"Evidence: {fact} (nearest past cases: {cause}, similarity {float(sims[top[0]]):.2f})"[:240]
+    return cause, conf, f"Evidence: {fact}"[:240]
 
 
 def diagnose(item: dict) -> tuple[str, float, str]:

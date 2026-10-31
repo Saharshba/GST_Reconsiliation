@@ -1,11 +1,11 @@
 {
- "run_id": "c3_20261031-175956_f9a6",
+ "run_id": "c3_20261031-193309_c167",
  "client_id": "c3",
  "mode": "local",
  "model": "local/minilm",
- "started_at": "2026-10-31T17:59:50",
- "finished_at": "2026-10-31T17:59:56",
- "duration_s": 5.81,
+ "started_at": "2026-10-31T19:33:07",
+ "finished_at": "2026-10-31T19:33:09",
+ "duration_s": 2.79,
  "invoices": [
   {
    "invoice_id": "c3-inv-001",
@@ -1551,43 +1551,43 @@
    "invoice_id": "c3-inv-018",
    "cause": "unclear",
    "confidence": 0.612,
-   "explanation": "Evidence: same GSTIN+no. in 2B row 09-017 but amount Rs 30879.42 vs invoice Rs 31410.42 (gap -531.0); found in NEXT period 2B row 10-009 (amount matches) (nearest past cases: unclear, similarity 0.98)"
+   "explanation": "Evidence: same GSTIN+no. in 2B row 09-017 but amount Rs 30879.42 vs invoice Rs 31410.42 (gap -531.0); found in NEXT period 2B row 10-009 (amount matches)"
   },
   {
    "invoice_id": "c3-inv-020",
    "cause": "unclear",
    "confidence": 1.0,
-   "explanation": "Evidence: pass-4 fuzzy match to row 09-032: fuzzy: 'SA-306' vs 'SA-036' (score 91) - needs human confirmation (nearest past cases: unclear, similarity 0.93)"
+   "explanation": "Evidence: pass-4 fuzzy match to row 09-032: fuzzy: 'SA-306' vs 'SA-036' (score 91) - needs human confirmation"
   },
   {
    "invoice_id": "c3-inv-024",
    "cause": "vendor_not_filed",
    "confidence": 1.0,
-   "explanation": "Evidence: vendor has NO rows in 2B this period (nearest past cases: vendor_not_filed, similarity 1.00)"
+   "explanation": "Evidence: vendor has NO rows in 2B this period"
   },
   {
    "invoice_id": "c3-inv-026",
    "cause": "wrong_gstin",
    "confidence": 1.0,
-   "explanation": "Evidence: same no.+amount in 2B under OTHER GSTIN 33JMECY5796R3Z9 (row 09-024, Rs 142220.68) (nearest past cases: wrong_gstin, similarity 0.98)"
+   "explanation": "Evidence: same no.+amount in 2B under OTHER GSTIN 33JMECY5796R3Z9 (row 09-024, Rs 142220.68)"
   },
   {
    "invoice_id": "c3-inv-029",
    "cause": "unreadable",
    "confidence": 1.0,
-   "explanation": "Evidence: PDF unreadable: no text layer (image-only scan?) (nearest past cases: unreadable, similarity 1.00)"
+   "explanation": "Evidence: PDF unreadable: no text layer (image-only scan?)"
   },
   {
    "invoice_id": "c3-inv-033",
    "cause": "amount_typo",
    "confidence": 1.0,
-   "explanation": "Evidence: same GSTIN+no. in 2B row 09-015 but amount Rs 221448.24 vs invoice Rs 210828.24 (gap +10620.0) (nearest past cases: amount_typo, similarity 0.98)"
+   "explanation": "Evidence: same GSTIN+no. in 2B row 09-015 but amount Rs 221448.24 vs invoice Rs 210828.24 (gap +10620.0)"
   },
   {
    "invoice_id": "c3-inv-035",
    "cause": "period_mismatch",
    "confidence": 1.0,
-   "explanation": "Evidence: found in NEXT period 2B row 10-006 (amount matches) (nearest past cases: period_mismatch, similarity 1.00)"
+   "explanation": "Evidence: found in NEXT period 2B row 10-006 (amount matches)"
   }
  ],
  "emails": [
@@ -1596,7 +1596,7 @@
    "to_vendor": "Virk Supplies",
    "to_gstin": "37HWPFS3691C1ZF",
    "subject": "GSTR-1 for Sep 2026 not reflecting invoice VSK262701180",
-   "body": "Dear Virk Supplies team,\n\nWe are writing on behalf of our client Joshi-Som LLP (GSTIN 29ZGPCH7489V1ZT) about their purchase reconciliation for Sep 2026.\n\nInvoice VSK262701180 dated 18-09-2026 for Rs 39,337.66 does not appear in our GSTR-2B for Sep 2026; no invoices from GSTIN 37HWPFS3691C1ZF appear for that period.\n\nRequested fix: Please file your GSTR-1 / IFF for Sep 2026 including this invoice against recipient GSTIN 29ZGPCH7489V1ZT, and share the filing acknowledgement. We cannot claim input tax credit until it is reported.\n\nInvoice details:\n  Invoice no.: VSK262701180\n  Invoice date: 18-09-2026\n  Your GSTIN: 37HWPFS3691C1ZF\n  Taxable value: Rs 33,337.00\n  Invoice total: Rs 39,337.66\n\nThank you for your help.\n\nRegards,\nAccounts team (on behalf of the client)\n[DRAFT - review before sending]",
+   "body": "Dear Virk Supplies team,\n\nWe are writing on behalf of our client Joshi-Som LLP (GSTIN 29ZGPCH7489V1ZT) about their purchase reconciliation for Sep 2026.\n\nInvoice VSK262701180 dated 18-09-2026 for Rs 39,337.66 does not appear in our GSTR-2B for Sep 2026; no invoices from GSTIN 37HWPFS3691C1ZF appear for that period.\n\nEvidence: vendor has NO rows in 2B this period\n\nRequested fix: Please file your GSTR-1 / IFF for Sep 2026 including this invoice against recipient GSTIN 29ZGPCH7489V1ZT, and share the filing acknowledgement. We cannot claim input tax credit until it is reported.\n\nInvoice details:\n  Invoice no.: VSK262701180\n  Invoice date: 18-09-2026\n  Your GSTIN: 37HWPFS3691C1ZF\n  Taxable value: Rs 33,337.00\n  Invoice total: Rs 39,337.66\n\nThank you for your help.\n\nRegards,\nAccounts team (on behalf of the client)\n[DRAFT - review before sending]",
    "cause": "vendor_not_filed",
    "highlights": [
     "VSK262701180",
@@ -1609,7 +1609,7 @@
    "to_vendor": "Dhawan Traders",
    "to_gstin": "27JMECY5796R1Z4",
    "subject": "GSTIN correction needed: invoice DT/1007/26-27 dated 20-09-2026",
-   "body": "Dear Dhawan Traders team,\n\nWe are writing on behalf of our client Joshi-Som LLP (GSTIN 29ZGPCH7489V1ZT) about their purchase reconciliation for Sep 2026.\n\nIn our GSTR-2B for Sep 2026, invoice DT/1007/26-27 dated 20-09-2026 for Rs 1,42,220.68 is reported under GSTIN 33JMECY5796R3Z9, not under your GSTIN 27JMECY5796R1Z4 shown on the invoice.\n\nEvidence: same no.+amount in 2B under OTHER GSTIN 33JMECY5796R3Z9 (row 09-024, Rs 142220.68) (nearest past cases: wrong_gstin, similarity 0.98)\n\nRequested fix: Please amend this invoice in your GSTR-1 (Table 9A) so that it is reported under GSTIN 27JMECY5796R1Z4, with recipient GSTIN 29ZGPCH7489V1ZT, or confirm in writing which GSTIN is correct and issue a revised invoice.\n\nInvoice details:\n  Invoice no.: DT/1007/26-27\n  Invoice date: 20-09-2026\n  Your GSTIN: 27JMECY5796R1Z4\n  Taxable value: Rs 1,20,526.00\n  Invoice total: Rs 1,42,220.68\n\nThank you for your help.\n\nRegards,\nAccounts team (on behalf of the client)\n[DRAFT - review before sending]",
+   "body": "Dear Dhawan Traders team,\n\nWe are writing on behalf of our client Joshi-Som LLP (GSTIN 29ZGPCH7489V1ZT) about their purchase reconciliation for Sep 2026.\n\nIn our GSTR-2B for Sep 2026, invoice DT/1007/26-27 dated 20-09-2026 for Rs 1,42,220.68 is reported under GSTIN 33JMECY5796R3Z9, not under your GSTIN 27JMECY5796R1Z4 shown on the invoice.\n\nEvidence: same no.+amount in 2B under OTHER GSTIN 33JMECY5796R3Z9 (row 09-024, Rs 142220.68)\n\nRequested fix: Please amend this invoice in your GSTR-1 (Table 9A) so that it is reported under GSTIN 27JMECY5796R1Z4, with recipient GSTIN 29ZGPCH7489V1ZT, or confirm in writing which GSTIN is correct and issue a revised invoice.\n\nInvoice details:\n  Invoice no.: DT/1007/26-27\n  Invoice date: 20-09-2026\n  Your GSTIN: 27JMECY5796R1Z4\n  Taxable value: Rs 1,20,526.00\n  Invoice total: Rs 1,42,220.68\n\nThank you for your help.\n\nRegards,\nAccounts team (on behalf of the client)\n[DRAFT - review before sending]",
    "cause": "wrong_gstin",
    "highlights": [
     "DT/1007/26-27",
@@ -1624,7 +1624,7 @@
    "to_vendor": "Mangat Agencies",
    "to_gstin": "29PHXPG7274A1ZJ",
    "subject": "Amount mismatch on invoice INV/2026-27/1149 dated 25-09-2026",
-   "body": "Dear Mangat Agencies team,\n\nWe are writing on behalf of our client Joshi-Som LLP (GSTIN 29ZGPCH7489V1ZT) about their purchase reconciliation for Sep 2026.\n\nInvoice INV/2026-27/1149 dated 25-09-2026 shows a total of Rs 2,10,828.24 in our books, but your GSTR-1 reports Rs 2,21,448.24 for the same invoice (difference Rs 10,620.00).\n\nEvidence: same GSTIN+no. in 2B row 09-015 but amount Rs 221448.24 vs invoice Rs 210828.24 (gap +10620.0) (nearest past cases: amount_typo, similarity 0.98)\n\nRequested fix: Please confirm which figure is correct. If the GSTR-1 figure is wrong, amend it in Table 9A of your next GSTR-1; if the invoice is wrong, issue a credit/debit note for the difference.\n\nInvoice details:\n  Invoice no.: INV/2026-27/1149\n  Invoice date: 25-09-2026\n  Your GSTIN: 29PHXPG7274A1ZJ\n  Taxable value: Rs 1,78,668.00\n  Invoice total: Rs 2,10,828.24\n\nThank you for your help.\n\nRegards,\nAccounts team (on behalf of the client)\n[DRAFT - review before sending]",
+   "body": "Dear Mangat Agencies team,\n\nWe are writing on behalf of our client Joshi-Som LLP (GSTIN 29ZGPCH7489V1ZT) about their purchase reconciliation for Sep 2026.\n\nInvoice INV/2026-27/1149 dated 25-09-2026 shows a total of Rs 2,10,828.24 in our books, but your GSTR-1 reports Rs 2,21,448.24 for the same invoice (difference Rs 10,620.00).\n\nEvidence: same GSTIN+no. in 2B row 09-015 but amount Rs 221448.24 vs invoice Rs 210828.24 (gap +10620.0)\n\nRequested fix: Please confirm which figure is correct. If the GSTR-1 figure is wrong, amend it in Table 9A of your next GSTR-1; if the invoice is wrong, issue a credit/debit note for the difference.\n\nInvoice details:\n  Invoice no.: INV/2026-27/1149\n  Invoice date: 25-09-2026\n  Your GSTIN: 29PHXPG7274A1ZJ\n  Taxable value: Rs 1,78,668.00\n  Invoice total: Rs 2,10,828.24\n\nThank you for your help.\n\nRegards,\nAccounts team (on behalf of the client)\n[DRAFT - review before sending]",
    "cause": "amount_typo",
    "highlights": [
     "INV/2026-27/1149",
@@ -1674,7 +1674,7 @@
     ],
     "suggested_cause": "unclear"
    },
-   "agent_note": "Evidence: same GSTIN+no. in 2B row 09-017 but amount Rs 30879.42 vs invoice Rs 31410.42 (gap -531.0); found in NEXT period 2B row 10-009 (amount matches) (nearest past cases: unclear, similarity 0.98)",
+   "agent_note": "Evidence: same GSTIN+no. in 2B row 09-017 but amount Rs 30879.42 vs invoice Rs 31410.42 (gap -531.0); found in NEXT period 2B row 10-009 (amount matches)",
    "llm_cause": "unclear",
    "llm_confidence": 0.612
   },
@@ -1705,7 +1705,7 @@
     ],
     "suggested_cause": "unclear"
    },
-   "agent_note": "Evidence: pass-4 fuzzy match to row 09-032: fuzzy: 'SA-306' vs 'SA-036' (score 91) - needs human confirmation (nearest past cases: unclear, similarity 0.93)",
+   "agent_note": "Evidence: pass-4 fuzzy match to row 09-032: fuzzy: 'SA-306' vs 'SA-036' (score 91) - needs human confirmation",
    "llm_cause": "unclear",
    "llm_confidence": 1.0
   },
@@ -1720,7 +1720,7 @@
     ],
     "suggested_cause": "unreadable"
    },
-   "agent_note": "Evidence: PDF unreadable: no text layer (image-only scan?) (nearest past cases: unreadable, similarity 1.00)",
+   "agent_note": "Evidence: PDF unreadable: no text layer (image-only scan?)",
    "llm_cause": "unreadable",
    "llm_confidence": 1.0
   }
@@ -1733,7 +1733,7 @@
    "data": "Reconcile client c3 (Joshi-Som LLP, GSTIN 29ZGPCH7489V1ZT) for filing period 092026. The next period is 102026."
   },
   {
-   "t": 0.19,
+   "t": 0.18,
    "kind": "info",
    "name": "config",
    "data": {
@@ -1744,13 +1744,13 @@
    }
   },
   {
-   "t": 0.31,
+   "t": 0.3,
    "kind": "llm_text",
    "name": "",
    "data": "Plan: load 2B for 092026 and 102026, parse invoices, match, then decide each open item."
   },
   {
-   "t": 0.31,
+   "t": 0.3,
    "kind": "tool_call",
    "name": "fetch_2b_rows",
    "data": {
@@ -1759,7 +1759,7 @@
    }
   },
   {
-   "t": 0.31,
+   "t": 0.3,
    "kind": "tool_result",
    "name": "fetch_2b_rows",
    "data": {
@@ -1770,7 +1770,7 @@
    }
   },
   {
-   "t": 0.31,
+   "t": 0.3,
    "kind": "tool_call",
    "name": "fetch_2b_rows",
    "data": {
@@ -1779,7 +1779,7 @@
    }
   },
   {
-   "t": 0.31,
+   "t": 0.3,
    "kind": "tool_result",
    "name": "fetch_2b_rows",
    "data": {
@@ -1790,7 +1790,7 @@
    }
   },
   {
-   "t": 0.32,
+   "t": 0.3,
    "kind": "tool_call",
    "name": "parse_invoice",
    "data": {
@@ -1798,7 +1798,7 @@
    }
   },
   {
-   "t": 0.48,
+   "t": 0.47,
    "kind": "tool_result",
    "name": "parse_invoice",
    "data": {
@@ -1814,7 +1814,7 @@
    }
   },
   {
-   "t": 0.48,
+   "t": 0.47,
    "kind": "tool_call",
    "name": "match_records",
    "data": {
@@ -1822,7 +1822,7 @@
    }
   },
   {
-   "t": 0.48,
+   "t": 0.47,
    "kind": "tool_result",
    "name": "match_records",
    "data": {
@@ -1917,24 +1917,24 @@
    }
   },
   {
-   "t": 5.76,
+   "t": 2.74,
    "kind": "llm_text",
    "name": "",
    "data": "c3-inv-018: diagnosed unclear (confidence 0.61)."
   },
   {
-   "t": 5.76,
+   "t": 2.74,
    "kind": "tool_call",
    "name": "escalate_case",
    "data": {
     "invoice_id": "c3-inv-018",
     "reason": "unclear: needs a human",
     "confidence": 0.612,
-    "explanation": "Evidence: same GSTIN+no. in 2B row 09-017 but amount Rs 30879.42 vs invoice Rs 31410.42 (gap -531.0); found in NEXT period 2B row 10-009 (amount matches) (nearest past cases: unclear, similarity 0.98)"
+    "explanation": "Evidence: same GSTIN+no. in 2B row 09-017 but amount Rs 30879.42 vs invoice Rs 31410.42 (gap -531.0); found in NEXT period 2B row 10-009 (amount matches)"
    }
   },
   {
-   "t": 5.77,
+   "t": 2.75,
    "kind": "tool_result",
    "name": "escalate_case",
    "data": {
@@ -1943,24 +1943,24 @@
    }
   },
   {
-   "t": 5.77,
+   "t": 2.75,
    "kind": "llm_text",
    "name": "",
    "data": "c3-inv-020: diagnosed unclear (confidence 1.00)."
   },
   {
-   "t": 5.77,
+   "t": 2.75,
    "kind": "tool_call",
    "name": "escalate_case",
    "data": {
     "invoice_id": "c3-inv-020",
     "reason": "unclear: needs a human",
     "confidence": 1.0,
-    "explanation": "Evidence: pass-4 fuzzy match to row 09-032: fuzzy: 'SA-306' vs 'SA-036' (score 91) - needs human confirmation (nearest past cases: unclear, similarity 0.93)"
+    "explanation": "Evidence: pass-4 fuzzy match to row 09-032: fuzzy: 'SA-306' vs 'SA-036' (score 91) - needs human confirmation"
    }
   },
   {
-   "t": 5.77,
+   "t": 2.75,
    "kind": "tool_result",
    "name": "escalate_case",
    "data": {
@@ -1969,36 +1969,35 @@
    }
   },
   {
-   "t": 5.78,
+   "t": 2.76,
    "kind": "llm_text",
    "name": "",
    "data": "c3-inv-024: diagnosed vendor_not_filed (confidence 1.00)."
   },
   {
-   "t": 5.78,
+   "t": 2.76,
    "kind": "tool_call",
    "name": "draft_email",
    "data": {
     "invoice_id": "c3-inv-024",
     "cause": "vendor_not_filed",
     "confidence": 1.0,
-    "explanation": "Evidence: vendor has NO rows in 2B this period (nearest past cases: vendor_not_filed, similarity 1.00)"
+    "explanation": "Evidence: vendor has NO rows in 2B this period"
    }
   },
   {
-   "t": 5.78,
+   "t": 2.76,
    "kind": "tool_result",
    "name": "draft_email",
    "data": {
     "invoice_id": "c3-inv-024",
     "status": "drafted",
     "to": "Virk Supplies",
-    "subject": "GSTR-1 for Sep 2026 not reflecting invoice VSK262701180",
-    "note": "your explanation cited a figure not in the evidence, so it was left out of the email"
+    "subject": "GSTR-1 for Sep 2026 not reflecting invoice VSK262701180"
    }
   },
   {
-   "t": 5.78,
+   "t": 2.76,
    "kind": "tool_call",
    "name": "validate_gstin",
    "data": {
@@ -2006,7 +2005,7 @@
    }
   },
   {
-   "t": 5.78,
+   "t": 2.76,
    "kind": "tool_result",
    "name": "validate_gstin",
    "data": {
@@ -2018,24 +2017,24 @@
    }
   },
   {
-   "t": 5.79,
+   "t": 2.77,
    "kind": "llm_text",
    "name": "",
    "data": "c3-inv-026: diagnosed wrong_gstin (confidence 1.00)."
   },
   {
-   "t": 5.79,
+   "t": 2.77,
    "kind": "tool_call",
    "name": "draft_email",
    "data": {
     "invoice_id": "c3-inv-026",
     "cause": "wrong_gstin",
     "confidence": 1.0,
-    "explanation": "Evidence: same no.+amount in 2B under OTHER GSTIN 33JMECY5796R3Z9 (row 09-024, Rs 142220.68) (nearest past cases: wrong_gstin, similarity 0.98)"
+    "explanation": "Evidence: same no.+amount in 2B under OTHER GSTIN 33JMECY5796R3Z9 (row 09-024, Rs 142220.68)"
    }
   },
   {
-   "t": 5.79,
+   "t": 2.77,
    "kind": "tool_result",
    "name": "draft_email",
    "data": {
@@ -2046,24 +2045,24 @@
    }
   },
   {
-   "t": 5.79,
+   "t": 2.77,
    "kind": "llm_text",
    "name": "",
    "data": "c3-inv-029: diagnosed unreadable (confidence 1.00)."
   },
   {
-   "t": 5.79,
+   "t": 2.77,
    "kind": "tool_call",
    "name": "escalate_case",
    "data": {
     "invoice_id": "c3-inv-029",
     "reason": "unreadable: needs a human",
     "confidence": 1.0,
-    "explanation": "Evidence: PDF unreadable: no text layer (image-only scan?) (nearest past cases: unreadable, similarity 1.00)"
+    "explanation": "Evidence: PDF unreadable: no text layer (image-only scan?)"
    }
   },
   {
-   "t": 5.8,
+   "t": 2.77,
    "kind": "tool_result",
    "name": "escalate_case",
    "data": {
@@ -2072,24 +2071,24 @@
    }
   },
   {
-   "t": 5.8,
+   "t": 2.78,
    "kind": "llm_text",
    "name": "",
    "data": "c3-inv-033: diagnosed amount_typo (confidence 1.00)."
   },
   {
-   "t": 5.8,
+   "t": 2.78,
    "kind": "tool_call",
    "name": "draft_email",
    "data": {
     "invoice_id": "c3-inv-033",
     "cause": "amount_typo",
     "confidence": 1.0,
-    "explanation": "Evidence: same GSTIN+no. in 2B row 09-015 but amount Rs 221448.24 vs invoice Rs 210828.24 (gap +10620.0) (nearest past cases: amount_typo, similarity 0.98)"
+    "explanation": "Evidence: same GSTIN+no. in 2B row 09-015 but amount Rs 221448.24 vs invoice Rs 210828.24 (gap +10620.0)"
    }
   },
   {
-   "t": 5.8,
+   "t": 2.78,
    "kind": "tool_result",
    "name": "draft_email",
    "data": {
@@ -2100,24 +2099,24 @@
    }
   },
   {
-   "t": 5.81,
+   "t": 2.78,
    "kind": "llm_text",
    "name": "",
    "data": "c3-inv-035: diagnosed period_mismatch (confidence 1.00)."
   },
   {
-   "t": 5.81,
+   "t": 2.78,
    "kind": "tool_call",
    "name": "draft_email",
    "data": {
     "invoice_id": "c3-inv-035",
     "cause": "period_mismatch",
     "confidence": 1.0,
-    "explanation": "Evidence: found in NEXT period 2B row 10-006 (amount matches) (nearest past cases: period_mismatch, similarity 1.00)"
+    "explanation": "Evidence: found in NEXT period 2B row 10-006 (amount matches)"
    }
   },
   {
-   "t": 5.81,
+   "t": 2.79,
    "kind": "tool_result",
    "name": "draft_email",
    "data": {
@@ -2127,7 +2126,7 @@
    }
   },
   {
-   "t": 5.81,
+   "t": 2.79,
    "kind": "llm_text",
    "name": "",
    "data": "[local MiniLM] Matched 29 invoices; drafted 3 emails, flagged 1 for the next return and escalated 3 to the reviewer."
