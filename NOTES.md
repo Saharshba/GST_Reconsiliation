@@ -1,6 +1,17 @@
 # Zero Balance: build notes
 
-## M0: tool-calling spike (PENDING: needs NVIDIA_NIM_API_KEY)
+## M0: tool-calling spike (BLOCKED: Gemma 4 endpoint not responding, 2026-10-31)
+
+Attempt log (key valid; `GET /v1/models` returns 200 in ~3 s and lists `google/gemma-4-31b-it`):
+- LiteLLM's `nvidia_nim` provider needs the `mcp` package at call time (`No module named 'mcp'`). Added to
+  requirements.txt.
+- ADK → LiteLLM → NIM, add-tool turn: `litellm.Timeout ... Error code: 504` after several minutes.
+- Direct `POST /v1/chat/completions` (no tools, 20 max tokens): no response in 150 s.
+- Same with `stream: true`: no response headers in 240 s.
+- `google/gemma-3-12b-it` probe: 404 "Function not found for account" (not deployed for this key), so it doesn't
+  tell us whether the stall is Gemma-4-specific.
+Conclusion so far: the free Gemma 4 31B endpoint is queued/overloaded; tool calling is still **untested**.
+
 
 Script: `spike/m0_tool_calling.py` (add tool, state write/read across turns, 10 quick calls for latency/429s).
 Not run yet: no API key on this machine, and the team asked not to spend credits until the key is provided.
